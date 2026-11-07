@@ -8,7 +8,7 @@ The disc holds a launcher plus **two games**: Goku Makaimura Kai (`USRDIR/REGOKU
 - Build:    not written yet (phase 3): `python -X utf8 tools/build.py` -> `build/goku_en.iso`, checks the dump against `rom.sha1` first
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this). Hook setup on a fresh clone: `git config core.hooksPath tools/hooks`
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" "rom/Goku Makai-Mura Kai (Japan).iso" --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     not written yet (phase 2): `tools/debug/warp.py` drives PPSSPP over `psp.py` (no Lua on PSP)
+- Warp:     `python -X utf8 tools/debug/warp.py re:stage_0201 --out work/qa/warp` (`--list`, `--all`; `re` Kai, `go` original; notes in `tools/debug/README.md`)
 - Release:  not written yet (phase 9): `python -X utf8 tools/release.py` (patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 
