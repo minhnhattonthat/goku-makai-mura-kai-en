@@ -6,7 +6,7 @@ import os, shutil, struct
 
 ADDR = {
     're': {
-        'G': 0x351098, 'sys': 0x38578, 'stage_off': 0x40, 'book': None,
+        'G': 0x351098, 'sys': 0x38578, 'stage_off': 0x40, 'book': None, 'witch_slot': 11,
         'stage_read': 0x4a6a4, 'stage_read_orig': 0x8e650040,    # lw a1,0x40(s3) -> ori a1,zero,stage
         'area_read': 0x50e08, 'area_read_orig': 0x8e650044,      # lw a1,0x44(s3) -> ori a1,zero,area
         'newgame_jal': 0x70060,    # title's jal Play
@@ -21,7 +21,7 @@ ADDR = {
         },
     },
     'go': {   # the original has no Pause process: START opens Submenu
-        'G': 0x351518, 'sys': 0x38538, 'stage_off': 0x3c, 'book': 'right',
+        'G': 0x351518, 'sys': 0x38538, 'stage_off': 0x3c, 'book': 'right', 'witch_slot': 1,   # its s0600.bms stops at 10
         'stage_read': 0x4a858, 'stage_read_orig': 0x8e65003c,
         'area_read': 0x514c0, 'area_read_orig': 0x8e650040,
         'newgame_jal': 0x70184,
@@ -126,18 +126,22 @@ def scenes_for(game):
     d['gameover'] = dict(go=overlay('GameOver', gap=240), proc='GameOver', doc='GAME OVER')
     d['timeout'] = dict(go=overlay('TimeOut', gap=40), proc='TimeOut', doc='TIME OUT')
     d['result'] = dict(go=overlay('Result', [(0x100, 1)], gap=300, mode=2), proc='Result', doc='stage result')
-    d['stage_select'] = dict(go=keys(overlay('SystemMenu', [(0x140, 4)]), 'circle left circle', 200), proc='StageSelect', doc='stage select')
+    # mode 2, as after a real stage clear: over a live Area the original null-reads res 0x30 in StageSelect and the emulator dies
+    d['stage_select'] = dict(go=keys(overlay('SystemMenu', [(0x140, 4)], mode=2), 'circle left circle', 200), proc='StageSelect', doc='stage select')
     d['save'] = dict(go=save_screen, proc='MsLoad', doc='save list')
     d['witch'] = dict(go=lambda g: (stage(6, 0)(g), g.s.hold('right'), g.s.run(420), g.s.hold(''), g.s.run(420)), proc='Area', doc='witch message box')
     d['msg_all'] = dict(go=msg_all, proc='Area', doc='every stage message, in the witch box')
     d['save_fixture'] = dict(go=save_fixture, proc='MsLoad', doc='saves in game, keeps the file as work/saves/<game>')
     sav = f'work/saves/{game}'
-    d['autoload'] = dict(go=lambda g: (g.s.run(1800), g.a['book'] and g.s.press(g.a['book'], gap=120), g.s.press('start'), g.s.run(300)),
+    d['autoload'] = dict(go=lambda g: (g.s.run(1800), g.a['book'] and g.s.press(g.a['book'], gap=120), g.s.press('start'), g.s.run(130)),
                          sav=sav, doc='auto-load message (needs save_fixture first)')
     d['load_list'] = dict(go=load_menu, proc='Ms', sav=sav, doc='LOAD GAME with a save')
     d['load_done'] = dict(go=keys(load_menu, 'circle circle circle', 150), sav=sav, doc='load a save')
     d['movie_attract'] = dict(go=attract, proc='Title', doc='title left idle: opening movie mv00')
     d['movie_newgame'] = dict(go=lambda g: (boot(g), new_game(g), g.s.run(200)), proc='Title', doc='NEW GAME movie mv01')
+    for n, w in ((1, 780), (2, 1380)):
+        d[f'movie_boss{n}'] = dict(go=lambda g, w=w: boss_movie(g, w), proc='Result', doc=f'5-7 clear movie mv03, subtitle {n}')
+    d['memstick_all'] = dict(go=memstick_all, doc='every memstick.bms string, in the no-save prompt')
     d['sub_tabs'] = dict(go=keys(lambda g: (stage(2, 1)(g), g.s.press('start', gap=40)), 'up right right right', 40), proc='Pause' if game == 're' else 'Submenu', doc='sub screen / pause')
     if game == 'go':
         d['sub_all'] = dict(go=sub_all, proc='Submenu', doc='every a03/a04 string in the sub screen detail pane')
@@ -149,7 +153,7 @@ def scenes_for(game):
 def find_bytes(g, needle, lo=0x08c00000, hi=0x0a000000):
     """First RAM address holding NEEDLE; reads in 1 MB chunks with an overlap."""
     for a in range(lo, hi, 0x100000):
-        i = g.s.rd(a, 0x100000 + len(needle)).find(needle)
+        i = g.s.rd(a, min(0x100000 + len(needle), hi - a)).find(needle)
         if i >= 0: return a + i
     raise LookupError('bytes not in RAM')
 
@@ -170,7 +174,7 @@ WITCH_FRAMES = 840  # from stage 6 start, holding right for 420: the witch's box
 
 def msg_all(g):
     """Every stage message (.bms strings the game only shows on rare story flags, tools/debug/README.md): in the witch's
-    real box, copy string N to scratch RAM and point the slot she reads (s0600 string 11) at it.
+    real box, copy string N to scratch RAM and point the slot she reads (s0600 string `witch_slot`) at it.
     Text comes from work/<game>/pkdata, or BMS_DIR for a build; a shot per string in OUT/run/<scene>/."""
     stage(6, 0)(g)
     s = g.s
@@ -185,7 +189,7 @@ def msg_all(g):
         for i in range(1, n):
             s.ws.call('game.state.load', path=os.path.abspath('work/states/_msg.ppst'), wait=True)
             s.r.base = s.ws.call('cpu.status')['us']; s.f = 0
-            point_string(g, addr, 11, d, i)
+            point_string(g, addr, g.a['witch_slot'], d, i)
             s.hold('right'); s.run(420); s.hold(''); s.run(WITCH_FRAMES - 420)
             s.shot(f'msg_s{st:02x}{ar:02x}_{i:02d}'); ok += 1
     s.hold('')
@@ -223,6 +227,40 @@ def load_menu(g):
     s.press('start', gap=120); s.press('start', gap=240)
     s.press('down', gap=60); s.press('circle', gap=180)
     if g.g == 'go': s.press('circle', gap=180)   # past the save-icon picker on the title screen
+
+
+def memstick_all(g):
+    """Every memstick.bms string in the no-save prompt (the real box and font): its slot 6 points at each in turn, so the
+    error strings show without a faulty card. The prompt lays its text out once, so the slot is set before it opens, from
+    a state taken as soon as the file is in RAM. A shot per string in OUT/run/<scene>/."""
+    s = g.s
+    root = os.environ.get('BMS_DIR') or f'work/{g.g}/pkdata'
+    d = open(f'{root}/memstick.kpd/memstick/memstick.bms', 'rb').read()
+    s.run(1800)
+    if g.a['book']: s.press(g.a['book'], gap=120)
+    s.press('start')
+    addr = None
+    for _ in range(100):
+        try: addr = find_bytes(g, d[:64], 0x08800000); break
+        except LookupError: s.run(5)
+    assert addr, 'memstick.bms never reached RAM'
+    s.r.save_state('work/states/_mem.ppst')
+    n = struct.unpack_from('<I', d, 0)[0]
+    for i in range(n):
+        s.ws.call('game.state.load', path=os.path.abspath('work/states/_mem.ppst'), wait=True)
+        s.r.base = s.ws.call('cpu.status')['us']; s.f = 0
+        point_string(g, addr, 6, d, i)
+        s.run(280); s.shot(f'mem_{i:02d}')
+    print(f'{n} memstick shots, file at {addr:x}')
+
+
+def boss_movie(g, wait=60):
+    """Result plays mv03 after stage 5-7: its check reads the two ids after the live ones. mv02.bms is byte-identical to mv03.bms."""
+    stage(1, 0)(g)
+    g.redirect(g.a['select_jal'], 'Result', fields=[(0x100, 0)])
+    g.s.w32(g.mod(g.a['select_jal'] + 0x18), 0x34050002)
+    g.s.wr(g.G + g.a['stage_off'] + 8, struct.pack('<II', 5, 7))
+    g.s.press('select', gap=wait)
 
 
 def attract(g):

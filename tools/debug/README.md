@@ -44,15 +44,22 @@ with `prxtrans.py` (transitions, factories, static objects), `prxmap.py` (dis, x
 - SYSTEM variants (`SystemMenu+0x140`): 0, 1 stage menu; 2 game over; 3 after a stage; 4 with stage select; 5, 6 open on the save prompt.
 - `Result+0x100`: 1 is the tally, 0 skips straight to SystemMenu. Opening Result from the title closes the emulator, so it goes
   through SELECT with mode 2. `Ending+0xf0`: 0, 1, 2 play mv04, mv05, mv06, then credits.
-- StageSelect forced from the title is black; the real menu route works, so the scene uses that.
+- StageSelect forced from the title is black; the real menu route works, so the scene uses that. It runs SystemMenu with mode 2,
+  as after a real clear: over a live Area the original null-reads resource 0x30 (`0x53a04`) and the emulator exits.
+- PPSSPPHeadless exits on a game SIGSEGV. The MIPS stack is in `OUT/run/<scene>/ppsspp.log`; warp reports it as a `JSONDecodeError`.
+- The witch reads s0600 string 11 in Kai, string 1 in the original (`witch_slot`). Its file there stops at 10.
+- Result plays mv03 when `Result+0x100` is 0 and the two ids after the live ones are 5, 7 (`movie_boss1/2`, one scene per subtitle).
+- The memstick prompt lays out its text once, so `memstick_all` sets the slot before it opens. Autoload's message holds about 120 frames.
 - The door messages in stages 5-6 and 5-7 didn't fire on pressing up at the door, trigger not found: `msg_all` shows them in the
   witch's box. The real trigger is still unknown, and the door's own layout is unproven.
 - Teleport: write the player's x. A warp into enemies kills Arthur; there is no god mode yet.
 
 ## Not reached
 
-- `mv02`/`mv03` subtitles (Result, boss clear); `mv07.pmf` (no subtitle file); `select00-04.pmf` draws blank in the stage select
-  panel in the headless emulator.
-- `memstick.bms` error strings 3-5, 7-10 (no card, corrupt, full, sleep during load) and 11 (a save from ULJM-05147).
+- `mv02` as a movie: only `0x4da98` plays movies from Result and it asks for mv03. `mv02.bms` is byte-identical to `mv03.bms`.
+  `mv07.pmf` has no subtitle file.
+- Real faults behind the memstick errors: `memstick_all` shows those strings in the no-save prompt instead. String 11 clips at the
+  sides there; its real screen is unproven.
+- God mode: not built, phase 8 adds it if a playtest needs it. A dump of the player object's first 0x1000 bytes across one hit showed no obvious HP field; that was one run, not proof.
 - `a02` strings only some menu states use: see phase 8. `a03`, `a04` show in the detail pane, not always their own screen.
 - Launcher demo leftovers (`docs/re/graphics.md`): no route found, still undecided.
