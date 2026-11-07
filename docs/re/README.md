@@ -1,15 +1,10 @@
 # Reverse-engineering notes
 
-One file per subsystem (text engine, pointers, compression, font, graphics). Mark every finding with how far it is
-proven, so a later session doesn't build on a guess:
+One file per subsystem. Findings are marked verified (with how) or guess (with why).
 
-- **verified** - and how: a decoded known string, a corrupt-and-boot test, a breakpoint hit on the drawing path, a
-  passing roundtrip test. Name the test or savestate.
-- **guess** - and why it seems likely (byte pattern, another game, an earlier patch's notes). Promote it to verified
-  before code depends on it.
+- `kpd.md`: disc layout (launcher plus two games), DPLK archives, ANA and GIM, free space, rebuild plan.
+- `text.md`: `.bms` format, font encoding, control codes, PRX strings.
+- `graphics.md`: every Japanese texture, per screen.
 
-Addresses are for the dump in `rom.sha1` unless a note says otherwise.
-
-| File | Covers | State |
-|---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+Prior work: no fan patch or tools for this game found (web search, 2026-11-08). The official English release of the original game
+is *Ultimate Ghosts 'n Goblins* (PSP, 2006); Kai never left Japan. The disc's `a70` ending lines and the movie credits are already English.

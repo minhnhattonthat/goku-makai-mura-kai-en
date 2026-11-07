@@ -1,2 +1,1 @@
-# SHA-1 of the supported dump, in sha1sum format (`sha1sum -c rom.sha1` works too). One line per file for discs.
-<sha1>  rom/<file>
+574ce2a6b04ac99a8e246051767b1f8ef8dc2efc  rom/Goku Makai-Mura Kai (Japan).iso
