@@ -38,6 +38,10 @@ with `prxtrans.py` (transitions, factories, static objects), `prxmap.py` (dis, x
   Writing the ids to RAM doesn't work: Play resets them.
 - `redirect`: writes a stub at 0x08800100 and points one `jal factory` at it, optionally storing fields in the returned object.
   Sites: title NEW GAME (mode 3) and SELECT in a stage (mode 1, or 2 by patching the `ori` at site+0x18).
+- `prompt_all` (a02, in the variant-5 save prompt: slot 22, read once at open) and `select_all` (a30, the stage-select help
+  box: slot 1, pointed as soon as a30.bms is in RAM): every menu prompt and help line, from a state taken before the box opens.
+  Their cursor stays where the slot's own string put it; `stage_prompt` and `sysmenu5 --keys right` show the real cursor.
+  `select_all` sometimes loses the emulator connection inside `--all` (twice), and passes run alone: rerun it.
 - `msg_all`, `sub_all`: rare strings shown in a real box. `point_string` copies string N to scratch RAM (0x08801000) and wraps the
   `.bms` offset slot backwards to it, so length doesn't matter. Set `BMS_DIR` to the build's unpacked `pkdata` to check translated text.
 
