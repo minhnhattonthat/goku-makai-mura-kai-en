@@ -6,7 +6,7 @@ import os, shutil, struct
 
 ADDR = {
     're': {
-        'G': 0x351098, 'sys': 0x38578, 'stage_off': 0x40, 'book': None, 'witch_slot': 11,
+        'G': 0x351098, 'sys': 0x38578, 'stage_off': 0x40, 'book': None, 'witch_slot': 11, 'getter': 0x301fcc,
         'stage_read': 0x4a6a4, 'stage_read_orig': 0x8e650040,    # lw a1,0x40(s3) -> ori a1,zero,stage
         'area_read': 0x50e08, 'area_read_orig': 0x8e650044,      # lw a1,0x44(s3) -> ori a1,zero,area
         'newgame_jal': 0x70060,    # title's jal Play
@@ -22,6 +22,7 @@ ADDR = {
     },
     'go': {   # the original has no Pause process: START opens Submenu
         'G': 0x351518, 'sys': 0x38538, 'stage_off': 0x3c, 'book': 'right', 'witch_slot': 1,   # its s0600.bms stops at 10
+        'getter': 0x302438,    # same code bytes as Kai's 0x301fcc
         'stage_read': 0x4a858, 'stage_read_orig': 0x8e65003c,
         'area_read': 0x514c0, 'area_read_orig': 0x8e650040,
         'newgame_jal': 0x70184,

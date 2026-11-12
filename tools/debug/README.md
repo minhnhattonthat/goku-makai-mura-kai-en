@@ -28,7 +28,9 @@ with `prxtrans.py` (transitions, factories, static objects), `prxmap.py` (dis, x
 - Each screen is a static `Process` object made by a factory. A transition stores a mode in `sys+0xc` and the object in `sys+0x10`.
   Modes: 1 push over the current one, 2 replace the stack, 3 used by NEW GAME.
 - `sys+0x14` heads the live list, linked through object +0 (`Game.chain()`). The scene check reads this, not a frame count.
-- `0x301fcc` (Kai) is the `.bms` string getter: `(bms*, index)`, and it spins forever on an index past the count.
+- `0x301fcc` (Kai) is the `.bms` string getter: `(bms*, index)`, and it spins forever on an index past the count. The
+  original's is `0x302438` (same bytes). `attach()` hooks it (`hook_text`): every read lands in `run/<scene>/textlog.txt`
+  for `tools/cover.py` (stub at 0x08800800, ring at 0x08802000; PPSSPP breakpoint logs don't reach the WS client).
 
 ## The tricks
 

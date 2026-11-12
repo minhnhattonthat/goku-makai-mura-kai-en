@@ -14,15 +14,17 @@
    "id": "s0507:1",
    "jp": "暗黒魔界へ行くには\n11の「光の力」が必要だが",
    "us": "You need the power of\n11 Light Rings to enter",
-   "en": "You need the power of\n11 Light Rings to enter",
-   "status": "official"
+   "en": "You need the power of 11 Light Rings\nto enter the Demon Realm.",
+   "status": "done",
+   "notes": "USA text, page break moved to the sentence end (was \"to enter / the Demon Realm.\")"
   },
   {
    "id": "s0507:2",
    "jp": "\nどうやら足りないようだな…",
    "us": "the Demon Realm.\nYou do not have enough...",
-   "en": "the Demon Realm.\nYou do not have enough...",
-   "status": "official"
+   "en": "\nYou do not have enough...",
+   "status": "done",
+   "notes": "USA text, page break moved (as s0506:2)"
   }
  ]
 }

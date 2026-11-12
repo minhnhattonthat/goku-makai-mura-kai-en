@@ -24,10 +24,12 @@ class Session:
         self.r = psp.Run(psp.find_emu(None), iso, out, state, memstick=self.ms)
         self.r.ws.s.settimeout(300)
         self.ws = self.r.ws; self.out = out; self.f = 0
+        self.after_run = None    # warp.Game.hook_text reads its ring buffer here
         atexit.register(self.close)   # a crashed script must not leave its emulator running
 
     def run(self, n=1):
         self.f += n; self.r.run_to(self.f)
+        if self.after_run: self.after_run()
 
     def press(self, keys, hold=6, gap=20):
         self.r.press(set(keys.split('+'))); self.run(hold)

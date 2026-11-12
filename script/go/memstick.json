@@ -28,22 +28,23 @@
    "id": "memstick:3",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™ inserted.\n{c:02}Ultimate Ghosts'n Goblins requires\n{c:02}at least 400Ⓚ of free space\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™ inserted.\n{c:02}Ultimate Ghosts 'n Goblins requires\n{c:02}at least 400Ⓚ of free space\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
    "status": "done",
-   "notes": "USA text rewrapped for the VWF (its 'data.' stub line came from the fixed-width font); blank rows keep the USA's row count"
+   "notes": "USA text rewrapped for the VWF (its 'data.' stub line came from the fixed-width font); blank rows keep the USA's row count; title spacing fixed (Ghosts'n -> Ghosts 'n, D12); YES/NO row: 20 trailing spaces, see memstick:4"
   },
   {
    "id": "memstick:4",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}ゲームデータが破損しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Game data is corrupted.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Game data is corrupted.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Game data is corrupted.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; the YES/NO row is right-aligned to the screen edge by its trailing spaces: 8 VWF half spaces (5 px) put it 58 px right of the JP place, 20 put it back (memstick 3-10)"
   },
   {
    "id": "memstick:5",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}アクセスエラーが発生しました。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occured.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occurred.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occurred.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
    "status": "done",
    "notes": "USA text, typo fixed (occured)"
   },
@@ -51,36 +52,41 @@
    "id": "memstick:6",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータがありません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no game data present.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no game data present.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no game data present.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; YES/NO row padding, see memstick:4"
   },
   {
    "id": "memstick:7",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™の空き容量が不足しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; YES/NO row padding, see memstick:4"
   },
   {
    "id": "memstick:8",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™の空き容量が不足しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}セーブデータを削除しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Delete save data?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Delete save data?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Delete save data?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; YES/NO row padding, see memstick:4"
   },
   {
    "id": "memstick:9",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Memory Stick Duo™ is not\n{c:02}inserted properly.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Memory Stick Duo™ is not\n{c:02}inserted properly.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Memory Stick Duo™ is not\n{c:02}inserted properly.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; YES/NO row padding, see memstick:4"
   },
   {
    "id": "memstick:10",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロード中に\n{c:02}スリープモードに移行したので\n{c:02}オートロードに失敗しました。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Sleep Mode was engaged during\n{c:02}load attempt.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Sleep Mode was engaged during\n{c:02}load attempt.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Sleep Mode was engaged during\n{c:02}load attempt.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "USA text; YES/NO row padding, see memstick:4"
   },
   {
    "id": "memstick:11",
