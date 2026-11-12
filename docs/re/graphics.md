@@ -18,9 +18,20 @@ Reachability of the rows marked "demo leftover" is unproven. They come from a "C
   labels (another packing; ours are English already). Kai keeps its Japanese logos (a60/03 seal set, a10/15-16; D5).
 - **Redrawn** from the USA's own letters (`gfx.Font`): Kai a10/18 (MAGIC POWER x2, NOT USED, MAGIC POWER, JUMP, ATTACK),
   a10/20 (legend, PAUSE for SUBSCREEN).
-- **Left:** a60/14,15 tit_w_1 `極魔界村 (ULJM-…)` (both games), a60 op_w_01 save-carryover notice (re 27, go 23), the
-  original game's small logos (a60/13 tit_ico, go a60/18-22), launcher a50 (door 次へ, book logos), demo leftovers,
-  memstick icons, ICON0/PIC0, s0a0001mazo 仮.
+- **Redrawn, second batch (2026-11-12):** a60 op_w_01 (go 23, re 27, same image) in the game's own font (`gfx.write`,
+  the shipped VWF), logo kept; seen in game with `warp.py go:carryover` (a fake ULJM-05147 save, `scenes.carryover_sav`).
+  Launcher a50/08 door_w0 = the games' a06 door_w0, so it takes the USA one. s0a0001mazo: 仮 diffused away (`gfx.mazo`;
+  the USA kept it), checked offline only: the stone isn't on screen at the stage 0a warp spot.
+- **Kept, with the reason:**
+  - Kai logo art everywhere it shows (D5: no official English Kai logo): a60/03 seal set and 22-26 (go 18-22, the same
+    seal pieces), a10/15-16, launcher a50/00 book logos, memstick sl_ico01-03, ICON0/PIC0 (PIC0's copyright line is
+    English already).
+  - a60/13 tit_ico and the logo inside op_w_01: the standalone ULJM-05147 disc's save icon, which is Japanese; the picker
+    shows it as that disc's data (`work/qa/p8left/picker2.png`).
+  - a60/14,15 tit_w_1 `極魔界村 (ULJM-xxxxx / 05147)`: never drawn. Kai's PRX has no ULJM05147; the original's LOAD GAME
+    picker shows only icons (two icons, no label, `go:carryover` save, 2026-11-12), and its load dialog is the system one.
+  - Launcher demo leftovers (a80, a83, a84): the retail launcher boots CERO (a82) then the book (a50); no route reaches the
+    demo screens (Waiting (3) default: waive).
 
 ## Must translate
 

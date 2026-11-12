@@ -61,7 +61,7 @@ def edits(archives, marker=None):
     for game in ("GOKUMAKAI", "REGOKUMAKAI"):
         out[USR + game + "/datapack.kpd"].update(font)
     for p, e in gfx.files().items():   # textures: the USA art (D10), then our redraws (docs/re/graphics.md)
-        out[p].update(e)
+        out.setdefault(p, {}).update(e)
     return out
 
 

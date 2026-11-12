@@ -137,6 +137,9 @@ def scenes_for(game):
                          sav=sav, doc='auto-load message (needs save_fixture first)')
     d['load_list'] = dict(go=load_menu, proc='Ms', sav=sav, doc='LOAD GAME with a save')
     d['load_done'] = dict(go=keys(load_menu, 'circle circle circle', 150), sav=sav, doc='load a save')
+    if game == 'go':   # only the original's PRX names ULJM05147 (the standalone disc); Kai never looks for its saves
+        d['carryover'] = dict(go=lambda g: (g.s.run(1800), g.s.press(g.a['book'], gap=120), g.s.press('start'), g.s.run(500)),
+                              sav=carryover_sav, doc='ULJM-05147 save found: a60 op_w_01 notice (needs save_fixture first)')
     d['movie_attract'] = dict(go=attract, proc='Title', doc='title left idle: opening movie mv00')
     d['movie_newgame'] = dict(go=lambda g: (boot(g), new_game(g), g.s.run(200)), proc='Title', doc='NEW GAME movie mv01')
     for n, w in ((1, 780), (2, 1380)):
@@ -215,6 +218,22 @@ def save_fixture(g):
     shutil.rmtree(dst, ignore_errors=True)
     shutil.copytree(src, dst)
     assert any(n.startswith('ULJM') for n in os.listdir(dst)), 'game wrote no save'
+
+
+def carryover_sav():
+    """work/saves/go05147: the original's save fixture plus a copy of it posing as a save of the standalone disc
+    (ULJM05147DATA00, its PARAM.SFO directory renamed); the game takes it as one. Returns the folder."""
+    src, dst = 'work/saves/go', 'work/saves/go05147'
+    shutil.rmtree(dst, ignore_errors=True)
+    shutil.copytree(src, dst)
+    old = next(n for n in os.listdir(src) if n.startswith('ULJM05265DATA'))
+    fake = os.path.join(dst, 'ULJM05147DATA00')
+    shutil.copytree(os.path.join(src, old), fake)
+    p = os.path.join(fake, 'PARAM.SFO')
+    d = open(p, 'rb').read()
+    assert d.count(old.encode()) == 1
+    open(p, 'wb').write(d.replace(old.encode(), b'ULJM05147DATA00'))
+    return dst
 
 
 def load_menu(g):

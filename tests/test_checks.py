@@ -75,7 +75,7 @@ def test_gfx_keeps_jp_button_icons():
     import gfx
     e = gfx.edits()
     for game, members in e.items():
-        own = gfx.tree(build.ROM, build.USR + gfx.GAMES[game] + "/datapack.kpd")
+        own = gfx.tree(build.ROM, gfx.ARCH[game])
         for m, (b, _) in members.items():
             if not m.endswith(".ana"):
                 continue

@@ -11,11 +11,13 @@ Rules (D10: the USA disc's English art wins wherever the tree matches):
 - .csl layouts (same length in all three): Kai takes the USA's byte changes wherever its own bytes equal the original's.
   a60.csl differs in length (another title layout): both games keep their own.
 """
+import struct
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import ana
+import bms
 import build
 import gim
 import kpd
@@ -24,7 +26,10 @@ D2 = "pkdata/{}.kpd/2d/{}/{}.{}"
 # (kpd, ana) of every texture set the USA disc changed; a03 (sub screen) exists only in the original game
 SETS = [("play_res", "a00"), ("play_res", "a02"), ("play_res", "a03"), ("play_res", "a10"), ("loading", "a06"),
         ("st_select", "a30"), ("title", "a60"), ("ending", "a70")]
-GAMES = {"re": "REGOKUMAKAI", "go": "GOKUMAKAI"}
+ARCH = {"re": build.USR + "REGOKUMAKAI/datapack.kpd", "go": build.USR + "GOKUMAKAI/datapack.kpd",
+        "la": build.USR + "LAUNCHER/LAUNCHER.KPD"}
+A06 = D2.format("loading", "a06", "a06", "ana")
+MAZO = "pkdata/s0a00_stg.kpd/stage/s0a/s0a00/gim/s0a0001mazo.gim"
 # a60: the USA title packs its menu labels another way (its tit_w_0 under our layout drew OPTIONS where NEW GAME goes,
 # work/qa/p8gfx/cmp_title.png), and ours are English already: take only the intro story, and the logo for the original
 # game. Kai keeps its Japanese logo (D5: no official English Kai logo).
@@ -178,7 +183,7 @@ def gim_of(d, member, name):
     raise KeyError(name)
 
 
-def re_a10_18(us):
+def re_a10_18(us, _):
     """Kai's button functions: 魔力 魔力 使用しない 魔力 ジャンプ 攻撃 = MAGIC POWER x2, NOT USED, MAGIC POWER, JUMP, ATTACK
     (USA wording for 魔力 on this screen: MAGIC POWER)."""
     f, rows, _ = a10_font(us)
@@ -195,7 +200,7 @@ def re_a10_18(us):
     return rows
 
 
-def re_a10_20(us):
+def re_a10_20(us, _):
     """Kai's legend: the USA one with SUBSCREEN -> PAUSE (ポーズ), centred where SUBSCREEN was."""
     f, _, rows = a10_font(us)
     y0, y1 = ink_rows(rows)[2]
@@ -206,10 +211,86 @@ def re_a10_20(us):
     return rows
 
 
-# redraws: (game, member, GIM "NN_name") -> fn(usa tree) giving the RGBA rows; the USA GIM of the same size and name
-# is the base (its palette holds the lettering's colours), else our own GIM
+def game_font():
+    """(bft, sheet rows, table) of the font both games ship (build.font_files: the USA font, variable width)."""
+    f = build.font_files()
+    return f["font/jfont_00.bft"], rgba(f["font/jfont_00.gim"])[2], bms.load_tbl()
+
+
+def glyphs(font, text):
+    """[(sheet x, y, w, h)] per character; one-byte codes only (ASCII)."""
+    bft, _, t = font
+    b = t.encode(text.replace("\xa0", " "))   # NBSP: a space wrap() doesn't break at
+    assert all(c < 0x80 for c in b), text
+    return [struct.unpack_from("<5H", bft, 0x2c + c * 10)[1:] for c in b]
+
+
+def text_width(font, text):
+    return sum(g[2] for g in glyphs(font, text))
+
+
+def write(rows, x, y, text, font, bg):
+    """text in the game font, top-left at (x, y), blended over the opaque colour bg."""
+    sheet = font[1]
+    for sx, sy, w, h in glyphs(font, text):
+        for j in range(h):
+            for i in range(w):
+                p = sheet[sy + j][4 * (sx + i):4 * (sx + i) + 4]
+                if p[3]:
+                    rows[y + j][4 * (x + i):4 * (x + i) + 4] = bytes(
+                        [(c * p[3] + b * (255 - p[3])) // 255 for c, b in zip(p[:3], bg[:3])] + [255])
+        x += w
+
+
+def wrap(font, text, width):
+    lines = [""]
+    for w in text.split(" "):
+        t = (lines[-1] + " " + w).strip()
+        if text_width(font, t) <= width or not lines[-1]:
+            lines[-1] = t
+        else:
+            lines.append(w)
+    return lines
+
+
+# a60 op_w_01: the original game's notice when the card holds a ULJM-05147 (standalone 極魔界村 disc) save; the go
+# memstick:11 text is the same notice (D12 titles). The logo stays: it is that disc's save icon, as the picker shows it.
+GO, KAI = "\"Ultimate\xa0Ghosts\xa0'n\xa0Goblins\"", "\"Ultimate\xa0Ghosts\xa0'n\xa0Goblins\xa0Kai\""
+OPW01_HEAD = f"Game data from the {GO} disc has been detected."
+OPW01_BODY = [f"To load this game data on the {KAI} disc, choose \"LOAD\xa0GAME\" on the title menu, then select the "
+              "icon above.",
+              f"Game data created on the {KAI} disc cannot be loaded on the {GO} disc."]
+
+
+def op_w_01(us, rows):
+    font, bg = game_font(), bytes(rows[0][:4])
+    logo = (40, 24, 200, 116)   # the logo's box; everything else is the JP text on a flat background
+    for y, r in enumerate(rows):
+        for x in range(len(r) // 4):
+            if not (logo[0] <= x < logo[2] and logo[1] <= y < logo[3]):
+                r[4 * x:4 * x + 4] = bg
+    head = wrap(font, OPW01_HEAD, 470 - 208)
+    y = (logo[1] + logo[3]) // 2 - 17 * len(head) // 2
+    for line in head:
+        write(rows, 208, y, line, font, bg)
+        y += 17
+    y = 128
+    for para in OPW01_BODY:
+        for line in wrap(font, para, 440 - 40):
+            write(rows, 40, y, line, font, bg)
+            y += 17
+        y += 10
+    assert y - 10 <= 262, y
+    return rows
+
+
+# redraws: (game, member, GIM "NN_name") -> fn(usa tree, base RGBA rows) giving the RGBA rows; the USA GIM of the same
+# size and name is the base (its palette holds the lettering's colours), else our own GIM
+A60 = "pkdata/title.kpd/2d/a60/a60.ana"
 REDRAW = {("re", "pkdata/play_res.kpd/2d/a10/a10.ana", "18_op_wor0"): re_a10_18,
-          ("re", "pkdata/play_res.kpd/2d/a10/a10.ana", "20_op_wor0"): re_a10_20}
+          ("re", "pkdata/play_res.kpd/2d/a10/a10.ana", "20_op_wor0"): re_a10_20,
+          ("go", A60, "23_op_w_01"): op_w_01,
+          ("re", A60, "27_op_w_01"): op_w_01}   # same image; Kai never shows it (its PRX has no ULJM05147)
 
 
 def redraw(game, member, data, us):
@@ -224,18 +305,48 @@ def redraw(game, member, data, us):
         except KeyError:
             base = data[o:o + s]
         base = base if len(base) == s else data[o:o + s]
-        out[o:o + s] = gim.encode(base, gim.parse(base)[0], fn(us))
+        out[o:o + s] = gim.encode(base, gim.parse(base)[0], fn(us, rgba(base)[2]))
         done.append(f"{i:02d}_{n}")
     return bytes(out), done
 
 
+def mazo(d):
+    """Stage 0a's stone texture with the dev mark 仮 removed (the USA left it): its strokes are the only green-tinted
+    pixels in that box; they are filled from their neighbours, then mapped back to the 16-colour palette."""
+    img = gim.parse(d)[0]
+    w, h, rows = rgba(d)
+    x0, y0, x1, y1 = MAZO_BOX
+    hole = {(x, y) for y in range(y0, y1) for x in range(x0, x1) if rows[y][4 * x + 1] > rows[y][4 * x] + 4}
+    hole |= {(x + dx, y + dy) for x, y in hole for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))}   # the dark rim
+    while hole:
+        fill = {}
+        for x, y in hole:
+            near = [(x + dx, y + dy) for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1))
+                    if 0 <= x + dx < w and 0 <= y + dy < h and (x + dx, y + dy) not in hole]
+            if near:
+                fill[x, y] = bytes([sum(rows[b][4 * a + k] for a, b in near) // len(near) for k in range(3)] + [255])
+        assert fill
+        for (x, y), p in fill.items():
+            rows[y][4 * x:4 * x + 4] = p
+        hole -= set(fill)
+    return gim.encode(d, img, rows, repalette=False)
+
+
+MAZO_BOX = (35, 49, 63, 72)   # 仮 in s0a0001mazo (64x128), x0, y0, x1, y1
+
+
 def edits(trees=None):
-    """{game: {member: (bytes, note)}} for the members whose bytes change."""
-    t = trees or {"re": tree(build.ROM, build.USR + "REGOKUMAKAI/datapack.kpd"),
-                  "go": tree(build.ROM, build.USR + "GOKUMAKAI/datapack.kpd"),
-                  "us": tree(build.US_ROM, build.USR + "datapack.kpd")}
+    """{archive key ("re", "go", "la"): {member: (bytes, note)}} for the members whose bytes change."""
+    t = trees or {g: tree(build.ROM, p) for g, p in ARCH.items()}
+    t.setdefault("us", tree(build.US_ROM, build.USR + "datapack.kpd"))
     go, us = t["go"], t["us"]
-    out = {"re": {}, "go": {}}
+    out = {"re": {}, "go": {}, "la": {}}
+    # the launcher's loading word (次へ) is the games' a06 door_w0: the USA one, as in the games
+    m = "2d/a50/a50.ana"
+    new, done = splice(t["la"][m], go[A06], us[A06])
+    out["la"][m] = (new, "USA GIMs " + " ".join(done))
+    for game in ("re", "go"):
+        out[game][MAZO] = (mazo(t[game][MAZO]), "仮 removed")
     for k, a in SETS:
         for x in ("ana", "csl"):
             m = D2.format(k, a, a, x)
@@ -262,7 +373,7 @@ def edits(trees=None):
 
 def files():
     """{datapack iso path: {member: bytes}} for build.edits()."""
-    return {build.USR + GAMES[g] + "/datapack.kpd": {m: b for m, (b, _) in e.items()} for g, e in edits().items()}
+    return {ARCH[g]: {m: b for m, (b, _) in e.items()} for g, e in edits().items()}
 
 
 if __name__ == "__main__":
@@ -271,6 +382,9 @@ if __name__ == "__main__":
     for game, e in edits().items():
         for m, (b, note) in sorted(e.items()):
             print(game, m, note)
+            if m.endswith(".gim"):
+                w, h, rows = gim.to_rgba(b, gim.parse(b)[0])
+                gim.save_png(str(out / f"{game}_{Path(m).stem}.png"), w, h, rows)
             if m.endswith(".ana"):   # previews of the redrawn GIMs: work/gfx/out/<game>_<NN_name>.png
                 for i, (o, s, n) in enumerate(ana.parse(b)):
                     if (game, m, f"{i:02d}_{n}") in REDRAW:

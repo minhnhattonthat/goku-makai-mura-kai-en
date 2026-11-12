@@ -52,6 +52,9 @@ with `prxtrans.py` (transitions, factories, static objects), `prxmap.py` (dis, x
 - The memstick prompt lays out its text once, so `memstick_all` sets the slot before it opens. Autoload's message holds about 120 frames.
 - The door messages in stages 5-6 and 5-7 didn't fire on pressing up at the door, trigger not found: `msg_all` shows them in the
   witch's box. The real trigger is still unknown, and the door's own layout is unproven.
+- `go:carryover`: the original game looks for saves of the standalone disc (ULJM05147, in its PRX; Kai doesn't). A copy of
+  the save fixture with its PARAM.SFO directory renamed to `ULJM05147DATA00` passes (`scenes.carryover_sav`), so the boot
+  shows the a60 op_w_01 notice and LOAD GAME offers a second icon.
 - Teleport: write the player's x. A warp into enemies kills Arthur; there is no god mode yet.
 
 ## Not reached

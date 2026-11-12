@@ -97,7 +97,8 @@ class Game:
 def run_scene(game, name, out, iso=ISO, state_out=True, tail=0, every=120, keys=''):
     r = sc.SCENES[game][name]
     os.makedirs(out, exist_ok=True)
-    g = Game(game, os.path.join(out, 'run', f'{game}_{name}'), iso, sav=r.get('sav'))
+    sav = r.get('sav')
+    g = Game(game, os.path.join(out, 'run', f'{game}_{name}'), iso, sav=sav() if callable(sav) else sav)
     t = time.time()
     try:
         r['go'](g)

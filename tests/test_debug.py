@@ -36,7 +36,7 @@ def test_read_sites_are_lw_a1_at_the_stage_fields():
 
 
 def test_both_games_have_the_same_scene_names():
-    assert set(scenes.SCENES["go"]) - {"sub_all"} == set(scenes.SCENES["re"])
+    assert set(scenes.SCENES["go"]) - {"sub_all", "carryover"} == set(scenes.SCENES["re"])   # go-only screens
 
 
 def test_stage_list_has_every_area_once():
