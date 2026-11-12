@@ -28,22 +28,25 @@
    "id": "mv00:3",
    "jp": "{c:02}これで　プリンセスに流れる人間王家の血は\n{c:02}魔界のものとなり",
    "us": "{c:02}The princess is mine!\n{c:02}Now that I possess the royal",
-   "en": "{c:02}The princess is mine!\n{c:02}Now that I possess the royal",
-   "status": "official"
+   "en": "{c:02}The princess is mine! Now that I possess\n{c:02}the royal blood that courses through her veins,",
+   "status": "done",
+   "notes": "USA text re-cut from 7 subtitles to the JP's 5: the game cues only mv00:1-5 (textlog of the attract run), so the USA's :6-7 never showed and the opening stopped mid-sentence (phase 9 story pass, D13)"
   },
   {
    "id": "mv00:4",
    "jp": "{c:02}全てを魔界が支配するのも\n{c:02}もはや時間の問題",
    "us": "{c:02}blood that courses through her\n{c:02}veins, it is only a matter of time",
-   "en": "{c:02}blood that courses through her\n{c:02}veins, it is only a matter of time",
-   "status": "official"
+   "en": "{c:02}it is only a matter of time\n{c:02}before your world bows to our own.",
+   "status": "done",
+   "notes": "USA text re-cut to the JP's 5 subtitles (see mv00:3)"
   },
   {
    "id": "mv00:5",
    "jp": "{c:02}我ら暗黒の魔界が動いた以上\n{c:02}お前ごときに　邪魔立てはさせんわ",
    "us": "{c:02}before your world bows to our own.\n{c:02}Once I, the dark lord, have begun",
-   "en": "{c:02}before your world bows to our own.\n{c:02}Once I, the dark lord, have begun",
-   "status": "official"
+   "en": "{c:02}Once I, the dark lord, have begun stirring,\n{c:02}nothing a mortal like you can do will stop me!",
+   "status": "done",
+   "notes": "USA text re-cut to the JP's 5 subtitles (see mv00:3); 'will hinder that which has been set into motion' shortened to fit"
   },
   {
    "id": "mv00:6",
