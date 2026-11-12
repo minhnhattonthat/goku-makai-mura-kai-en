@@ -1,0 +1,105 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv04.bms",
+ "strings": [
+  {
+   "id": "mv04:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv04:1",
+   "jp": "{c:02}\n{c:02}アーサー…",
+   "us": "{c:02}\n{c:02}Arthur...",
+   "en": "{c:02}\n{c:02}Arthur...",
+   "status": "official"
+  },
+  {
+   "id": "mv04:2",
+   "jp": "{c:02}\n{c:02}ご無事で何よりでした",
+   "us": "{c:02}I'm relieved to see that you are\n{c:02}safe.",
+   "en": "{c:02}I'm relieved to see that you are\n{c:02}safe.",
+   "status": "official"
+  },
+  {
+   "id": "mv04:3",
+   "jp": "{c:02}\n{c:02}ありがとう…",
+   "us": "{c:02}\n{c:02}Thank you...",
+   "en": "{c:02}\n{c:02}Thank you...",
+   "status": "official"
+  },
+  {
+   "id": "mv04:4",
+   "jp": "{c:02}\n{c:02}Sorcerer",
+   "us": "{c:02}\n{c:02}Sorcerer",
+   "en": "{c:02}\n{c:02}Sorcerer",
+   "status": "official"
+  },
+  {
+   "id": "mv04:5",
+   "jp": "{c:02}\n{c:02}Minotauros",
+   "us": "{c:02}\n{c:02}Minotauros",
+   "en": "{c:02}\n{c:02}Minotauros",
+   "status": "official"
+  },
+  {
+   "id": "mv04:6",
+   "jp": "{c:02}\n{c:02}Red Arimmar",
+   "us": "{c:02}\n{c:02}Red Devil",
+   "en": "{c:02}\n{c:02}Red Devil",
+   "status": "official"
+  },
+  {
+   "id": "mv04:7",
+   "jp": "{c:02}\n{c:02}Dust Manteater",
+   "us": "{c:02}\n{c:02}Dust Manteater",
+   "en": "{c:02}\n{c:02}Dust Manteater",
+   "status": "official"
+  },
+  {
+   "id": "mv04:8",
+   "jp": "{c:02}\n{c:02}Slugel",
+   "us": "{c:02}\n{c:02}Slugel",
+   "en": "{c:02}\n{c:02}Slugel",
+   "status": "official"
+  },
+  {
+   "id": "mv04:9",
+   "jp": "{c:02}\n{c:02}Black Dragon",
+   "us": "{c:02}\n{c:02}Black Dragon",
+   "en": "{c:02}\n{c:02}Black Dragon",
+   "status": "official"
+  },
+  {
+   "id": "mv04:10",
+   "jp": "{c:02}\n{c:02}Galiburn",
+   "us": "{c:02}\n{c:02}Galiburn",
+   "en": "{c:02}\n{c:02}Galiburn",
+   "status": "official"
+  },
+  {
+   "id": "mv04:11",
+   "jp": "{c:02}アーサーよ…\n{c:02}よくぞプリンセスを救い出した…",
+   "us": "{c:02}Arthur. You have done an admirable\n{c:02}job in rescuing the princess.",
+   "en": "{c:02}Arthur. You have done an admirable\n{c:02}job in rescuing the princess.",
+   "status": "official"
+  },
+  {
+   "id": "mv04:12",
+   "jp": "{c:02}しかし　この世界を脅かす暗黒魔王の力は\n{c:02}いまだ　消えてはいない",
+   "us": "{c:02}However, the evil force of the\n{c:02}dark lord has not yet dissipated.",
+   "en": "{c:02}However, the evil force of the\n{c:02}dark lord has not yet dissipated.",
+   "status": "official"
+  },
+  {
+   "id": "mv04:13",
+   "jp": "{c:02}暗黒魔王のいる限り\n{c:02}平和な日々は訪れぬであろう…",
+   "us": "{c:02}As long as he remains in power,\n{c:02}true peace can never be restored.",
+   "en": "{c:02}As long as he remains in power,\n{c:02}true peace can never be restored.",
+   "status": "official"
+  }
+ ]
+}

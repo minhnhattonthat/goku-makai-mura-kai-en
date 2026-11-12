@@ -1,0 +1,63 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv00.bms",
+ "strings": [
+  {
+   "id": "mv00:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv00:1",
+   "jp": "{c:02}\n{c:02}姫っ…!",
+   "us": "{c:02}\n{c:02}Princess!",
+   "en": "{c:02}\n{c:02}Princess!",
+   "status": "official"
+  },
+  {
+   "id": "mv00:2",
+   "jp": "{c:02}アーサーか…　一足遅かったようだな\n{c:02}プリンセスは　すでに我が手中にある",
+   "us": "{c:02}So we meet again, Arthur...\n{c:02}I'm afraid you're too late.",
+   "en": "{c:02}So we meet again, Arthur...\n{c:02}I'm afraid you're too late.",
+   "status": "official"
+  },
+  {
+   "id": "mv00:3",
+   "jp": "{c:02}これで　プリンセスに流れる人間王家の血は\n{c:02}魔界のものとなり",
+   "us": "{c:02}The princess is mine!\n{c:02}Now that I possess the royal",
+   "en": "{c:02}The princess is mine!\n{c:02}Now that I possess the royal",
+   "status": "official"
+  },
+  {
+   "id": "mv00:4",
+   "jp": "{c:02}全てを魔界が支配するのも\n{c:02}もはや時間の問題",
+   "us": "{c:02}blood that courses through her\n{c:02}veins, it is only a matter of time",
+   "en": "{c:02}blood that courses through her\n{c:02}veins, it is only a matter of time",
+   "status": "official"
+  },
+  {
+   "id": "mv00:5",
+   "jp": "{c:02}我ら暗黒の魔界が動いた以上\n{c:02}お前ごときに　邪魔立てはさせんわ",
+   "us": "{c:02}before your world bows to our own.\n{c:02}Once I, the dark lord, have begun",
+   "en": "{c:02}before your world bows to our own.\n{c:02}Once I, the dark lord, have begun",
+   "status": "official"
+  },
+  {
+   "id": "mv00:6",
+   "jp": "",
+   "us": "{c:02}stirring, nothing a mortal like\n{c:02}you can do will hinder that which",
+   "en": "{c:02}stirring, nothing a mortal like\n{c:02}you can do will hinder that which",
+   "status": "empty"
+  },
+  {
+   "id": "mv00:7",
+   "jp": "",
+   "us": "{c:02}\n{c:02}has been set into motion!",
+   "en": "{c:02}\n{c:02}has been set into motion!",
+   "status": "empty"
+  }
+ ]
+}

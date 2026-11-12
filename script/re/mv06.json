@@ -1,0 +1,90 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv06.bms",
+ "strings": [
+  {
+   "id": "mv06:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv06:1",
+   "jp": "{c:02}\n{c:02}無事だったのね",
+   "same": "go/mv06:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:2",
+   "jp": "{c:02}暗黒魔王は　討ち果たしました\n{c:02}これで　この世界にも　平和が戻ることでしょう",
+   "same": "go/mv06:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:3",
+   "jp": "{c:02}あなたがいる限り　何の心配もしていないわ\n{c:02}アーサー　本当に　ありがとう…",
+   "same": "go/mv06:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:4",
+   "jp": "{c:02}\n{c:02}Arthror",
+   "same": "go/mv06:4",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:5",
+   "jp": "{c:02}\n{c:02}Deathcurse",
+   "same": "go/mv06:5",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:6",
+   "jp": "{c:02}\n{c:02}Vermirous",
+   "same": "go/mv06:6",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:7",
+   "jp": "{c:02}\n{c:02}Spiral Mantruda",
+   "same": "go/mv06:7",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:8",
+   "jp": "{c:02}\n{c:02}Red Arimmar Dark",
+   "same": "go/mv06:8",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:9",
+   "jp": "{c:02}\n{c:02}Dark Astaroth",
+   "same": "go/mv06:9",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:10",
+   "jp": "{c:02}\n{c:02}Hades",
+   "same": "go/mv06:10",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv06:11",
+   "jp": "{c:02}\n{c:02}さあ　皆が待ち兼ねています",
+   "same": "go/mv06:11",
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

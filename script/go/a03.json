@@ -1,0 +1,1282 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/play_res.kpd/2d/a03/a03.bms",
+ "strings": [
+  {
+   "id": "a03:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:1",
+   "jp": "鎧",
+   "us": "ARMOR",
+   "en": "ARMOR",
+   "status": "official"
+  },
+  {
+   "id": "a03:2",
+   "jp": "武器",
+   "us": "WEAPON",
+   "en": "WEAPON",
+   "status": "official"
+  },
+  {
+   "id": "a03:3",
+   "jp": "光のリング",
+   "us": "LIGHT RING",
+   "en": "LIGHT RING",
+   "status": "official"
+  },
+  {
+   "id": "a03:4",
+   "jp": "宝箱",
+   "us": "CHEST",
+   "en": "CHEST",
+   "status": "official"
+  },
+  {
+   "id": "a03:5",
+   "jp": "{02}{04}{06}はだか{03}",
+   "us": "{02}{04}{06}NAKED{03}",
+   "en": "{02}{04}{06}NAKED{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:6",
+   "jp": "{02}{04}{06}騎士の鎧{03}",
+   "us": "{02}{04}{06}KNIGHT ARMOR{03}",
+   "en": "{02}{04}{06}KNIGHT ARMOR{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:7",
+   "jp": "{02}{04}{06}勇者の鎧{03}",
+   "us": "{02}{04}{06}WARRIOR ARMOR{03}",
+   "en": "{02}{04}{06}WARRIOR ARMOR{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:8",
+   "jp": "{02}{04}{06}覇王の鎧{03}",
+   "us": "{02}{04}{06}EMPEROR ARMOR{03}",
+   "en": "{02}{04}{06}EMPEROR ARMOR{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:9",
+   "jp": "{02}{04}{06}魔の鎧　正{03}",
+   "us": "{02}{04}{06}CURSED ARMOR LT{03}",
+   "en": "{02}{04}{06}CURSED ARMOR LT{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:10",
+   "jp": "{02}{04}{06}魔の鎧　負{03}",
+   "us": "{02}{04}{06}CURSED ARMOR DK{03}",
+   "en": "{02}{04}{06}CURSED ARMOR DK{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:11",
+   "jp": "{02}{04}{06}暗黒の鎧{03}",
+   "us": "{02}{04}{06}DARK ARMOR{03}",
+   "en": "{02}{04}{06}DARK ARMOR{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:12",
+   "jp": "{02}{04}{06}墜天使の鎧{03}",
+   "us": "{02}{04}{06}ANGELIC ARMOR{03}",
+   "en": "{02}{04}{06}ANGELIC ARMOR{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:13",
+   "jp": "{02}{04}{06}ノッポ{03}",
+   "us": "{02}{04}{06}BEANPOLE{03}",
+   "en": "{02}{04}{06}BEANPOLE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:14",
+   "jp": "{02}{04}{06}ミニ{03}",
+   "us": "{02}{04}{06}SMALL FRY{03}",
+   "en": "{02}{04}{06}SMALL FRY{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:15",
+   "jp": "{02}{04}{06}巨漢おばさん{03}",
+   "us": "{02}{04}{06}XL WOMAN{03}",
+   "en": "{02}{04}{06}XL WOMAN{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:16",
+   "jp": "{02}{04}{06}ヤリ{03}",
+   "us": "{02}{04}{06}LANCE{03}",
+   "en": "{02}{04}{06}LANCE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:17",
+   "jp": "{02}{04}{06}大ヤリ{03}",
+   "us": "{02}{04}{06}GRAND LANCE{03}",
+   "en": "{02}{04}{06}GRAND LANCE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:18",
+   "jp": "{02}{04}{06}短剣{03}",
+   "us": "{02}{04}{06}DAGGER{03}",
+   "en": "{02}{04}{06}DAGGER{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:19",
+   "jp": "{02}{04}{06}鎌ブーメラン{03}",
+   "us": "{02}{04}{06}BOOMERANG SCYTHE{03}",
+   "en": "{02}{04}{06}BOOMERANG SCYTHE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:20",
+   "jp": "{02}{04}{06}火炎瓶{03}",
+   "us": "{02}{04}{06}FIRE BOTTLE{03}",
+   "en": "{02}{04}{06}FIRE BOTTLE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:21",
+   "jp": "{02}{04}{06}スワローブレイド{03}",
+   "us": "{02}{04}{06}SWALLOW BLADE{03}",
+   "en": "{02}{04}{06}SWALLOW BLADE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:22",
+   "jp": "{02}{04}{06}火薬玉{03}",
+   "us": "{02}{04}{06}BOMB{03}",
+   "en": "{02}{04}{06}BOMB{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:23",
+   "jp": "{02}{04}{06}棘のムチ{03}",
+   "us": "{02}{04}{06}VINE WHIP{03}",
+   "en": "{02}{04}{06}VINE WHIP{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:24",
+   "jp": "{02}{04}{06}電撃のムチ{03}",
+   "us": "{02}{04}{06}ELECTRIC WHIP{03}",
+   "en": "{02}{04}{06}ELECTRIC WHIP{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:25",
+   "jp": "{02}{04}{06}火矢クロスボウ{03}",
+   "us": "{02}{04}{06}FIRE CROSSBOW{03}",
+   "en": "{02}{04}{06}FIRE CROSSBOW{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:26",
+   "jp": "{02}{04}{06}散弾クロスボウ{03}",
+   "us": "{02}{04}{06}SCATTER CROSSBOW{03}",
+   "en": "{02}{04}{06}SCATTER CROSSBOW{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:27",
+   "jp": "{02}{04}{06}電撃クロスボウ{03}",
+   "us": "{02}{04}{06}ELEC CROSSBOW{03}",
+   "en": "{02}{04}{06}ELEC CROSSBOW{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:28",
+   "jp": "{02}{04}{06}光のリング{03}",
+   "us": "{02}{04}{06}LIGHT RING{03}",
+   "en": "{02}{04}{06}LIGHT RING{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:29",
+   "jp": "{02}{04}{06}宝箱{03}",
+   "us": "{02}{04}{06}CHEST{03}",
+   "en": "{02}{04}{06}CHEST{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:30",
+   "jp": "{02}{04}{06}ひび割れた盾{03}",
+   "us": "{02}{04}{06}CRACKED SHIELD{03}",
+   "en": "{02}{04}{06}CRACKED SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:31",
+   "jp": "{02}{04}{06}騎士の盾{03}",
+   "us": "{02}{04}{06}KNIGHT SHIELD{03}",
+   "en": "{02}{04}{06}KNIGHT SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:32",
+   "jp": "{02}{04}{06}覇王の盾{03}",
+   "us": "{02}{04}{06}EMPEROR SHIELD{03}",
+   "en": "{02}{04}{06}EMPEROR SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:33",
+   "jp": "{02}{04}{06}魔人の盾{03}",
+   "us": "{02}{04}{06}DEMON SHIELD{03}",
+   "en": "{02}{04}{06}DEMON SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:34",
+   "jp": "{02}{04}{06}飛竜の盾{03}",
+   "us": "{02}{04}{06}DRAGON SHIELD{03}",
+   "en": "{02}{04}{06}DRAGON SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:35",
+   "jp": "{02}{04}{06}無限の盾{03}",
+   "us": "{02}{04}{06}INFINITY SHIELD{03}",
+   "en": "{02}{04}{06}INFINITY SHIELD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:36",
+   "jp": "{02}{04}{06}爆発の魔力{03}",
+   "us": "{02}{04}{06}FLARE MAGIC{03}",
+   "en": "{02}{04}{06}FLARE MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:37",
+   "jp": "{02}{04}{06}火炎の魔力{03}",
+   "us": "{02}{04}{06}INFERNO MAGIC{03}",
+   "en": "{02}{04}{06}INFERNO MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:38",
+   "jp": "{02}{04}{06}無敵の魔力{03}",
+   "us": "{02}{04}{06}INVINCIBLE MAGIC{03}",
+   "en": "{02}{04}{06}INVINCIBLE MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:39",
+   "jp": "{02}{04}{06}時の魔力{03}",
+   "us": "{02}{04}{06}TIME MAGIC{03}",
+   "en": "{02}{04}{06}TIME MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:40",
+   "jp": "{02}{04}{06}封印解除の魔力{03}",
+   "us": "{02}{04}{06}UNSEAL MAGIC{03}",
+   "en": "{02}{04}{06}UNSEAL MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:41",
+   "jp": "{02}{04}{06}カマイタチの魔力{03}",
+   "us": "{02}{04}{06}SPIRIT MAGIC{03}",
+   "en": "{02}{04}{06}SPIRIT MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:42",
+   "jp": "{02}{04}{06}石化の魔力{03}",
+   "us": "{02}{04}{06}GORGON MAGIC{03}",
+   "en": "{02}{04}{06}GORGON MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:43",
+   "jp": "{02}{04}{06}パワーアップの魔力{03}",
+   "us": "{02}{04}{06}POWER UP MAGIC{03}",
+   "en": "{02}{04}{06}POWER UP MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:44",
+   "jp": "{02}{04}{06}発見の魔力{03}",
+   "us": "{02}{04}{06}DISCOVERY MAGIC{03}",
+   "en": "{02}{04}{06}DISCOVERY MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:45",
+   "jp": "{02}{04}{06}波動の魔力{03}",
+   "us": "{02}{04}{06}WAVE MAGIC{03}",
+   "en": "{02}{04}{06}WAVE MAGIC{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:46",
+   "jp": "{02}{04}{06}跳ね馬のブーツ{03}",
+   "us": "{02}{04}{06}LEAP BOOT{03}",
+   "en": "{02}{04}{06}LEAP BOOT{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:47",
+   "jp": "{02}{04}{06}墜天使の羽{03}",
+   "us": "{02}{04}{06}ANGEL FEATHER{03}",
+   "en": "{02}{04}{06}ANGEL FEATHER{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:48",
+   "jp": "{02}{04}{06}妖樹の葉{03}",
+   "us": "{02}{04}{06}NECROTREE LEAF{03}",
+   "en": "{02}{04}{06}NECROTREE LEAF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:49",
+   "jp": "{02}{04}{06}人喰い花の葉{03}",
+   "us": "{02}{04}{06}MANTRAP LEAF{03}",
+   "en": "{02}{04}{06}MANTRAP LEAF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:50",
+   "jp": "{02}{04}{06}呪い草の葉{03}",
+   "us": "{02}{04}{06}CURSED LEAF{03}",
+   "en": "{02}{04}{06}CURSED LEAF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:51",
+   "jp": "{02}{04}{06}騎士の魂{03}",
+   "us": "{02}{04}{06}KNIGHT SOUL{03}",
+   "en": "{02}{04}{06}KNIGHT SOUL{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:52",
+   "jp": "{02}{04}{06}駿馬の魂{03}",
+   "us": "{02}{04}{06}STEED SOUL{03}",
+   "en": "{02}{04}{06}STEED SOUL{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:53",
+   "jp": "{02}{04}{06}黄泉ガエルの血{03}",
+   "us": "{02}{04}{06}DEMON FROG BLOOD{03}",
+   "en": "{02}{04}{06}DEMON FROG BLOOD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:54",
+   "jp": "{02}{04}{06}不老ドリの血{03}",
+   "us": "{02}{04}{06}YOUNGBIRD BLOOD{03}",
+   "en": "{02}{04}{06}YOUNGBIRD BLOOD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:55",
+   "jp": "{02}{04}{06}黄金ヤギの血{03}",
+   "us": "{02}{04}{06}GOLD GOAT BLOOD{03}",
+   "en": "{02}{04}{06}GOLD GOAT BLOOD{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:56",
+   "jp": "{02}{04}{06}魔力のペンダント{03}",
+   "us": "{02}{04}{06}MAGIC PENDANT{03}",
+   "en": "{02}{04}{06}MAGIC PENDANT{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:57",
+   "jp": "{02}{04}{06}百年ヘビの脱殻{03}",
+   "us": "{02}{04}{06}100 YR SNAKESKIN{03}",
+   "en": "{02}{04}{06}100 YR SNAKESKIN{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:58",
+   "jp": "{02}{04}{06}一角牛の骨{03}",
+   "us": "{02}{04}{06}1 HORN BULL BONE{03}",
+   "en": "{02}{04}{06}1 HORN BULL BONE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:59",
+   "jp": "{02}{04}{06}八つ目魚の目{03}",
+   "us": "{02}{04}{06}8 EYED FISH EYE{03}",
+   "en": "{02}{04}{06}8 EYED FISH EYE{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:60",
+   "jp": "{02}{04}{06}跳ね馬のブーツ　両方{03}",
+   "us": "{02}{04}{06}LEAP BOOTS{03}",
+   "en": "{02}{04}{06}LEAP BOOTS{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:61",
+   "jp": "{02}{04}{06}魔天のペンダント{03}",
+   "us": "{02}{04}{06}EX MAGIC PENDANT{03}",
+   "en": "{02}{04}{06}EX MAGIC PENDANT{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:62",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:63",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:64",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:65",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:66",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:67",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:68",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:69",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:70",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:71",
+   "jp": "{02}{04}{06}ワープスピア{03}",
+   "us": "{02}{04}{06}WARP STAFF{03}",
+   "en": "{02}{04}{06}WARP STAFF{03}",
+   "status": "official"
+  },
+  {
+   "id": "a03:72",
+   "jp": "鎧が壊れてパンツだけ\nの状態\n\n\n\n魔力　使用不可\n最大耐久力　1",
+   "us": "With his armor\nbroken, Arthur\nis reduced to\nhis underwear.\n\nNO MAGIC POWER\nMAX DURABILITY 1",
+   "en": "With his armor\nbroken, Arthur\nis reduced to\nhis underwear.\n\nNO MAGIC POWER\nMAX DURABILITY 1",
+   "status": "official"
+  },
+  {
+   "id": "a03:73",
+   "jp": "騎士が一般的に使用し\nている鎧\n\n\n魔力Lv　1\n鎧バイタリティ　2\n最大耐久力　3",
+   "us": "Standard armor\nof the type worn\nby knights.\n\nMAGIC POWER Lv 1\nARMOR VITALITY 2\nMAX DURABILITY 3",
+   "en": "Standard armor\nof the type worn\nby knights.\n\nMAGIC POWER Lv 1\nARMOR VITALITY 2\nMAX DURABILITY 3",
+   "status": "official"
+  },
+  {
+   "id": "a03:74",
+   "jp": "選ばれた者だけが装備\nすることができる鎧\n\n\n魔力Lv　2\n鎧バイタリティ　1\n最大耐久力　4",
+   "us": "Only chosen\nwarriors can don\nthis armor.\n\nMAGIC POWER Lv 2\nARMOR VITALITY 1\nMAX DURABILITY 4",
+   "en": "Only chosen\nwarriors can don\nthis armor.\n\nMAGIC POWER Lv 2\nARMOR VITALITY 1\nMAX DURABILITY 4",
+   "status": "official"
+  },
+  {
+   "id": "a03:75",
+   "jp": "伝説の覇王が身に着け\nていた由緒正しき鎧\n\n\n魔力Lv　3\n鎧バイタリティ　1\n最大耐久力　5",
+   "us": "Armor previously\nworn by a\nlegendary ruler.\n\nMAGIC POWER Lv 3\nARMOR VITALITY 1\nMAX DURABILITY 5",
+   "en": "Armor previously\nworn by a\nlegendary ruler.\n\nMAGIC POWER Lv 3\nARMOR VITALITY 1\nMAX DURABILITY 5",
+   "status": "official"
+  },
+  {
+   "id": "a03:76",
+   "jp": "正なる力に支配された\n鎧{06}魔力Lv　2\n鎧バイタリティ　2\n最大耐久力　3\n魔力消費量　1/2\n移動速度　アップ",
+   "us": "Armor possessed\nby a benevolent\nforce.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3\nMAGIC COST 1/2\nAGILITY UP",
+   "en": "Armor possessed\nby a benevolent\nforce.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3\nMAGIC COST 1/2\nAGILITY UP",
+   "status": "official"
+  },
+  {
+   "id": "a03:77",
+   "jp": "負なる力に支配された\n鎧{06}魔力Lv　1\n鎧バイタリティ　4\n最大耐久力　5\n魔力消費量　2倍\n移動速度　ダウン",
+   "us": "Armor possessed\nby a malevolent\nforce.{06}MAGIC POWER Lv 1\nARMOR VITALITY 4\nMAX DURABILITY 5\nMAGIC COST x2\nAGILITY DOWN",
+   "en": "Armor possessed\nby a malevolent\nforce.{06}MAGIC POWER Lv 1\nARMOR VITALITY 4\nMAX DURABILITY 5\nMAGIC COST x2\nAGILITY DOWN",
+   "status": "official"
+  },
+  {
+   "id": "a03:78",
+   "jp": "邪悪な力を宿している\n危険な鎧{06}魔力　使用不可\n盾　使用不可\n鎧バイタリティ　4\n最大耐久力　5\n移動速度　アップ",
+   "us": "Armor possessed\nby evil power.{06}NO MAGIC POWER\nNO SHIELD USE\nARMOR VITALITY 4\nMAX DURABILITY 5\nAGILITY UP",
+   "en": "Armor possessed\nby evil power.{06}NO MAGIC POWER\nNO SHIELD USE\nARMOR VITALITY 4\nMAX DURABILITY 5\nAGILITY UP",
+   "status": "official"
+  },
+  {
+   "id": "a03:79",
+   "jp": "かつて罪を犯して天界\nから追放された天使が\n身に着けていたと言わ\nれている伝説の鎧{06}魔力Lv　2\n鎧バイタリティ　2\n最大耐久力　3{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う",
+   "us": "Legendary armor\nsaid to have\nbeen donned by a\nfallen angel who\nsuccumbed to\nevil.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.",
+   "en": "Legendary armor\nsaid to have\nbeen donned by a\nfallen angel who\nsuccumbed to\nevil.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.",
+   "status": "official"
+  },
+  {
+   "id": "a03:80",
+   "jp": "邪悪な魔法の力によっ\nてノッポ状態に変えら\nれてしまったアーサー\nの姿{06}魔力　使用不可\n多段ジャンプ　不可\nダッシュ　不可\nアイテム　入手不可",
+   "us": "Elongated\nversion of\nArthur brought\nabout by evil\nmagic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nNO DASH\nNO ITEM PICKUP",
+   "en": "Elongated\nversion of\nArthur brought\nabout by evil\nmagic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nNO DASH\nNO ITEM PICKUP",
+   "status": "official"
+  },
+  {
+   "id": "a03:81",
+   "jp": "邪悪な魔法の力によっ\nて小人状態に変えられ\nてしまったアーサーの\n姿{06}魔力　使用不可\n多段ジャンプ　不可\n攻撃力　1/2\n移動速度　ダウン\nアイテム　入手不可",
+   "us": "Shrunken down\nversion of\nArthur caused\nby evil magic\npower.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nATTACK 1/2\nAGILITY DOWN\nNO ITEM PICKUP",
+   "en": "Shrunken down\nversion of\nArthur caused\nby evil magic\npower.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nATTACK 1/2\nAGILITY DOWN\nNO ITEM PICKUP",
+   "status": "official"
+  },
+  {
+   "id": "a03:82",
+   "jp": "邪悪な魔法の力によっ\nて町女状態に変えられ\nてしまったアーサーの\n姿{06}魔力　使用不可\n盾　使用不可\n多段ジャンプ　不可\n移動速度　ダウン\nアイテム　入手不可",
+   "us": "Evil magic has\nturned Arthur\ninto a portly\nfemale villager.{06}NO MAGIC POWER\nNO SHIELD USE\nNO DOUBLE JUMP\nAGILITY DOWN\nNO ITEM PICKUP",
+   "en": "Evil magic has\nturned Arthur\ninto a portly\nfemale villager.{06}NO MAGIC POWER\nNO SHIELD USE\nNO DOUBLE JUMP\nAGILITY DOWN\nNO ITEM PICKUP",
+   "status": "official"
+  },
+  {
+   "id": "a03:83",
+   "jp": "アーサーが最初に持っ\nている基本的な武器\n\n\n軌道　直線\n連射　普通\n威力　1",
+   "us": "Basic weapon\nused by Arthur\nfrom the start.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1",
+   "en": "Basic weapon\nused by Arthur\nfrom the start.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1",
+   "status": "official"
+  },
+  {
+   "id": "a03:84",
+   "jp": "とても大きくて強力な\nヤリ\n\n\n軌道　直線\n連射　遅い\n威力　2{06}効果:\n敵を貫通して攻撃する\nことができる\n\n草や塵に対して効果が\n高い",
+   "us": "A huge and\npowerful lance.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "en": "A huge and\npowerful lance.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "status": "official"
+  },
+  {
+   "id": "a03:85",
+   "jp": "小さくて使い勝手の良\nい武器\n\n\n軌道　直線\n連射　速い\n威力　1",
+   "us": "Small and easy\nto handle\nweapon.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1",
+   "en": "Small and easy\nto handle\nweapon.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1",
+   "status": "official"
+  },
+  {
+   "id": "a03:86",
+   "jp": "投げた後に手元まで戻\nる鎌状のブーメラン\n\n\n軌道　直線\n連射　普通\n威力　1{06}効果:\n特定のアイテムを引き\n寄せることができる\n\n草や塵に対して効果が\n高い",
+   "us": "Weapon that\nreturns to the\nthrower.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nCan be used to\ngrab certain\nitems.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "en": "Weapon that\nreturns to the\nthrower.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nCan be used to\ngrab certain\nitems.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "status": "official"
+  },
+  {
+   "id": "a03:87",
+   "jp": "放り投げて地面に落ち\nると燃え上がる武器\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、炎上\n炎上部分に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
+   "us": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "en": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "status": "official"
+  },
+  {
+   "id": "a03:88",
+   "jp": "敵を追尾して飛んでい\nく武器\n\n\n軌道　追尾\n連射　遅い\n威力　1{06}効果:\n草や塵に対して効果が\n高い",
+   "us": "Weapon which\nautomatically\ntracks enemies.\n\nARC: CHASE\nFIRE RATE: SLOW\nPOWER: 1{06}EFFECT:\nFollows enemies\nautomatically.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "en": "Weapon which\nautomatically\ntracks enemies.\n\nARC: CHASE\nFIRE RATE: SLOW\nPOWER: 1{06}EFFECT:\nFollows enemies\nautomatically.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
+   "status": "official"
+  },
+  {
+   "id": "a03:89",
+   "jp": "火薬の詰まった大きな\n玉\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、転がっ\nて爆発\n爆発範囲に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
+   "us": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "en": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "status": "official"
+  },
+  {
+   "id": "a03:90",
+   "jp": "近距離攻撃を行うこと\nができる棘状のムチ\n\n\n軌道　直線\n連射　遅い\n威力　2{06}効果:\n特定のアイテムを引き\n寄せることができる",
+   "us": "Thorny whip that\nallows for close\nrange attacks.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nCan be used to\ngrab certain\nitems.",
+   "en": "Thorny whip that\nallows for close\nrange attacks.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nCan be used to\ngrab certain\nitems.",
+   "status": "official"
+  },
+  {
+   "id": "a03:91",
+   "jp": "電撃をまとった強力な\nムチ\n\n\n軌道　直線\n連射　遅い\n威力　3{06}効果:\n特定のアイテムを引き\n寄せることができる\nまた敵を貫通して攻撃\nすることができる",
+   "us": "Powerful whip\nimbued with\nelectricity.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 3{06}EFFECT:\nCan be used to\ngrab certain\nitems.\nAlso, can pierce\nenemies to\ndamage others.",
+   "en": "Powerful whip\nimbued with\nelectricity.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 3{06}EFFECT:\nCan be used to\ngrab certain\nitems.\nAlso, can pierce\nenemies to\ndamage others.",
+   "status": "official"
+  },
+  {
+   "id": "a03:92",
+   "jp": "矢先に火の着いた矢を\n撃ち出すクロスボウ\n\n\n軌道　直線\n連射　速い\n威力　1{06}効果:\n炎に弱い敵に対して効\n果が高い",
+   "us": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "en": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
+   "status": "official"
+  },
+  {
+   "id": "a03:93",
+   "jp": "3方向同時に矢を撃ち\n出すクロスボウ\n\nパワーアップすると、\n同時に発射する矢の数\nが増える{06}1本の矢の威力は変わ\nらない\n\n\n軌道　直線\n連射　遅い\n威力　1",
+   "us": "Crossbow that\nfires arrows in\n3 directions:\nUp, down, and\nstraight ahead.{06}Powering up\nincreases arrow\ncount, but not\nindividual\npower.{06}ARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 1",
+   "en": "Crossbow that\nfires arrows in\n3 directions:\nUp, down, and\nstraight ahead.{06}Powering up\nincreases arrow\ncount, but not\nindividual\npower.{06}ARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 1",
+   "status": "official"
+  },
+  {
+   "id": "a03:94",
+   "jp": "電撃をまとった矢を撃\nち出すクロスボウ\n\n\n軌道　直線\n連射　普通\n威力　2{06}効果:\n敵を貫通して攻撃する\nことができる",
+   "us": "Crossbow that\nfires arrows\nwith electrical\nproperties.{06}ARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.",
+   "en": "Crossbow that\nfires arrows\nwith electrical\nproperties.{06}ARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.",
+   "status": "official"
+  },
+  {
+   "id": "a03:95",
+   "jp": "聖なる光に輝くリング\n\n冒険のカギとなる…",
+   "us": "Sacred ring\ntwinkling with\nenchanted light.\n\nIt will prove\nimportant on\nArthur's quest.",
+   "en": "Sacred ring\ntwinkling with\nenchanted light.\n\nIt will prove\nimportant on\nArthur's quest.",
+   "status": "official"
+  },
+  {
+   "id": "a03:96",
+   "jp": "各地に存在する宝箱\n\n青と赤のものがあり\n赤のものは開けた順\nに中身が変化する",
+   "us": "Chests appear in\nvarious places.\nRed ones offer\ndifferent\ncontents based\non the order\nthey are opened.",
+   "en": "Chests appear in\nvarious places.\nRed ones offer\ndifferent\ncontents based\non the order\nthey are opened.",
+   "status": "official"
+  },
+  {
+   "id": "a03:97",
+   "jp": "ひび割れ、朽ち果てた\n盾\n\n\n\n\n最大耐久力　2",
+   "us": "Decaying shield\nwith a crack in\nits facade.\n\nMAX DURABILITY 2",
+   "en": "Decaying shield\nwith a crack in\nits facade.\n\nMAX DURABILITY 2",
+   "status": "official"
+  },
+  {
+   "id": "a03:98",
+   "jp": "騎士が一般的に使用し\nている盾\n\n\n\n\n最大耐久力　4",
+   "us": "Normal shield of\nthe type used by\nknights.\n\nMAX DURABILITY 4",
+   "en": "Normal shield of\nthe type used by\nknights.\n\nMAX DURABILITY 4",
+   "status": "official"
+  },
+  {
+   "id": "a03:99",
+   "jp": "伝説の覇王が使用して\nいたと言われる強靭な\n盾\n\n\n\n最大耐久力　8",
+   "us": "Shield said to\nhave been used\nby a legendary\nruler.\n\nMAX DURABILITY 8",
+   "en": "Shield said to\nhave been used\nby a legendary\nruler.\n\nMAX DURABILITY 8",
+   "status": "official"
+  },
+  {
+   "id": "a03:100",
+   "jp": "魔人の力を宿している\n盾\n\n\n\n\n最大耐久力　?{06}効果:\n攻撃を防ぐと魔力が5\n回復する",
+   "us": "Shield inhabited\nby a powerful\nspiritual force.\n\nMAX DURABILITY ?{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "en": "Shield inhabited\nby a powerful\nspiritual force.\n\nMAX DURABILITY ?{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "status": "official"
+  },
+  {
+   "id": "a03:101",
+   "jp": "飛竜の力を宿している\n盾\n\n\n\n\n最大耐久力　4{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う{06}効果:\n一定時間で飛行状態は\n自動的に解除される",
+   "us": "The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
+   "en": "The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
+   "status": "official"
+  },
+  {
+   "id": "a03:102",
+   "jp": "決して壊れることのな\nい最強の盾\n\n\n\n\n最大耐久力　∞{06}効果:\n攻撃を防ぐと魔力が5\n回復する",
+   "us": "Extremely strong\nshield believed\nto be completely\nindestructible.\n\nMAX DURABILITY\n∞{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "en": "Extremely strong\nshield believed\nto be completely\nindestructible.\n\nMAX DURABILITY\n∞{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "status": "official"
+  },
+  {
+   "id": "a03:103",
+   "jp": "アーサーを中心に爆発\nを起こす魔力\n\n\n\n威力　2\n魔力消費量　4{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n爆発範囲と威力がアッ\nプする",
+   "us": "Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
+   "en": "Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:104",
+   "jp": "アーサーの前方に炎を\n撃ち出す魔力\n\n\n\n威力　1\n魔力消費量　5{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n炎の数と威力がアップ\nする",
+   "us": "Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
+   "en": "Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:105",
+   "jp": "アーサーの周囲にバリ\nアーを出現させる守護\n魔力\n\n\n威力　1\n魔力消費量　10{06}効果:\n接触した敵にダメージ\nを与える\n敵に接触するたびにバ\nリアーは1個ずつ消滅\nしてしまう{06}魔力のLvが上がると\nバリアーの数と耐久力\nがアップする",
+   "us": "Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
+   "en": "Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
+   "status": "official"
+  },
+  {
+   "id": "a03:106",
+   "jp": "アーサー以外の者に対\nして時の進行を遅らせ\nる魔力\n\n\n威力　-\n魔力消費量　6{06}効果:\n周囲の敵などの動きを\n一定時間スローにする\n魔力のLvが上がると停\n止させることができる",
+   "us": "Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
+   "en": "Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:107",
+   "jp": "封印を解除することが\nできる魔力\n\n\n\n威力　-\n魔力消費量　8{06}効果:\n封印された場所で使用\nすると、その封印が解\nかれ先に進めるように\nなる",
+   "us": "Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
+   "en": "Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
+   "status": "official"
+  },
+  {
+   "id": "a03:108",
+   "jp": "アーサーの周囲にカマ\nイタチを発生させる魔\n力\n\n\n威力　1\n魔力消費量　2{06}効果:\nカマイタチ発生中は飛\n行状態となり通常攻撃\nは行えなくなる\n敵と接触するとその敵\nにダメージを与えるこ\nとができるが、{06}その度に魔力は消費さ\nれる{06}解除:\n飛行中にジャンプボタ\nン、又は魔力ボタンを\n押すと飛行解除される{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動",
+   "us": "Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
+   "en": "Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
+   "status": "official"
+  },
+  {
+   "id": "a03:109",
+   "jp": "前方の敵を石化させる\nことができる魔力\n\n\n\n威力　-\n魔力消費量　3{06}効果:\nヒットした敵を一定時\n間石化状態にすること\nができる\n石化状態の敵を足場と\nして利用することも可\n能{06}また、墓石など石化し\nたものに撃ち出すと、\n石化状態を解除するこ\nとができる",
+   "us": "Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
+   "en": "Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
+   "status": "official"
+  },
+  {
+   "id": "a03:110",
+   "jp": "武器をパワーアップさ\nせる魔力\n\n\n\n威力　-\n魔力消費量　10{06}効果:\n装備している武器の攻\n撃力と攻撃速度をアッ\nプさせる\n敵からダメージを受け\nるとパワーアップ状態\nは解除されてしまう",
+   "us": "Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
+   "en": "Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
+   "status": "official"
+  },
+  {
+   "id": "a03:111",
+   "jp": "隠された財宝を発見す\nることができる魔力\n\n\n\n威力　-\n魔力消費量　2{06}効果:\nアーサーの周囲に隠さ\nれた宝箱がある場合、\nその場所を見つけるこ\nとができる",
+   "us": "Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
+   "en": "Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
+   "status": "official"
+  },
+  {
+   "id": "a03:112",
+   "jp": "あらゆるものを飲み込\nんで飛んでいく最強の\n魔力\n\n\n威力　4\n魔力消費量　3{06}効果:\n敵を貫通して飛んでい\nき、敵の攻撃もはね返\nすことができる{06}魔力のLvが上がると\n魔力の大きさと威力が\nアップする",
+   "us": "Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
+   "en": "Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:113",
+   "jp": "跳ね馬の力を宿したブ\nーツの片一方\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、1回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
+   "us": "Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:114",
+   "jp": "かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
+   "us": "Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:115",
+   "jp": "魔界に生息する妖樹に\n生える妖しげな葉\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Leaf from the\nfearful\nNecrotree.\nOften used by\nwitches to\nperform wicked\nexperiments.",
+   "en": "Leaf from the\nfearful\nNecrotree.\nOften used by\nwitches to\nperform wicked\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:116",
+   "jp": "甘い句いを発して人を\n誘い込み襲う巨大な花\nに生える葉\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Leaf from a\nplant that lures\nvictims with a\nsweet smell.\nWitches often\nuse it for\nexperiments.",
+   "en": "Leaf from a\nplant that lures\nvictims with a\nsweet smell.\nWitches often\nuse it for\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:117",
+   "jp": "摘んだ者は呪われると\n言われている葉\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Leaf fabled to\ncurse the one\nwho plucks it.\nOften used by\nwitches in their\nexperiments.",
+   "en": "Leaf fabled to\ncurse the one\nwho plucks it.\nOften used by\nwitches in their\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:118",
+   "jp": "騎士違の心が魂となっ\nて具現化した物\n受けるダメージが1/2\nになる\n\n一度取得すると失うこ\nとはない",
+   "us": "The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:119",
+   "jp": "大地を駆ける駿馬違の\n魂が具現化した物\n移動速度が20%アップ\nする\n\n一度取得すると失うこ\nとはない",
+   "us": "The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:120",
+   "jp": "死者の国に生息するカ\nエルの王の血\nその血を飲むとあらゆ\nる傷や病を治し、死者\nさえも甦ると言われて\nいる{06}魔女が実験の材料とし\nて使うこともある",
+   "us": "Blood drained\nfrom the king of\ndemonic frogs.\nQuaffing this\nfoul liquid will\nheal wounds and\ndisease.{06}It is even\nrumored to be a\ncatalyst in\nresurrection.\nOften used in\nwitches' foul\nexperiments.",
+   "en": "Blood drained\nfrom the king of\ndemonic frogs.\nQuaffing this\nfoul liquid will\nheal wounds and\ndisease.{06}It is even\nrumored to be a\ncatalyst in\nresurrection.\nOften used in\nwitches' foul\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:121",
+   "jp": "何百年も生き続ける年\nを取ることのない怪鳥\nの血\nその血を飲むと不老不\n死になると言われてい\nる{06}魔女が実験の材料とし\nて使うこともある",
+   "us": "The bird of\neternal youth\ndoes not age\nwith the passage\nof time.{06}Its blood is\nsaid to bring\nabout eternal\nyouth and\nimmortality.{06}Witches have\nbeen known to\nutilize it in\nexperiments.",
+   "en": "The bird of\neternal youth\ndoes not age\nwith the passage\nof time.{06}Its blood is\nsaid to bring\nabout eternal\nyouth and\nimmortality.{06}Witches have\nbeen known to\nutilize it in\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:122",
+   "jp": "清い心を持つ者の前に\nしか姿を現すことがな\nい黄金のヤギの血\nその血を飲むと無限の\n力を宿すと言われてい\nる{06}魔女が実験の材料とし\nて使うこともある",
+   "us": "The golden goat\nonly appears to\nthose pure of\nheart.\nConsuming its\nblood yields\nlimitless power.{06}It is often used\nby witches in\ntheir horrific\nexperiments.",
+   "en": "The golden goat\nonly appears to\nthose pure of\nheart.\nConsuming its\nblood yields\nlimitless power.{06}It is often used\nby witches in\ntheir horrific\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:123",
+   "jp": "魔力を秘めたペンダン\nト\n魔力の消費量が1/2に\nなる\n\n一度取得すると失うこ\nとはない",
+   "us": "Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:124",
+   "jp": "百年生きると言われて\nいる魔界に生息する毒\nヘビの脱殻\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Skin of a\ndreadful\npoisonous snake\nsaid to live\n100 years.{06}Often used in\nwitches'\nexperiments.",
+   "en": "Skin of a\ndreadful\npoisonous snake\nsaid to live\n100 years.{06}Often used in\nwitches'\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:125",
+   "jp": "頭に巨大な1本の角を\n持つ牛の怪物の骨\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Bone of a single\nhorned bull\ncreature.\nOften used in\nwitches'\nexperiments.",
+   "en": "Bone of a single\nhorned bull\ncreature.\nOften used in\nwitches'\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:126",
+   "jp": "血の池に棲み人を襲う\n怪魚の目\n魔女が実験の材料とし\nて使うこともある",
+   "us": "Eye of horrific\nman-eating fish\ncreature that\ndwells in a lake\nof blood.{06}Often used in\nwitches'\nexperiments.",
+   "en": "Eye of horrific\nman-eating fish\ncreature that\ndwells in a lake\nof blood.{06}Often used in\nwitches'\nexperiments.",
+   "status": "official"
+  },
+  {
+   "id": "a03:127",
+   "jp": "跳ね馬の力を宿したブ\nーツ\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、2回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
+   "us": "Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:128",
+   "jp": "絶大な魔力を秘めたペ\nンダント\n魔力の消費量が1/2、\n魔力Lvが3になる\n\n一度取得すると失うこ\nとはない",
+   "us": "Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:129",
+   "jp": "St1-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:130",
+   "jp": "St1-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:131",
+   "jp": "St2-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:132",
+   "jp": "St2-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:133",
+   "jp": "St3-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:134",
+   "jp": "St3-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:135",
+   "jp": "St4のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:136",
+   "jp": "赤バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:137",
+   "jp": "黄バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:138",
+   "jp": "青バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:139",
+   "jp": "ワープスピアは再び元\nの場所に散らばってし\nまった",
+   "us": "All Warp Staves\nhave been\nredistributed to\ntheir original\nlocations.",
+   "en": "All Warp Staves\nhave been\nredistributed to\ntheir original\nlocations.",
+   "status": "official"
+  },
+  {
+   "id": "a03:140",
+   "jp": "{02}{04}{02}飛竜の盾{03}を手に入れた{06}飛竜の力を宿している\n盾\n\n\n\n\n最大耐久力　4{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う{06}効果:\n一定時間で飛行状態は\n自動的に解除される",
+   "us": "You obtained the\n{02}{04}{02}Dragon Shield{03}!{06}The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
+   "en": "You obtained the\n{02}{04}{02}Dragon Shield{03}!{06}The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
+   "status": "official"
+  },
+  {
+   "id": "a03:141",
+   "jp": "{02}{04}{02}無限の盾{03}を手に入れた{06}決して壊れることのな\nい最強の盾\n\n\n\n\n最大耐久力　∞{06}効果:\n攻撃を防ぐと魔力が5\n回復する",
+   "us": "You obtained the\n{02}{04}{02}Infinity Shield{03}!{06}Extremely strong\nshield believed\nto be completely\nindestructible.\n\nMAX DURABILITY\n∞{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "en": "You obtained the\n{02}{04}{02}Infinity Shield{03}!{06}Extremely strong\nshield believed\nto be completely\nindestructible.\n\nMAX DURABILITY\n∞{06}EFFECT:\nBlocked attacks\nrestore Magic\nPower by 5.",
+   "status": "official"
+  },
+  {
+   "id": "a03:142",
+   "jp": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}アーサーを中心に爆発\nを起こす魔力\n\n\n\n威力　2\n魔力消費量　4{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n爆発範囲と威力がアッ\nプする",
+   "us": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
+   "en": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
+   "status": "new",
+   "notes": "USA text keeps a Japanese line; translate it in the USA style"
+  },
+  {
+   "id": "a03:143",
+   "jp": "{02}{04}{02}火炎の魔力水晶{03}を手に\n入れた{06}アーサーの前方に炎を\n撃ち出す魔力\n\n\n\n威力　1\n魔力消費量　5{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n炎の数と威力がアップ\nする",
+   "us": "You obtained the\n{02}{04}{02}Inferno Magic\nCrystal{03}!{06}Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
+   "en": "You obtained the\n{02}{04}{02}Inferno Magic\nCrystal{03}!{06}Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:144",
+   "jp": "{02}{04}{02}無敵の魔力水晶{03}を手に\n入れた{06}アーサーの周囲にバリ\nアーを出現させる守護\n魔力\n\n\n威力　1\n魔力消費量　10{06}効果:\n接触した敵にダメージ\nを与える\n敵に接触するたびにバ\nリアーは1個ずつ消滅\nしてしまう{06}魔力のLvが上がると\nバリアーの数と耐久力\nがアップする",
+   "us": "You obtained the\n{02}{04}{02}Invincible Magic\nCrystal{03}!{06}Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
+   "en": "You obtained the\n{02}{04}{02}Invincible Magic\nCrystal{03}!{06}Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
+   "status": "official"
+  },
+  {
+   "id": "a03:145",
+   "jp": "{02}{04}{02}時の魔力水晶{03}を手に入\nれた{06}アーサー以外の者に対\nして時の進行を遅らせ\nる魔力\n\n\n威力　-\n魔力消費量　6{06}効果:\n周囲の敵などの動きを\n一定時間スローにする\n魔力のLvが上がると停\n止させることができる",
+   "us": "You obtained the\n{02}{04}{02}Time Magic\nCrystal{03}!{06}Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
+   "en": "You obtained the\n{02}{04}{02}Time Magic\nCrystal{03}!{06}Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:146",
+   "jp": "{02}{04}{02}封印解除の魔力水晶{03}を\n手に入れた{06}封印を解除することが\nできる魔力\n\n\n\n威力　-\n魔力消費量　8{06}効果:\n封印された場所で使用\nすると、その封印が解\nかれ先に進めるように\nなる",
+   "us": "You obtained the\n{02}{04}{02}Unseal Magic\nCrystal{03}!{06}Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
+   "en": "You obtained the\n{02}{04}{02}Unseal Magic\nCrystal{03}!{06}Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
+   "status": "official"
+  },
+  {
+   "id": "a03:147",
+   "jp": "{02}{04}{02}カマイタチの魔力水晶{03}\nを手に入れた{06}アーサーの周囲にカマ\nイタチを発生させる魔\n力\n\n\n威力　1\n魔力消費量　2{06}効果:\nカマイタチ発生中は飛\n行状態となり通常攻撃\nは行えなくなる\n敵と接触するとその敵\nにダメージを与えるこ\nとができるが、{06}その度に魔力は消費さ\nれる{06}解除:\n飛行中にジャンプボタ\nン、又は魔力ボタンを\n押すと飛行解除される{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動",
+   "us": "You obtained the\n{02}{04}{02}Spirit Magic\nCrystal{03}!{06}Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
+   "en": "You obtained the\n{02}{04}{02}Spirit Magic\nCrystal{03}!{06}Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
+   "status": "official"
+  },
+  {
+   "id": "a03:148",
+   "jp": "{02}{04}{02}石化の魔力水晶{03}を手に\n入れた{06}前方の敵を石化させる\nことができる魔力\n\n\n\n威力　-\n魔力消費量　3{06}効果:\nヒットした敵を一定時\n間石化状態にすること\nができる\n石化状態の敵を足場と\nして利用することも可\n能{06}また、墓石など石化し\nたものに撃ち出すと、\n石化状態を解除するこ\nとができる",
+   "us": "You obtained the\n{02}{04}{02}Gorgon Magic\nCrystal{03}!{06}Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
+   "en": "You obtained the\n{02}{04}{02}Gorgon Magic\nCrystal{03}!{06}Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
+   "status": "official"
+  },
+  {
+   "id": "a03:149",
+   "jp": "{02}{04}{02}パワーアップの魔力水\n晶{03}を手に入れた{06}武器をパワーアップさ\nせる魔力\n\n\n\n威力　-\n魔力消費量　10{06}効果:\n装備している武器の攻\n撃力と攻撃速度をアッ\nプさせる\n敵からダメージを受け\nるとパワーアップ状態\nは解除されてしまう",
+   "us": "You obtained the\n{02}{04}{02}Power Up Magic\nCrystal{03}!{06}Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
+   "en": "You obtained the\n{02}{04}{02}Power Up Magic\nCrystal{03}!{06}Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
+   "status": "official"
+  },
+  {
+   "id": "a03:150",
+   "jp": "{02}{04}{02}発見の魔力水晶{03}を手に\n入れた{06}隠された財宝を発見す\nることができる魔力\n\n\n\n威力　-\n魔力消費量　2{06}効果:\nアーサーの周囲に隠さ\nれた宝箱がある場合、\nその場所を見つけるこ\nとができる",
+   "us": "You obtained the\n{02}{04}{02}Discovery Magic\nCrystal{03}!{06}Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
+   "en": "You obtained the\n{02}{04}{02}Discovery Magic\nCrystal{03}!{06}Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
+   "status": "official"
+  },
+  {
+   "id": "a03:151",
+   "jp": "{02}{04}{02}波動の魔力水晶{03}を手に\n入れた{06}あらゆるものを飲み込\nんで飛んでいく最強の\n魔力\n\n\n威力　4\n魔力消費量　3{06}効果:\n敵を貫通して飛んでい\nき、敵の攻撃もはね返\nすことができる{06}魔力のLvが上がると\n魔力の大きさと威力が\nアップする",
+   "us": "You obtained the\n{02}{04}{02}Wave Magic\nCrystal{03}!{06}Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
+   "en": "You obtained the\n{02}{04}{02}Wave Magic\nCrystal{03}!{06}Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
+   "status": "official"
+  },
+  {
+   "id": "a03:152",
+   "jp": "{02}{04}{02}跳ね馬のブーツ{03}を手に\n入れた{06}跳ね馬の力を宿したブ\nーツの片一方\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、1回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
+   "us": "You obtained a\n{02}{04}{02}Leap Boot{03}!{06}Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained a\n{02}{04}{02}Leap Boot{03}!{06}Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:153",
+   "jp": "{02}{04}{02}墜天使の羽{03}を手に入れ\nた{06}かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
+   "us": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:154",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:155",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:156",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:157",
+   "jp": "{02}{04}{02}騎士の魂{03}を手に入れた{06}騎士違の心が魂となっ\nて具現化した物\n受けるダメージが1/2\nになる\n\n一度取得すると失うこ\nとはない",
+   "us": "You obtained the\n{02}{04}{02}Knight Soul{03}!{06}The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Knight Soul{03}!{06}The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:158",
+   "jp": "{02}{04}{02}駿馬の魂{03}を手に入れた{06}大地を駆ける駿馬違の\n魂が具現化した物\n移動速度が20%アップ\nする\n\n一度取得すると失うこ\nとはない",
+   "us": "You obtained the\n{02}{04}{02}Steed Soul{03}!{06}The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Steed Soul{03}!{06}The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:159",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:160",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:161",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:162",
+   "jp": "{02}{04}{02}魔力のペンダント{03}を手\nに入れた{06}魔力を秘めたペンダン\nト\n魔力の消費量が1/2に\nなる\n\n一度取得すると失うこ\nとはない",
+   "us": "You obtained a\n{02}{04}{02}Magic Pendant{03}!{06}Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained a\n{02}{04}{02}Magic Pendant{03}!{06}Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:163",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:164",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:165",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:166",
+   "jp": "{02}{04}{02}跳ね馬のブーツ　両方{03}\nを手に入れた{06}跳ね馬の力を宿したブ\nーツ\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、2回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
+   "us": "You obtained the\n{02}{04}{02}Leap Boots{03}!{06}Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Leap Boots{03}!{06}Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:167",
+   "jp": "{02}{04}{02}魔天のペンダント{03}を手\nに入れた{06}絶大な魔力を秘めたペ\nンダント\n魔力の消費量が1/2、\n魔力Lvが3になる\n\n一度取得すると失うこ\nとはない",
+   "us": "You obtained the\n{02}{04}{02}Ex Magic\nPendant{03}!{06}Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Ex Magic\nPendant{03}!{06}Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "official"
+  },
+  {
+   "id": "a03:168",
+   "jp": "{02}{04}{02}St1-1のワープスピア{03}\nをセットした{06}St1-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 1-1 Warp\nStaff{03} has been\nset.{06}Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 1-1 Warp\nStaff{03} has been\nset.{06}Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:169",
+   "jp": "{02}{04}{02}St1-2のワープスピア{03}\nをセットした{06}St1-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 1-2 Warp\nStaff{03} has been\nset.{06}Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 1-2 Warp\nStaff{03} has been\nset.{06}Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:170",
+   "jp": "{02}{04}{02}St2-1のワープスピア{03}\nをセットした{06}St2-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 2-1 Warp\nStaff{03} has been\nset.{06}Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 2-1 Warp\nStaff{03} has been\nset.{06}Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:171",
+   "jp": "{02}{04}{02}St2-2のワープスピア{03}\nをセットした{06}St2-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 2-2 Warp\nStaff{03} has been\nset.{06}Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 2-2 Warp\nStaff{03} has been\nset.{06}Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:172",
+   "jp": "{02}{04}{02}St3-1のワープスピア{03}\nをセットした{06}St3-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 3-1 Warp\nStaff{03} has been\nset.{06}Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 3-1 Warp\nStaff{03} has been\nset.{06}Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:173",
+   "jp": "{02}{04}{02}St3-2のワープスピア{03}\nをセットした{06}St3-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 3-2 Warp\nStaff{03} has been\nset.{06}Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 3-2 Warp\nStaff{03} has been\nset.{06}Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:174",
+   "jp": "{02}{04}{02}St4のワープスピア{03}\nをセットした{06}St4のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}ST 4 Warp\nStaff{03} has been\nset.{06}Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}ST 4 Warp\nStaff{03} has been\nset.{06}Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:175",
+   "jp": "{02}{04}{02}赤バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}赤バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}Red Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}Red Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:176",
+   "jp": "{02}{04}{02}黄バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}黄バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}Yellow Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}Yellow Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:177",
+   "jp": "{02}{04}{02}青バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}青バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
+   "us": "The {02}{04}{02}Blue Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "en": "The {02}{04}{02}Blue Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
+   "status": "official"
+  },
+  {
+   "id": "a03:178",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:179",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a03:180",
+   "jp": "このゲームモードではワープできません",
+   "us": "You cannot warp\nin this game\nmode.",
+   "en": "You cannot warp\nin this game\nmode.",
+   "status": "official"
+  },
+  {
+   "id": "a03:181",
+   "jp": "ワープスピアを持って\nいません",
+   "us": "You don't have a\nWarp Staff.",
+   "en": "You don't have a\nWarp Staff.",
+   "status": "official"
+  }
+ ]
+}

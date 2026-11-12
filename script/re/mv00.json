@@ -1,0 +1,60 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv00.bms",
+ "strings": [
+  {
+   "id": "mv00:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv00:1",
+   "jp": "{c:02}\n{c:02}姫っ…!",
+   "same": "go/mv00:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv00:2",
+   "jp": "{c:02}アーサーか…　一足遅かったようだな\n{c:02}プリンセスは　すでに我が手中にある",
+   "same": "go/mv00:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv00:3",
+   "jp": "{c:02}これで　プリンセスに流れる人間王家の血は\n{c:02}魔界のものとなり",
+   "same": "go/mv00:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv00:4",
+   "jp": "{c:02}全てを魔界が支配するのも\n{c:02}もはや時間の問題",
+   "same": "go/mv00:4",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv00:5",
+   "jp": "{c:02}我ら暗黒の魔界が動いた以上\n{c:02}お前ごときに　邪魔立てはさせんわ",
+   "same": "go/mv00:5",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv00:6",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv00:7",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  }
+ ]
+}

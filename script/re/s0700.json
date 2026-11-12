@@ -1,0 +1,95 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0700_stg.kpd/stage/s07/s0700/s0700.bms",
+ "strings": [
+  {
+   "id": "s0700:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0700:1",
+   "jp": "\n3種類の血があれば…",
+   "same": "go/s0700:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:2",
+   "jp": "\nわたしが必要なのは3種類の血だ、それではない",
+   "same": "go/s0700:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:3",
+   "jp": "\nこれでは足らぬ",
+   "same": "go/s0700:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:4",
+   "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "same": "go/s0700:4",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:5",
+   "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "same": "go/s0700:5",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:6",
+   "jp": "\nこれで全てが揃った…",
+   "same": "go/s0700:6",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:7",
+   "jp": "\nひっひっひっ…",
+   "same": "go/s0700:7",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:8",
+   "jp": "\nくっくっくっ…",
+   "same": "go/s0700:8",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:9",
+   "jp": "\nふっふっふっ…",
+   "same": "go/s0700:9",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:10",
+   "jp": "\nひゃっひゃっひゃっ…",
+   "same": "go/s0700:10",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0700:11",
+   "jp": "研究の邪魔だ\nこれでも持って立ち去るがよい",
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "s0700:12",
+   "jp": "研究が完成した\n最高の美と最強の魔力を見るがいい",
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

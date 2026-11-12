@@ -1,0 +1,175 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/play_res.kpd/2d/a02/a02.bms",
+ "strings": [
+  {
+   "id": "a02:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a02:1",
+   "jp": "\nセーブデータをロードすることができます",
+   "us": "\nLoad save data.",
+   "en": "\nLoad save data.",
+   "status": "official"
+  },
+  {
+   "id": "a02:2",
+   "jp": "\nタイトル画面へ戻ります",
+   "us": "\nReturn to Title Screen.",
+   "en": "\nReturn to Title Screen.",
+   "status": "official"
+  },
+  {
+   "id": "a02:3",
+   "jp": "\nオプション設定を行うことができます",
+   "us": "\nAdjust Option settings.",
+   "en": "\nAdjust Option settings.",
+   "status": "official"
+  },
+  {
+   "id": "a02:4",
+   "jp": "ロード画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Go to Load Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Go to Load Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:5",
+   "jp": "タイトル画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Return to Title Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Return to Title Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:6",
+   "jp": "オプション画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Go to Options Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Go to Options Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:7",
+   "jp": "\nデータをセーブすることができます",
+   "us": "\nSave your progress.",
+   "en": "\nSave your progress.",
+   "status": "official"
+  },
+  {
+   "id": "a02:8",
+   "jp": "\nステージセレクトを行うことができます",
+   "us": "\nSelect a stage.",
+   "en": "\nSelect a stage.",
+   "status": "official"
+  },
+  {
+   "id": "a02:9",
+   "jp": "\n次のステージに進みます",
+   "us": "\nMove to next stage.",
+   "en": "\nMove to next stage.",
+   "status": "official"
+  },
+  {
+   "id": "a02:10",
+   "jp": "セーブ画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Go to Save Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Go to Save Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:11",
+   "jp": "ステージセレクト画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Go to Stage Select Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Go to Stage Select Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:12",
+   "jp": "次のステージに進みますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Continue to next stage?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Continue to next stage?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:13",
+   "jp": "セーブ画面へ移りますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Go to Save Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Go to Save Screen?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:14",
+   "jp": "\nコンティニューを行うことができます",
+   "us": "\nContinue playing.",
+   "en": "\nContinue playing.",
+   "status": "official"
+  },
+  {
+   "id": "a02:15",
+   "jp": "コンティニューしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Continue?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Continue?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a02:16",
+   "jp": "ロード画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Go to Load Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Go to Load Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:17",
+   "jp": "タイトル画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Return to Title Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Return to Title Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:18",
+   "jp": "オプション画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Go to Options Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Go to Options Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:19",
+   "jp": "セーブ画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Go to Save Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Go to Save Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:20",
+   "jp": "ステージセレクト画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Go to Stage Select Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Go to Stage Select Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:21",
+   "jp": "次のステージに進みますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Continue to next stage?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Continue to next stage?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:22",
+   "jp": "セーブ画面へ移りますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Go to Save Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Go to Save Screen?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a02:23",
+   "jp": "コンティニューしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Continue?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Continue?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  }
+ ]
+}

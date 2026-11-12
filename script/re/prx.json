@@ -1,0 +1,205 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/REGOKUMAKAI.PRX",
+ "strings": [
+  {
+   "id": "prx:0x3495a0",
+   "jp": "極魔界村 改セーブデータ",
+   "max": 35,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x3495c8",
+   "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \n",
+   "same": "go/prx:0x349b54",
+   "max": 87,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349620",
+   "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \nクリア周回数　%d周目クリア",
+   "same": "go/prx:0x349bac",
+   "max": 127,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3496dc",
+   "jp": "０－０",
+   "same": "go/prx:0x349c58",
+   "max": 11,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3496e8",
+   "jp": "１－１　魔の森",
+   "same": "go/prx:0x349c64",
+   "max": 23,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349700",
+   "jp": "１－２　血の巣窟",
+   "same": "go/prx:0x349c7c",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x34971c",
+   "jp": "第１の魔界門",
+   "same": "go/prx:0x349c98",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349730",
+   "jp": "２－１　嵐の砦",
+   "same": "go/prx:0x349cac",
+   "max": 23,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349748",
+   "jp": "２－２　死の古城",
+   "same": "go/prx:0x349cc4",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349764",
+   "jp": "第２の魔界門",
+   "same": "go/prx:0x349ce0",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349778",
+   "jp": "３－１　腐敗の沼",
+   "same": "go/prx:0x349cf4",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349794",
+   "jp": "３－２　地の底の死海",
+   "same": "go/prx:0x349d10",
+   "max": 31,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3497b4",
+   "jp": "第３の魔界門",
+   "same": "go/prx:0x349d30",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3497c8",
+   "jp": "４　灼熱の魔山",
+   "same": "go/prx:0x349d44",
+   "max": 23,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3497e0",
+   "jp": "４－２　（欠番）",
+   "same": "go/prx:0x349d5c",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3497fc",
+   "jp": "第４の魔界門",
+   "same": "go/prx:0x349d78",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349810",
+   "jp": "５　暗黒の大魔宮殿",
+   "same": "go/prx:0x349d8c",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x34982c",
+   "jp": "大魔王の部屋",
+   "same": "go/prx:0x349da8",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349840",
+   "jp": "暗黒魔王の部屋",
+   "same": "go/prx:0x349dbc",
+   "max": 23,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349858",
+   "jp": "赤バラの魔女の棲み家",
+   "same": "go/prx:0x349dd4",
+   "max": 31,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349878",
+   "jp": "黄バラの魔女の棲み家",
+   "same": "go/prx:0x349df4",
+   "max": 31,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x349898",
+   "jp": "青バラの魔女の棲み家",
+   "same": "go/prx:0x349e14",
+   "max": 31,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3498b8",
+   "jp": "知られざる塔",
+   "same": "go/prx:0x349e34",
+   "max": 19,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3498cc",
+   "jp": "忘れ去られた幽閉牢",
+   "same": "go/prx:0x349e48",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "prx:0x3498e8",
+   "jp": "隠された火炎の滝",
+   "same": "go/prx:0x349e64",
+   "max": 27,
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

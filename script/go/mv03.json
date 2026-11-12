@@ -1,0 +1,28 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv03.bms",
+ "strings": [
+  {
+   "id": "mv03:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv03:1",
+   "jp": "{c:02}\n{c:02}姫っ!!",
+   "us": "{c:02}\n{c:02}Princess!",
+   "en": "{c:02}\n{c:02}Princess!",
+   "status": "official"
+  },
+  {
+   "id": "mv03:2",
+   "jp": "{c:02}\n{c:02}きっと助けに来てくれると信じてた…",
+   "us": "{c:02}I knew you would come for me!\n{c:02}I believed in you all along!",
+   "en": "{c:02}I knew you would come for me!\n{c:02}I believed in you all along!",
+   "status": "official"
+  }
+ ]
+}

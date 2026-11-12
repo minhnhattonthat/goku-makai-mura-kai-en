@@ -1,0 +1,84 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0800_stg.kpd/stage/s08/s0800/s0800.bms",
+ "strings": [
+  {
+   "id": "s0800:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0800:1",
+   "jp": "\n骨・脱殻・目があれば…",
+   "us": "If only I had a bone, some skin,\nand an eye...",
+   "en": "If only I had a bone, some skin,\nand an eye...",
+   "status": "official"
+  },
+  {
+   "id": "s0800:2",
+   "jp": "\nわたしが必要なのは骨・脱殻・目だ、それではない",
+   "us": "I need bone, skin, and an eye.\nYou do not possess what I require.",
+   "en": "I need bone, skin, and an eye.\nYou do not possess what I require.",
+   "status": "official"
+  },
+  {
+   "id": "s0800:3",
+   "jp": "\nこれでは足らぬ",
+   "us": "This is not enough, but it should\ndo for now.",
+   "en": "This is not enough, but it should\ndo for now.",
+   "status": "official"
+  },
+  {
+   "id": "s0800:4",
+   "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "us": "Viola! We're two more experiments\naway from the ultimate power!",
+   "en": "Viola! We're two more experiments\naway from the ultimate power!",
+   "status": "official"
+  },
+  {
+   "id": "s0800:5",
+   "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "us": "Viola! We're one more experiment\naway from the ultimate power!",
+   "en": "Viola! We're one more experiment\naway from the ultimate power!",
+   "status": "official"
+  },
+  {
+   "id": "s0800:6",
+   "jp": "\nこれで全てが揃った…",
+   "us": "\nI have all the ingredients I need.",
+   "en": "\nI have all the ingredients I need.",
+   "status": "official"
+  },
+  {
+   "id": "s0800:7",
+   "jp": "\nふっふっふっ…",
+   "us": "\nHo ho ho...",
+   "en": "\nHo ho ho...",
+   "status": "official"
+  },
+  {
+   "id": "s0800:8",
+   "jp": "\nひっひっひっ…",
+   "us": "\nHeh heh heh...",
+   "en": "\nHeh heh heh...",
+   "status": "official"
+  },
+  {
+   "id": "s0800:9",
+   "jp": "\nくっくっくっ…",
+   "us": "\nNyah hah ha...",
+   "en": "\nNyah hah ha...",
+   "status": "official"
+  },
+  {
+   "id": "s0800:10",
+   "jp": "\nひゃっひゃっひゃっ…",
+   "us": "\nWah ha ha...",
+   "en": "\nWah ha ha...",
+   "status": "official"
+  }
+ ]
+}

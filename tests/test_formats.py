@@ -19,14 +19,27 @@ def test_bms_keeps_glyph_with_zero_trail_byte():
     assert bms.parse(d) == [b"\x80\x00\x80\x01", b"\x07\x02\x01\x80\x01"]
 
 
-def test_bms_decode_controls():
-    t = {b"\x80\x00": "あ", b"\x11": "A"}
-    assert bms.decode(b"\x07\x02\x80\x00\x01\x11\x05", t) == "{c2}あ\nA{05}"
+def test_bms_decode_controls_roundtrip():
+    t = bms.load_tbl()
+    b = b"\x07\x02\x80\x00\x01\x11\x05\x72"
+    assert bms.decode(b, t) == "{c:02}あ\nB{05}1"
+    assert bms.encode(bms.decode(b, t), t) == b
+
+
+def test_bms_build_inverts_parse():
+    s1, s2 = b"\x80\x00\x80\x01", b""
+    d = bms.build([s1, s2])
+    assert bms.parse(d) == [s1, s2] and bms.build(bms.parse(d)) == d
 
 
 def test_tbl_has_core_codes():
-    t = bms.load_tbl()
-    assert t[b"\x80\x00"] == "あ" and t[b"\x80\x0f"] == "　" and t[b"\x70"] == " "
+    t = bms.load_tbl().dec
+    assert t[b"\x80\x00"] == "あ" and t[b"\x80\x0f"] == "　" and t[b"\x70"] == " " and t[b"\x82\x57"] == "揃"
+
+
+def test_tbl_aliases_encode_to_the_codes_the_script_uses():
+    # digits sit in two code ranges (09-12, 71-7A); the game's text uses 71-7A
+    assert bms.load_tbl().encode("0129") == b"\x71\x72\x73\x7a"
 
 
 def _dir(cnt, ent_size, ent_end, sub, data_off, data_size, align):

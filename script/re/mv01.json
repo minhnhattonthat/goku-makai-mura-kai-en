@@ -1,0 +1,20 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv01.bms",
+ "strings": [
+  {
+   "id": "mv01:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv01:1",
+   "jp": "{c:02}姫…姫は必ず　このアーサーがお救いします\n{c:02}それまで　どうかご無事で…",
+   "same": "go/mv01:1",
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

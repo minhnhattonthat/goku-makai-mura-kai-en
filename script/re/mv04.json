@@ -1,0 +1,103 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv04.bms",
+ "strings": [
+  {
+   "id": "mv04:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv04:1",
+   "jp": "{c:02}\n{c:02}アーサー…",
+   "same": "go/mv04:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:2",
+   "jp": "{c:02}\n{c:02}ご無事で何よりでした",
+   "same": "go/mv04:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:3",
+   "jp": "{c:02}\n{c:02}ありがとう…",
+   "same": "go/mv04:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:4",
+   "jp": "{c:02}\n{c:02}Sorcerer",
+   "same": "go/mv04:4",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:5",
+   "jp": "{c:02}\n{c:02}Minotauros",
+   "same": "go/mv04:5",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:6",
+   "jp": "{c:02}\n{c:02}Red Arimmar",
+   "same": "go/mv04:6",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:7",
+   "jp": "{c:02}\n{c:02}Dust Manteater",
+   "same": "go/mv04:7",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:8",
+   "jp": "{c:02}\n{c:02}Slugel",
+   "same": "go/mv04:8",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:9",
+   "jp": "{c:02}\n{c:02}Black Dragon",
+   "same": "go/mv04:9",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:10",
+   "jp": "{c:02}\n{c:02}Galiburn",
+   "same": "go/mv04:10",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:11",
+   "jp": "{c:02}アーサーよ…\n{c:02}よくぞプリンセスを救い出した…",
+   "same": "go/mv04:11",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:12",
+   "jp": "{c:02}しかし　この世界を脅かす暗黒魔王の力は\n{c:02}いまだ　消えてはいない",
+   "same": "go/mv04:12",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv04:13",
+   "jp": "{c:02}魔女の棲家で生まれ出ずる魔力が\n{c:02}暗黒魔王を倒す力となるであろう…",
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

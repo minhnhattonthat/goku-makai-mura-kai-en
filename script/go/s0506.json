@@ -1,0 +1,35 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0506_stg.kpd/stage/s05/s0506/s0506.bms",
+ "strings": [
+  {
+   "id": "s0506:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0506:1",
+   "jp": "この扉を開くには\n22の「光の力」が必要だが",
+   "us": "You need 22 Light Rings to open\nthis gate.",
+   "en": "You need 22 Light Rings to open\nthis gate.",
+   "status": "official"
+  },
+  {
+   "id": "s0506:2",
+   "jp": "\nどうやら足りないようだな…",
+   "us": "\nYou do not have enough...",
+   "en": "\nYou do not have enough...",
+   "status": "official"
+  },
+  {
+   "id": "s0506:3",
+   "jp": "\nここから立ち去り　出直してくるがいいーーー",
+   "us": "Leave this place and come back\nwhen you are worthy.",
+   "en": "Leave this place and come back\nwhen you are worthy.",
+   "status": "official"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0800_stg.kpd/stage/s08/s0800/s0800.bms",
+ "strings": [
+  {
+   "id": "s0800:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0800:1",
+   "jp": "\n骨・脱殻・目があれば…",
+   "same": "go/s0800:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:2",
+   "jp": "\nわたしが必要なのは骨・脱殻・目だ、それではない",
+   "same": "go/s0800:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:3",
+   "jp": "\nこれでは足らぬ",
+   "same": "go/s0800:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:4",
+   "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "same": "go/s0800:4",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:5",
+   "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "same": "go/s0800:5",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:6",
+   "jp": "\nこれで全てが揃った…",
+   "same": "go/s0800:6",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:7",
+   "jp": "\nふっふっふっ…",
+   "same": "go/s0800:7",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:8",
+   "jp": "\nひっひっひっ…",
+   "same": "go/s0800:8",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:9",
+   "jp": "\nくっくっくっ…",
+   "same": "go/s0800:9",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:10",
+   "jp": "\nひゃっひゃっひゃっ…",
+   "same": "go/s0800:10",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0800:11",
+   "jp": "研究の邪魔だ\nこれでも持って立ち去るがよい",
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "s0800:12",
+   "jp": "研究が完成した\n最高の美と最強の魔力を見るがいい",
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv06.bms",
+ "strings": [
+  {
+   "id": "mv06:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv06:1",
+   "jp": "{c:02}\n{c:02}無事だったのね",
+   "us": "{c:02}\n{c:02}I'm so glad you're not hurt.",
+   "en": "{c:02}\n{c:02}I'm so glad you're not hurt.",
+   "status": "official"
+  },
+  {
+   "id": "mv06:2",
+   "jp": "{c:02}暗黒魔王は　討ち果たしました\n{c:02}これで　この世界にも　平和が戻ることでしょう",
+   "us": "{c:02}With the defeat of the lord of\n{c:02}darkness, peace can return.",
+   "en": "{c:02}With the defeat of the lord of\n{c:02}darkness, peace can return.",
+   "status": "official"
+  },
+  {
+   "id": "mv06:3",
+   "jp": "{c:02}あなたがいる限り　何の心配もしていないわ\n{c:02}アーサー　本当に　ありがとう…",
+   "us": "{c:02}As long as you are nearby, I need\n{c:02}not fear.  Thank you, Arthur!",
+   "en": "{c:02}As long as you are nearby, I need\n{c:02}not fear.  Thank you, Arthur!",
+   "status": "official"
+  },
+  {
+   "id": "mv06:4",
+   "jp": "{c:02}\n{c:02}Arthror",
+   "us": "{c:02}\n{c:02}Arthror",
+   "en": "{c:02}\n{c:02}Arthror",
+   "status": "official"
+  },
+  {
+   "id": "mv06:5",
+   "jp": "{c:02}\n{c:02}Deathcurse",
+   "us": "{c:02}\n{c:02}Deathcurse",
+   "en": "{c:02}\n{c:02}Deathcurse",
+   "status": "official"
+  },
+  {
+   "id": "mv06:6",
+   "jp": "{c:02}\n{c:02}Vermirous",
+   "us": "{c:02}\n{c:02}Vermirous",
+   "en": "{c:02}\n{c:02}Vermirous",
+   "status": "official"
+  },
+  {
+   "id": "mv06:7",
+   "jp": "{c:02}\n{c:02}Spiral Mantruda",
+   "us": "{c:02}\n{c:02}Spiral Mantruda",
+   "en": "{c:02}\n{c:02}Spiral Mantruda",
+   "status": "official"
+  },
+  {
+   "id": "mv06:8",
+   "jp": "{c:02}\n{c:02}Red Arimmar Dark",
+   "us": "{c:02}\n{c:02}Dark Red Devil",
+   "en": "{c:02}\n{c:02}Dark Red Devil",
+   "status": "official"
+  },
+  {
+   "id": "mv06:9",
+   "jp": "{c:02}\n{c:02}Dark Astaroth",
+   "us": "{c:02}\n{c:02}Dark Astaroth",
+   "en": "{c:02}\n{c:02}Dark Astaroth",
+   "status": "official"
+  },
+  {
+   "id": "mv06:10",
+   "jp": "{c:02}\n{c:02}Hades",
+   "us": "{c:02}\n{c:02}Hades",
+   "en": "{c:02}\n{c:02}Hades",
+   "status": "official"
+  },
+  {
+   "id": "mv06:11",
+   "jp": "{c:02}\n{c:02}さあ　皆が待ち兼ねています",
+   "us": "{c:02}Well, then...  Everyone anxiously\n{c:02}awaits your return.  Let's go.",
+   "en": "{c:02}Well, then...  Everyone anxiously\n{c:02}awaits your return.  Let's go.",
+   "status": "official"
+  }
+ ]
+}

@@ -31,7 +31,7 @@ ROWS = [
     "立同度冒投討当内毒秘利滅離道本又特極近距魚具喰金駆詰朽軌",
     "輝去巨究牛護効個後合国向攻険験決兼現言元減黄音右応果花可",
     "家威一悪囲飲隠茨引貫危漢甘寄起器基怪界画壊各角皆外込生聖",
-    "正清設説青赤進靭心身整棲数世打対村多段値待違前善先泉息捕",
+    "正清設説青赤進靭心身整棲数世打対村多段値待違前善先泉息揃",
     "操草自実次治邪守射者材罪左在死事財姿傷勝緒助触信小昇樹周",
     "受呪順初襲宿負線転増救脅日訪再支遥司題加望遠居継問名知項",
     "奪野未掛阻流凌乗我狙走城幾機率削絶塵弱早探会試示×研完美",
@@ -39,9 +39,15 @@ ROWS = [
 ]
 
 
+# bytes 00-08 are control codes in the text stream, not glyphs (docs/re/text.md); names stay hex until their meaning is proven.
+# {n} is the newline: script/ files show it as a real "\n" (tools/script.py).
+CTRL = {b"\x00": "{end}", b"\x01": "{n}", b"\x02": "{02}", b"\x03": "{03}", b"\x04": "{04}", b"\x05": "{05}", b"\x06": "{06}",
+        b"\x07": "{c:1}", b"\x08": "{08}"}
+
+
 def build(bft):
     d = Path(bft).read_bytes()
-    out = {}
+    out = dict(CTRL)
     for k, o in enumerate([0x2c] + list(struct.unpack_from("<8I", d, 0x0c))):
         for i in range(128 if k == 0 else 256):
             _, x, y, w, h = struct.unpack_from("<5H", d, o + i * 10)
@@ -58,5 +64,9 @@ def build(bft):
 if __name__ == "__main__":
     t = build(sys.argv[1] if len(sys.argv) > 1 else ROOT / "work/re/font/jfont_00.bft")
     (ROOT / "tbl").mkdir(exist_ok=True)
-    (ROOT / "tbl/jp.tbl").write_text("".join(f"{k.hex().upper()}={v}\n" for k, v in sorted(t.items(), key=lambda kv: (len(kv[0]), kv[0]))), encoding="utf-8")
+    # several codes share a cell (digits 09-12 and 71-7A, three × cells): the first line wins on encode (tbl.py), so the
+    # codes the script uses go first; any other alias decodes as [XX] bytes and still roundtrips
+    prefer = {bytes([c]) for c in range(0x71, 0x7b)} | {b"\x82\xa8"}
+    order = sorted(t.items(), key=lambda kv: (kv[0] not in prefer, len(kv[0]), kv[0]))
+    (ROOT / "tbl/jp.tbl").write_text("".join(f"{k.hex().upper()}={v if v != ' ' else chr(92) + 's'}\n" for k, v in order), encoding="utf-8", newline="\n")
     print(len(t), "codes")

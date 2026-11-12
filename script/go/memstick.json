@@ -1,0 +1,90 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/memstick.kpd/memstick/memstick.bms",
+ "strings": [
+  {
+   "id": "memstick:0",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}チェック中です。\n{c:02}メモリースティック™を抜き差ししないで下さい。",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Now checking...\n{c:02}Do not remove the Memory Stick Duo™.\n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Now checking...\n{c:02}Do not remove the Memory Stick Duo™.\n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:1",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータをロード中です。\n{c:02}メモリースティック™を抜き差ししないで下さい。",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Loading game data...\n{c:02}Do not remove the Memory Stick Duo™.\n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Loading game data...\n{c:02}Do not remove the Memory Stick Duo™.\n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:2",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータをオートロードしました。",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Game data has been autoloaded.",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Game data has been autoloaded.",
+   "status": "official"
+  },
+  {
+   "id": "memstick:3",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:4",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}ゲームデータが破損しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Game data is corrupted.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Game data is corrupted.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:5",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}アクセスエラーが発生しました。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occured.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occured.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:6",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータがありません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no game data present.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no game data present.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:7",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™の空き容量が不足しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:8",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™の空き容量が不足しています。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}セーブデータを削除しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Delete save data?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is not enough free space\n{c:02}available on the\n{c:02}Memory Stick Duo™.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Delete save data?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:9",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Memory Stick Duo™ is not\n{c:02}inserted properly.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Memory Stick Duo™ is not\n{c:02}inserted properly.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:10",
+   "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロード中に\n{c:02}スリープモードに移行したので\n{c:02}オートロードに失敗しました。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Sleep Mode was engaged during\n{c:02}load attempt.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}Sleep Mode was engaged during\n{c:02}load attempt.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "official"
+  },
+  {
+   "id": "memstick:11",
+   "jp": "{c:02}\n{c:02}\n{c:02}　　　　　　　　　　　「極魔界村」ディスクの\n{c:02}　　　　　　　　　　　ゲームデータを検出しました。\n{c:02}\n{c:02}　　　「極魔界村 ★」ディスクで\n{c:02}　　　ゲームデータをロードする際は、\n{c:02}　　　タイトルメニューの「LOAD GAME」を選択した後に\n{c:02}　　　上★のアイコンを選んでください。\n{c:02}\n{c:02}　　　また、「極魔界村 ★」ディスクで\n{c:02}　　　作成したゲームデータは\n{c:02}　　　「極魔界村」ディスクではロード出来ません。\n{c:02}\n",
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

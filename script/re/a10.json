@@ -1,0 +1,41 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/play_res.kpd/2d/a10/a10.bms",
+ "strings": [
+  {
+   "id": "a10:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a10:1",
+   "jp": "\nボタンコンフィグ画面へ移ります",
+   "same": "go/a10:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "a10:2",
+   "jp": "\nBGMの音量を調整します",
+   "same": "go/a10:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "a10:3",
+   "jp": "\nSEの音量を調整します",
+   "same": "go/a10:3",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "a10:4",
+   "jp": "\nデフォルトの値に戻します",
+   "same": "go/a10:4",
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

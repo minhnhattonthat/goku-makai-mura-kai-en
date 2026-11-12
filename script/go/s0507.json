@@ -1,0 +1,28 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0507_stg.kpd/stage/s05/s0507/s0507.bms",
+ "strings": [
+  {
+   "id": "s0507:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0507:1",
+   "jp": "暗黒魔界へ行くには\n11の「光の力」が必要だが",
+   "us": "You need the power of\n11 Light Rings to enter",
+   "en": "You need the power of\n11 Light Rings to enter",
+   "status": "official"
+  },
+  {
+   "id": "s0507:2",
+   "jp": "\nどうやら足りないようだな…",
+   "us": "the Demon Realm.\nYou do not have enough...",
+   "en": "the Demon Realm.\nYou do not have enough...",
+   "status": "official"
+  }
+ ]
+}

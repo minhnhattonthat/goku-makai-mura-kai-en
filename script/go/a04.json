@@ -1,0 +1,210 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/play_res.kpd/2d/a04/a04.bms",
+ "strings": [
+  {
+   "id": "a04:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a04:1",
+   "jp": "\nエリアを選択してください",
+   "us": "\nSelect an area!",
+   "en": "\nSelect an area!",
+   "status": "official"
+  },
+  {
+   "id": "a04:2",
+   "jp": "{02}{04}{02}St1-1{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 1-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 1-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:3",
+   "jp": "{02}{04}{02}赤バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:4",
+   "jp": "{02}{04}{02}St1-2{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 1-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 1-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:5",
+   "jp": "{02}{04}{02}St2-1{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 2-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 2-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:6",
+   "jp": "{02}{04}{02}St2-2{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 2-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 2-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:7",
+   "jp": "{02}{04}{02}黄バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:8",
+   "jp": "{02}{04}{02}St3-1{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 3-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 3-1{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:9",
+   "jp": "{02}{04}{02}St3-2{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 3-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 3-2{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:10",
+   "jp": "{02}{04}{02}青バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:11",
+   "jp": "{02}{04}{02}St4{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
+   "us": "Warp to {02}{04}{02}ST 4{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "en": "Warp to {02}{04}{02}ST 4{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "official"
+  },
+  {
+   "id": "a04:12",
+   "jp": "{02}{04}{02}St1-1{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 1-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 1-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:13",
+   "jp": "{02}{04}{02}赤バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:14",
+   "jp": "{02}{04}{02}St1-2{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 1-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 1-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:15",
+   "jp": "{02}{04}{02}St2-1{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 2-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 2-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:16",
+   "jp": "{02}{04}{02}St2-2{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 2-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 2-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:17",
+   "jp": "{02}{04}{02}黄バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:18",
+   "jp": "{02}{04}{02}St3-1{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 3-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 3-1{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:19",
+   "jp": "{02}{04}{02}St3-2{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 3-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 3-2{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:20",
+   "jp": "{02}{04}{02}青バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:21",
+   "jp": "{02}{04}{02}St4{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
+   "us": "Warp to {02}{04}{02}ST 4{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "en": "Warp to {02}{04}{02}ST 4{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "official"
+  },
+  {
+   "id": "a04:22",
+   "jp": "\n魔力が足りません",
+   "us": "\nYou don't have enough Magic Power.",
+   "en": "\nYou don't have enough Magic Power.",
+   "status": "official"
+  },
+  {
+   "id": "a04:23",
+   "jp": "\n今いるエリアへはワープできません",
+   "us": "You cannot warp to the area you\ncurrently occupy.",
+   "en": "You cannot warp to the area you\ncurrently occupy.",
+   "status": "official"
+  },
+  {
+   "id": "a04:24",
+   "jp": "\nここではワープできません",
+   "us": "\nYou cannot warp here.",
+   "en": "\nYou cannot warp here.",
+   "status": "official"
+  },
+  {
+   "id": "a04:25",
+   "jp": "\n状態異常中はワープできません",
+   "us": "You cannot warp while in an\nirregular status.",
+   "en": "You cannot warp while in an\nirregular status.",
+   "status": "official"
+  },
+  {
+   "id": "a04:26",
+   "jp": "\nこのゲームモードではワープできません",
+   "us": "\nYou cannot warp in this game mode.",
+   "en": "\nYou cannot warp in this game mode.",
+   "status": "official"
+  },
+  {
+   "id": "a04:27",
+   "jp": "\n今ワープすることはできません",
+   "us": "\nYou cannot warp right now.",
+   "en": "\nYou cannot warp right now.",
+   "status": "official"
+  },
+  {
+   "id": "a04:28",
+   "jp": "\nこの状態ではワープできません",
+   "us": "You cannot warp in your current\nstate.",
+   "en": "You cannot warp in your current\nstate.",
+   "status": "official"
+  }
+ ]
+}

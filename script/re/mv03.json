@@ -1,0 +1,27 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/movie.kpd/movie/mv03.bms",
+ "strings": [
+  {
+   "id": "mv03:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "mv03:1",
+   "jp": "{c:02}\n{c:02}姫っ!!",
+   "same": "go/mv03:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "mv03:2",
+   "jp": "{c:02}\n{c:02}きっと助けに来てくれると信じてた…",
+   "same": "go/mv03:2",
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

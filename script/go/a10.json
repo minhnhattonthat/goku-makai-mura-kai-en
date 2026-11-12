@@ -1,0 +1,42 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/play_res.kpd/2d/a10/a10.bms",
+ "strings": [
+  {
+   "id": "a10:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "a10:1",
+   "jp": "\nボタンコンフィグ画面へ移ります",
+   "us": "Go to BUTTON CONFIG screen.",
+   "en": "Go to BUTTON CONFIG screen.",
+   "status": "official"
+  },
+  {
+   "id": "a10:2",
+   "jp": "\nBGMの音量を調整します",
+   "us": "Adjust BGM volume level.",
+   "en": "Adjust BGM volume level.",
+   "status": "official"
+  },
+  {
+   "id": "a10:3",
+   "jp": "\nSEの音量を調整します",
+   "us": "Adjust SE volume level.",
+   "en": "Adjust SE volume level.",
+   "status": "official"
+  },
+  {
+   "id": "a10:4",
+   "jp": "\nデフォルトの値に戻します",
+   "us": "Return settings to default.",
+   "en": "Return settings to default.",
+   "status": "official"
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0600_stg.kpd/stage/s06/s0600/s0600.bms",
+ "strings": [
+  {
+   "id": "s0600:0",
+   "jp": "",
+   "us": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0600:1",
+   "jp": "\n3種類の葉があれば…",
+   "us": "If only you had three varieties of\nleaf...",
+   "en": "If only you had three varieties of\nleaf...",
+   "status": "official"
+  },
+  {
+   "id": "s0600:2",
+   "jp": "\nわたしが必要なのは3種類の葉だ、それではない",
+   "us": "I need three types of leaves.\nYou do not posses what I require.",
+   "en": "I need three types of leaves.\nYou do not posses what I require.",
+   "status": "official"
+  },
+  {
+   "id": "s0600:3",
+   "jp": "\nこれでは足らぬ",
+   "us": "This is not enough, but it should\ndo for now.",
+   "en": "This is not enough, but it should\ndo for now.",
+   "status": "official"
+  },
+  {
+   "id": "s0600:4",
+   "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "us": "Viola! We're two more experiments\naway from the ultimate power!",
+   "en": "Viola! We're two more experiments\naway from the ultimate power!",
+   "status": "official"
+  },
+  {
+   "id": "s0600:5",
+   "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
+   "us": "Viola! We're one more experiment\naway from the ultimate power!",
+   "en": "Viola! We're one more experiment\naway from the ultimate power!",
+   "status": "official"
+  },
+  {
+   "id": "s0600:6",
+   "jp": "\nこれで全てが揃った…",
+   "us": "\nI have all the ingredients I need.",
+   "en": "\nI have all the ingredients I need.",
+   "status": "official"
+  },
+  {
+   "id": "s0600:7",
+   "jp": "\nくっくっくっ…",
+   "us": "\nNyah hah ha...",
+   "en": "\nNyah hah ha...",
+   "status": "official"
+  },
+  {
+   "id": "s0600:8",
+   "jp": "\nひっひっひっ…",
+   "us": "\nHeh heh heh...",
+   "en": "\nHeh heh heh...",
+   "status": "official"
+  },
+  {
+   "id": "s0600:9",
+   "jp": "\nふっふっふっ…",
+   "us": "\nHo ho ho...",
+   "en": "\nHo ho ho...",
+   "status": "official"
+  },
+  {
+   "id": "s0600:10",
+   "jp": "\nひゃっひゃっひゃっ…",
+   "us": "\nWah ha ha...",
+   "en": "\nWah ha ha...",
+   "status": "official"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0507_stg.kpd/stage/s05/s0507/s0507.bms",
+ "strings": [
+  {
+   "id": "s0507:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0507:1",
+   "jp": "「最強の力」を持つ者だけに\n暗黒魔界への道が開くのだが",
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "s0507:2",
+   "jp": "\nまだ早すぎるようだな…",
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/USRDIR/REGOKUMAKAI/datapack.kpd",
+ "path": "pkdata/s0506_stg.kpd/stage/s05/s0506/s0506.bms",
+ "strings": [
+  {
+   "id": "s0506:0",
+   "jp": "",
+   "en": "",
+   "status": "empty"
+  },
+  {
+   "id": "s0506:1",
+   "jp": "この扉を開くには\n22の「光の力」が必要だが",
+   "same": "go/s0506:1",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0506:2",
+   "jp": "\nどうやら足りないようだな…",
+   "same": "go/s0506:2",
+   "en": "",
+   "status": "inherit"
+  },
+  {
+   "id": "s0506:3",
+   "jp": "\nここから立ち去り　出直してくるがいいーーー",
+   "same": "go/s0506:3",
+   "en": "",
+   "status": "inherit"
+  }
+ ]
+}

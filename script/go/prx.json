@@ -1,0 +1,181 @@
+{
+ "game": "go",
+ "archive": "/PSP_GAME/USRDIR/GOKUMAKAI/GOKUMAKAI.PRX",
+ "strings": [
+  {
+   "id": "prx:0x349b30",
+   "jp": "極魔界村セーブデータ",
+   "max": 31,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349b54",
+   "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \n",
+   "max": 87,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349bac",
+   "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \nクリア周回数　%d周目クリア",
+   "max": 127,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349c58",
+   "jp": "０－０",
+   "max": 11,
+   "en": "０－０",
+   "status": "keep"
+  },
+  {
+   "id": "prx:0x349c64",
+   "jp": "１－１　魔の森",
+   "max": 23,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349c7c",
+   "jp": "１－２　血の巣窟",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349c98",
+   "jp": "第１の魔界門",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349cac",
+   "jp": "２－１　嵐の砦",
+   "max": 23,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349cc4",
+   "jp": "２－２　死の古城",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349ce0",
+   "jp": "第２の魔界門",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349cf4",
+   "jp": "３－１　腐敗の沼",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d10",
+   "jp": "３－２　地の底の死海",
+   "max": 31,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d30",
+   "jp": "第３の魔界門",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d44",
+   "jp": "４　灼熱の魔山",
+   "max": 23,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d5c",
+   "jp": "４－２　（欠番）",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d78",
+   "jp": "第４の魔界門",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349d8c",
+   "jp": "５　暗黒の大魔宮殿",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349da8",
+   "jp": "大魔王の部屋",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349dbc",
+   "jp": "暗黒魔王の部屋",
+   "max": 23,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349dd4",
+   "jp": "赤バラの魔女の棲み家",
+   "max": 31,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349df4",
+   "jp": "黄バラの魔女の棲み家",
+   "max": 31,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349e14",
+   "jp": "青バラの魔女の棲み家",
+   "max": 31,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349e34",
+   "jp": "知られざる塔",
+   "max": 19,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349e48",
+   "jp": "忘れ去られた幽閉牢",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  },
+  {
+   "id": "prx:0x349e64",
+   "jp": "隠された火炎の滝",
+   "max": 27,
+   "en": "",
+   "status": "new"
+  }
+ ]
+}

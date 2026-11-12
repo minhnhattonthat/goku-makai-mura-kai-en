@@ -1,21 +1,21 @@
-"""bms.py: read the .bms message files. Usage: bms.py FILE...   prints every string, decoded.
+"""bms.py: read and write the .bms message files. Usage: bms.py FILE...   prints every string, decoded.
 
-Layout: u32 count, u32 offset[count], then NUL-terminated strings (docs/re/text.md).
-Stream: 0x80-0x87 leads a two-byte glyph, other bytes >= 0x09 are one-byte glyphs, bytes below 0x09 are control codes.
+Layout: u32 count, u32 offset[count], then the strings, each ending in 00 (docs/re/text.md).
+Stream: 0x80-0x87 leads a two-byte glyph, other bytes >= 0x09 are one-byte glyphs, bytes 00-08 are control codes (tbl/jp.tbl).
+Text form: tbl.py tokens, with {n} shown as a real newline.
 """
 import struct
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from tbl import Table
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def load_tbl(path=ROOT / "tbl/jp.tbl"):
-    t = {}
-    for line in Path(path).read_text(encoding="utf-8").splitlines():
-        k, v = line.split("=", 1)
-        t[bytes.fromhex(k)] = v
-    return t
+    return Table.load(path)
 
 
 def parse(d):
@@ -25,26 +25,21 @@ def parse(d):
     return [d[offs[i]:offs[i + 1]].removesuffix(b"\0") for i in range(n)]
 
 
+def build(strings):
+    """Inverse of parse: build(parse(d)) == d for every file in the game."""
+    offs, body = [], b""
+    for s in strings:
+        offs.append(4 + 4 * len(strings) + len(body))
+        body += s + b"\0"
+    return struct.pack(f"<I{len(strings)}I", len(strings), *offs) + body
+
+
 def decode(b, t):
-    out, i = [], 0
-    while i < len(b):
-        c = b[i]
-        if 0x80 <= c < 0x88:
-            out.append(t.get(b[i:i + 2], f"[{b[i:i + 2].hex()}]"))
-            i += 2
-        elif c < 9:
-            if c == 1:
-                out.append("\n")
-            elif c == 7:
-                out.append(f"{{c{b[i + 1]}}}")
-                i += 1
-            else:
-                out.append(f"{{{c:02x}}}")
-            i += 1
-        else:
-            out.append(t.get(b[i:i + 1], f"[{c:02x}]"))
-            i += 1
-    return "".join(out)
+    return t.decode(b, 0, len(b))[0].replace("{n}", "\n")
+
+
+def encode(s, t):
+    return t.encode(s.replace("\n", "{n}"))
 
 
 if __name__ == "__main__":
