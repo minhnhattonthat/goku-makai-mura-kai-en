@@ -196,6 +196,70 @@ def check():
     return bad
 
 
+FILLER = "The quick brown fox jumps over the lazy dog. "
+TOKENS = re.compile(r"(\{[^}]*\}|\n)")
+
+
+def marker(r, fill=None):
+    """`(id) filler` in place of the text, keeping the line breaks and control codes of the jp. Each text run becomes
+    filler 1.5x its JP length (an 18 px JP cell against a 12 px ASCII cell), the first run starts with the id.
+    fill: every run is this string instead (RULER, to read each box's width off a shot; TORTURE, every glyph)."""
+    out, first = [], True
+    for part in TOKENS.split(r["jp"]):
+        if not part or TOKENS.fullmatch(part) or not part.strip(" 　"):
+            out.append(part)
+            continue
+        head = f"({r['id']}) " if first else ""  # the font has no [ ]
+        first = False
+        core = part.strip(" 　")
+        lead, tail = part[:part.index(core)], part[part.index(core) + len(core):]   # the gap between choices stays
+        n = max(len(head), round(len(core) * 1.5))
+        out.append(lead + (head + fill if fill else (head + FILLER * (n // len(FILLER) + 1))[:n]) + tail)
+    return "".join(out)
+
+
+# width gate: the last character still drawn tells the box's budget (vwf.line_widths of the prefix up to it)
+RULER = "".join(c + "123456789" for c in "ABCDEFGHJK")
+# every ASCII character the font has (no [ ] { } < > @ ^ _ ` \ | ~ $), double spaces, the ™ and ★ cells
+TORTURE = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz 0123456789  !\"#%&'()*+,-./:;=?™★"
+
+
+def en_text(r, docs):
+    """The text a row inserts: its en, an `inherit` row its source row's en; an untranslated row keeps its jp."""
+    if r["status"] == "inherit":
+        game, rid = r["same"].split("/")
+        src = next(x for x in docs[game][rid.split(":")[0]]["strings"] if x["id"] == rid)
+        return en_text(src, docs)
+    return r["en"] or r["jp"]
+
+
+def insert(marker_build=None):
+    """{iso path: {archive path: bytes}} for the .bms files, {iso path: bytes} for the PRXes (strings in place, NUL padded).
+    marker_build: None (the translation), "id" (marker build), "ruler" or "torture" (width gate)."""
+    t = bms.load_tbl()
+    docs = load()
+    fill = {"ruler": RULER, "torture": TORTURE}.get(marker_build)
+    out = {}
+    for game, files in docs.items():
+        for name, doc in files.items():
+            rows = doc["strings"]
+            text = [r["jp"] if r["status"] in ("empty", "keep") else
+                    marker(r, fill) if marker_build else en_text(r, docs) for r in rows]
+            if name != "prx":
+                out.setdefault(doc["archive"], {})[doc["path"]] = bms.build([bms.encode(s, t) for s in text])
+                continue
+            d = bytearray(prx_bytes(game))
+            for r, s in zip(rows, text):
+                o = int(r["id"][4:], 16)
+                old = r["jp"].encode("utf-8")
+                assert d[o:o + len(old) + 1] == old + b"\0", f"{game}/{r['id']}: slot does not hold its jp"
+                new = s.encode("utf-8")[:r["max"]] if marker_build else s.encode("utf-8")
+                assert len(new) <= r["max"], f"{game}/{r['id']}: {len(new)} bytes, slot holds {r['max']}"
+                d[o:o + r["max"] + 1] = new.ljust(r["max"] + 1, b"\0")
+            out[doc["archive"]] = bytes(d)
+    return out
+
+
 def stats():
     from collections import Counter
     for game, files in load().items():

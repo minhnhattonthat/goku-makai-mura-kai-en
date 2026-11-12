@@ -108,7 +108,10 @@ def run_scene(game, name, out, iso=ISO, state_out=True, tail=0, every=120, keys=
         png = g.s.shot(name)
         target = os.path.join(out, f'{game}_{name}.png')
         os.replace(png, target)
-        if state_out: g.s.r.save_state(f'work/states/{game}_{name}.ppst')
+        if state_out:   # a build's states go in their own folder, so the original's stay
+            sd = 'work/states' if os.path.samefile(iso, ISO) else f'work/states/{os.path.splitext(os.path.basename(iso))[0]}'
+            os.makedirs(sd, exist_ok=True)
+            g.s.r.save_state(f'{sd}/{game}_{name}.ppst')
         for i, k in enumerate(keys.split()):    # scripted presses ("right*300" holds), one shot each: for exploring
             b, _, n = k.partition('*')
             g.s.press(b, hold=int(n or 6), gap=every); g.s.shot(f'k{i:02d}_{b}'); print(i, k, g.chain())

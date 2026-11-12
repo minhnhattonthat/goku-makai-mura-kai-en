@@ -6,6 +6,8 @@ The disc holds a launcher plus **two games**: Goku Makaimura Kai (`USRDIR/REGOKU
 
 ## Commands (run from repo root)
 - Build:    `python -X utf8 tools/build.py` -> `build/goku_en.iso`, checks both dumps against `rom.sha1` first (`--identity`: must equal the dump)
+- Marker:   `python -X utf8 tools/build.py --marker [ruler|torture] --out build/marker.iso` (ids / box rulers / every glyph; unpacked text in `work/marker/<re|go>/pkdata` = `BMS_DIR` for warp tours)
+- Lint:     `python -X utf8 tools/lint.py -v` (width budgets per box, `docs/re/boxes.md`)
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this). Hook setup on a fresh clone: `git config core.hooksPath tools/hooks`
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" "rom/Goku Makai-Mura Kai (Japan).iso" --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 tools/debug/warp.py re:stage_0201 --out work/qa/warp` (`--list`, `--all`; `re` Kai, `go` original; notes in `tools/debug/README.md`)
