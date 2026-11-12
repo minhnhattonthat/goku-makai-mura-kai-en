@@ -296,8 +296,8 @@ def insert(marker_build=None):
 
 
 # the u32 pointer table that holds every save-dialog string's address (value + 0x80 = file offset; one R_MIPS_32 reloc
-# each, so a new value relocates the same way). Every row has its pointers here and nowhere else (2026-11-12 scan: no
-# other word or lui/addiu pair points into the region).
+# each, so a new value relocates the same way). Every row has its pointers here and nowhere else: no other relocated
+# word or lui/addiu pair points into the region (tests/test_checks.py test_prx_region_read_only_through_the_table).
 PRX_PTRS = {"re": (0x351488, 0x351514), "go": (0x351988, 0x351A14)}
 
 

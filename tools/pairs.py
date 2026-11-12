@@ -8,6 +8,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import script
 
+if len(sys.argv) < 2 or sys.argv[1].startswith("-"):   # `--help` once became the output file name
+    sys.exit(__doc__)
 docs = script.load()
 want = set(sys.argv[2:] or ["done"])
 out = []

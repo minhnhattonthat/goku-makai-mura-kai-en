@@ -91,9 +91,9 @@
   {
    "id": "memstick:11",
    "jp": "{c:02}\n{c:02}\n{c:02}　　　　　　　　　　　「極魔界村」ディスクの\n{c:02}　　　　　　　　　　　ゲームデータを検出しました。\n{c:02}\n{c:02}　　　「極魔界村 ★」ディスクで\n{c:02}　　　ゲームデータをロードする際は、\n{c:02}　　　タイトルメニューの「LOAD GAME」を選択した後に\n{c:02}　　　上★のアイコンを選んでください。\n{c:02}\n{c:02}　　　また、「極魔界村 ★」ディスクで\n{c:02}　　　作成したゲームデータは\n{c:02}　　　「極魔界村」ディスクではロード出来ません。\n{c:02}\n",
-   "en": "{c:02}\n{c:02}\n{c:02}Game data from the\n{c:02}\"Ultimate Ghosts 'n Goblins\" disc has been detected.\n{c:02}\n{c:02}To load this game data on the\n{c:02}\"Ultimate Ghosts 'n Goblins ★\" disc,\n{c:02}choose \"LOAD GAME\" on the title menu,\n{c:02}then select the ★ icon at the top.\n{c:02}\n{c:02}Game data created on the\n{c:02}\"Ultimate Ghosts 'n Goblins ★\" disc cannot be\n{c:02}loaded on the \"Ultimate Ghosts 'n Goblins\" disc.\n{c:02}\n",
+   "en": "{c:02}\n{c:02}\n{c:02}Game data from the\n{c:02}\"Ultimate Ghosts 'n Goblins\" disc has been detected.\n{c:02}\n{c:02}To load this game data on the\n{c:02}\"Ultimate Ghosts 'n Goblins Kai\" disc,\n{c:02}choose \"LOAD GAME\" on the title menu,\n{c:02}then select the Kai icon at the top.\n{c:02}\n{c:02}Game data created on the\n{c:02}\"Ultimate Ghosts 'n Goblins Kai\" disc cannot be\n{c:02}loaded on the \"Ultimate Ghosts 'n Goblins\" disc.\n{c:02}\n",
    "status": "done",
-   "notes": "★ kept as the jp has it: a placeholder for the Kai disc's name and its title-menu icon (極魔界村 ★). No USA text: the USA disc has 11 memstick strings"
+   "notes": "the jp's ★ is a placeholder for the Kai disc's name and its title-menu icon (極魔界村 ★); phase 9 names it Kai (D12) so the line reads whether or not play reaches it. No USA text: the USA disc has 11 memstick strings"
   }
  ]
 }

@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import build
 import diffcheck
 import iso9660
+import kpd
 import lint
 import script
 import sfo
@@ -62,10 +63,64 @@ def test_build_writes_only_its_ranges(tmp_path):
             f.write(bytes([b[0] ^ 0xFF]))
         f.seek(prx + script.PRX_PTRS["go"][0])
         f.write(bytes(4))                   # a table word pointing outside the region
+        f.seek(prx + script.PRX["go"][0] + 4)
+        f.write("魔界村".encode())          # Japanese UTF-8 inside the region
+        f.seek(prx + script.PRX_SJIS["go"][0])
+        f.write("新規作成".encode("cp932") + b"\0")   # Shift-JIS back in the new-data title slot
+        arch = build.USR + "GOKUMAKAI/datapack.kpd"
+        a = build.read_files(iso, [arch])[arch]
+        files, _, base = kpd.parse(a)
+        edited = build.edits(build.read_files(build.ROM, build.ARCHIVES))[arch]
+        m = next(x for x in files if x["size"] > 16 and a[base + x["off"]:base + x["off"] + 4] != b"DPLK"
+                 and not any(k == x["path"] or k.startswith(x["path"] + "/") for k in edited))   # one the build leaves alone
+        f.seek(where[arch] * 2048 + base + m["off"] + 8)
+        b = f.read(1)
+        f.seek(where[arch] * 2048 + base + m["off"] + 8)
+        f.write(bytes([b[0] ^ 0xFF]))
     bad = diffcheck.check(iso)
     assert any("GOKUMAKAI.PRX: bytes changed outside" in x for x in bad)
     assert any("movie/" in x for x in bad)
     assert any("not a string start in the region" in x for x in bad)
+    assert any("Japanese UTF-8 left" in x for x in bad)
+    assert any("Japanese Shift-JIS left" in x for x in bad)
+    assert any(f"{arch}: {m['path']}" in x and "not to the bytes" in x for x in bad)
+
+
+def prx_refs(d):
+    """(file offset, target vaddr) of every R_MIPS_32 word and HI16/LO16 (lui + addiu/ori/load) pair into segment 0,
+    from the PRX's own relocation sections (type 0x700000A0)."""
+    import struct
+    e_phoff, e_shoff = struct.unpack_from("<II", d, 0x1C)
+    e_phnum, _, e_shnum = struct.unpack_from("<HHH", d, 0x2C)
+    ph = [struct.unpack_from("<8I", d, e_phoff + 32 * i) for i in range(e_phnum)]
+    sh = [struct.unpack_from("<10I", d, e_shoff + 40 * i) for i in range(e_shnum)]
+    out, his = [], []
+    for s in (s for s in sh if s[1] == 0x700000A0):
+        for k in range(s[4], s[4] + s[5], 8):
+            off, info = struct.unpack_from("<II", d, k)
+            t, ab = info & 0xFF, (info >> 16) & 0xFF
+            at = ph[(info >> 8) & 0xFF][1] + off
+            w = int.from_bytes(d[at:at + 4], "little")
+            if t == 5:
+                his.append(at)
+            elif t == 6:
+                lo = ((w & 0xFFFF) ^ 0x8000) - 0x8000
+                out += [(h, ((int.from_bytes(d[h:h + 4], "little") & 0xFFFF) << 16) + lo) for h in his if ab == 0]
+                his = []
+            elif t == 2 and ab == 0:
+                out.append((at, w))
+    return out
+
+
+@need_roms
+def test_prx_region_read_only_through_the_table():
+    """Moving a string is safe only if nothing but PRX_PTRS points into the save-dialog region (phase-7 Minor 5)."""
+    for g in ("re", "go"):
+        rr = prx_refs(script.prx_bytes(g))
+        (r0, r1), (t0, t1) = script.PRX[g], script.PRX_PTRS[g]
+        assert [(a, v) for a, v in rr if r0 <= v + 0x80 < r1 and not t0 <= a < t1] == []
+        assert len([a for a, _ in rr if t0 <= a < t1]) == (t1 - t0) // 4   # every table word is relocated
+        assert any(v + 0x80 in script.PRX_SJIS[g] for _, v in rr)          # the scan does see lui/addiu pairs
 
 
 @need_roms

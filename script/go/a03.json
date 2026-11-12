@@ -511,43 +511,49 @@
    "id": "a03:72",
    "jp": "鎧が壊れてパンツだけ\nの状態\n\n\n\n魔力　使用不可\n最大耐久力　1",
    "us": "With his armor\nbroken, Arthur\nis reduced to\nhis underwear.\n\nNO MAGIC POWER\nMAX DURABILITY 1",
-   "en": "With his armor\nbroken, Arthur\nis reduced to\nhis underwear.\n\nNO MAGIC POWER\nMAX DURABILITY 1",
-   "status": "official"
+   "en": "With his armor broken,\nArthur is reduced\nto his underwear.\n\nNO MAGIC POWER\nMAX DURABILITY 1",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:73",
    "jp": "騎士が一般的に使用し\nている鎧\n\n\n魔力Lv　1\n鎧バイタリティ　2\n最大耐久力　3",
    "us": "Standard armor\nof the type worn\nby knights.\n\nMAGIC POWER Lv 1\nARMOR VITALITY 2\nMAX DURABILITY 3",
-   "en": "Standard armor\nof the type worn\nby knights.\n\nMAGIC POWER Lv 1\nARMOR VITALITY 2\nMAX DURABILITY 3",
-   "status": "official"
+   "en": "Standard armor\nof the type\nworn by knights.\n\nMAGIC POWER Lv 1\nARMOR VITALITY 2\nMAX DURABILITY 3",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:74",
    "jp": "選ばれた者だけが装備\nすることができる鎧\n\n\n魔力Lv　2\n鎧バイタリティ　1\n最大耐久力　4",
    "us": "Only chosen\nwarriors can don\nthis armor.\n\nMAGIC POWER Lv 2\nARMOR VITALITY 1\nMAX DURABILITY 4",
-   "en": "Only chosen\nwarriors can don\nthis armor.\n\nMAGIC POWER Lv 2\nARMOR VITALITY 1\nMAX DURABILITY 4",
-   "status": "official"
+   "en": "Only chosen warriors\ncan don this armor.\n\nMAGIC POWER Lv 2\nARMOR VITALITY 1\nMAX DURABILITY 4",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:75",
    "jp": "伝説の覇王が身に着け\nていた由緒正しき鎧\n\n\n魔力Lv　3\n鎧バイタリティ　1\n最大耐久力　5",
    "us": "Armor previously\nworn by a\nlegendary ruler.\n\nMAGIC POWER Lv 3\nARMOR VITALITY 1\nMAX DURABILITY 5",
-   "en": "Armor previously\nworn by a\nlegendary ruler.\n\nMAGIC POWER Lv 3\nARMOR VITALITY 1\nMAX DURABILITY 5",
-   "status": "official"
+   "en": "Armor previously worn\nby a legendary ruler.\n\nMAGIC POWER Lv 3\nARMOR VITALITY 1\nMAX DURABILITY 5",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:76",
    "jp": "正なる力に支配された\n鎧{06}魔力Lv　2\n鎧バイタリティ　2\n最大耐久力　3\n魔力消費量　1/2\n移動速度　アップ",
    "us": "Armor possessed\nby a benevolent\nforce.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3\nMAGIC COST 1/2\nAGILITY UP",
-   "en": "Armor possessed\nby a benevolent\nforce.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3\nMAGIC COST 1/2\nAGILITY UP",
-   "status": "official"
+   "en": "Armor possessed by\na benevolent force.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3\nMAGIC COST 1/2\nAGILITY UP",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:77",
    "jp": "負なる力に支配された\n鎧{06}魔力Lv　1\n鎧バイタリティ　4\n最大耐久力　5\n魔力消費量　2倍\n移動速度　ダウン",
    "us": "Armor possessed\nby a malevolent\nforce.{06}MAGIC POWER Lv 1\nARMOR VITALITY 4\nMAX DURABILITY 5\nMAGIC COST x2\nAGILITY DOWN",
-   "en": "Armor possessed\nby a malevolent\nforce.{06}MAGIC POWER Lv 1\nARMOR VITALITY 4\nMAX DURABILITY 5\nMAGIC COST x2\nAGILITY DOWN",
-   "status": "official"
+   "en": "Armor possessed by\na malevolent force.{06}MAGIC POWER Lv 1\nARMOR VITALITY 4\nMAX DURABILITY 5\nMAGIC COST x2\nAGILITY DOWN",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:78",
@@ -560,29 +566,33 @@
    "id": "a03:79",
    "jp": "かつて罪を犯して天界\nから追放された天使が\n身に着けていたと言わ\nれている伝説の鎧{06}魔力Lv　2\n鎧バイタリティ　2\n最大耐久力　3{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う",
    "us": "Legendary armor\nsaid to have\nbeen donned by a\nfallen angel who\nsuccumbed to\nevil.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.",
-   "en": "Legendary armor\nsaid to have\nbeen donned by a\nfallen angel who\nsuccumbed to\nevil.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.",
-   "status": "official"
+   "en": "Legendary armor said\nto have been donned\nby a fallen angel who\nsuccumbed to evil.{06}MAGIC POWER Lv 2\nARMOR VITALITY 2\nMAX DURABILITY 3{06}FLIGHT:\nPress the jump button\nagain in the air to fly.{06}STOPPING:\nPress the jump button\nwhile flying to stop.{06}FLIGHT CONTROL:\nUse the up, down,\nleft, and right\ndirectional buttons\nor the analog stick to{06}move.\nAttack with the\nattack button.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:80",
    "jp": "邪悪な魔法の力によっ\nてノッポ状態に変えら\nれてしまったアーサー\nの姿{06}魔力　使用不可\n多段ジャンプ　不可\nダッシュ　不可\nアイテム　入手不可",
    "us": "Elongated\nversion of\nArthur brought\nabout by evil\nmagic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nNO DASH\nNO ITEM PICKUP",
-   "en": "Elongated\nversion of\nArthur brought\nabout by evil\nmagic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nNO DASH\nNO ITEM PICKUP",
-   "status": "official"
+   "en": "Elongated version of\nArthur brought about\nby evil magic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nNO DASH\nNO ITEM PICKUP",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:81",
    "jp": "邪悪な魔法の力によっ\nて小人状態に変えられ\nてしまったアーサーの\n姿{06}魔力　使用不可\n多段ジャンプ　不可\n攻撃力　1/2\n移動速度　ダウン\nアイテム　入手不可",
    "us": "Shrunken down\nversion of\nArthur caused\nby evil magic\npower.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nATTACK 1/2\nAGILITY DOWN\nNO ITEM PICKUP",
-   "en": "Shrunken down\nversion of\nArthur caused\nby evil magic\npower.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nATTACK 1/2\nAGILITY DOWN\nNO ITEM PICKUP",
-   "status": "official"
+   "en": "Shrunken down version\nof Arthur caused\nby evil magic power.{06}NO MAGIC POWER\nNO DOUBLE JUMP\nATTACK 1/2\nAGILITY DOWN\nNO ITEM PICKUP",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:82",
    "jp": "邪悪な魔法の力によっ\nて町女状態に変えられ\nてしまったアーサーの\n姿{06}魔力　使用不可\n盾　使用不可\n多段ジャンプ　不可\n移動速度　ダウン\nアイテム　入手不可",
    "us": "Evil magic has\nturned Arthur\ninto a portly\nfemale villager.{06}NO MAGIC POWER\nNO SHIELD USE\nNO DOUBLE JUMP\nAGILITY DOWN\nNO ITEM PICKUP",
-   "en": "Evil magic has\nturned Arthur\ninto a portly\nfemale villager.{06}NO MAGIC POWER\nNO SHIELD USE\nNO DOUBLE JUMP\nAGILITY DOWN\nNO ITEM PICKUP",
-   "status": "official"
+   "en": "Evil magic has turned\nArthur into a portly\nfemale villager.{06}NO MAGIC POWER\nNO SHIELD USE\nNO DOUBLE JUMP\nAGILITY DOWN\nNO ITEM PICKUP",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:83",
@@ -595,28 +605,31 @@
    "id": "a03:84",
    "jp": "とても大きくて強力な\nヤリ\n\n\n軌道　直線\n連射　遅い\n威力　2{06}効果:\n敵を貫通して攻撃する\nことができる\n\n草や塵に対して効果が\n高い",
    "us": "A huge and\npowerful lance.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "en": "A huge and\npowerful lance.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "status": "official"
+   "en": "A huge and\npowerful lance.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nPierces enemies and\ncontinues traveling,\npotentially damaging\nadditional foes.{06}This weapon\nis especially\neffective against\ngrass and dust.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:85",
    "jp": "小さくて使い勝手の良\nい武器\n\n\n軌道　直線\n連射　速い\n威力　1",
    "us": "Small and easy\nto handle\nweapon.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1",
-   "en": "Small and easy\nto handle\nweapon.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1",
-   "status": "official"
+   "en": "Small and easy to\nhandle weapon.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:86",
    "jp": "投げた後に手元まで戻\nる鎌状のブーメラン\n\n\n軌道　直線\n連射　普通\n威力　1{06}効果:\n特定のアイテムを引き\n寄せることができる\n\n草や塵に対して効果が\n高い",
    "us": "Weapon that\nreturns to the\nthrower.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nCan be used to\ngrab certain\nitems.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "en": "Weapon that\nreturns to the\nthrower.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nCan be used to\ngrab certain\nitems.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "status": "official"
+   "en": "Weapon that returns\nto the thrower.\n\nARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nCan be used to\ngrab certain items.{06}This weapon\nis especially\neffective against\ngrass and dust.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:87",
    "jp": "放り投げて地面に落ち\nると燃え上がる武器\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、炎上\n炎上部分に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
    "us": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "en": "Unleashes flame when\nthrown to the ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who\ncome in contact\nwith the flames\nsustain damage.{06}This weapon is\nespecially effective\nagainst enemies\nsusceptible to fire.",
    "status": "done",
    "notes": "USA text, spelling fixed (succeptible)"
   },
@@ -624,14 +637,15 @@
    "id": "a03:88",
    "jp": "敵を追尾して飛んでい\nく武器\n\n\n軌道　追尾\n連射　遅い\n威力　1{06}効果:\n草や塵に対して効果が\n高い",
    "us": "Weapon which\nautomatically\ntracks enemies.\n\nARC: CHASE\nFIRE RATE: SLOW\nPOWER: 1{06}EFFECT:\nFollows enemies\nautomatically.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "en": "Weapon which\nautomatically\ntracks enemies.\n\nARC: CHASE\nFIRE RATE: SLOW\nPOWER: 1{06}EFFECT:\nFollows enemies\nautomatically.{06}This weapon is\nespecially\neffective\nagainst grass\nand dust.",
-   "status": "official"
+   "en": "Weapon which\nautomatically\ntracks enemies.\n\nARC: CHASE\nFIRE RATE: SLOW\nPOWER: 1{06}EFFECT:\nFollows enemies\nautomatically.{06}This weapon\nis especially\neffective against\ngrass and dust.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:89",
    "jp": "火薬の詰まった大きな\n玉\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、転がっ\nて爆発\n爆発範囲に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
    "us": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "en": "Giant ball filled\nwith gunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the ground\nbefore detonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially effective\nagainst enemies\nsusceptible to fire.",
    "status": "done",
    "notes": "USA text, spelling fixed (succeptible)"
   },
@@ -639,21 +653,23 @@
    "id": "a03:90",
    "jp": "近距離攻撃を行うこと\nができる棘状のムチ\n\n\n軌道　直線\n連射　遅い\n威力　2{06}効果:\n特定のアイテムを引き\n寄せることができる",
    "us": "Thorny whip that\nallows for close\nrange attacks.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nCan be used to\ngrab certain\nitems.",
-   "en": "Thorny whip that\nallows for close\nrange attacks.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nCan be used to\ngrab certain\nitems.",
-   "status": "official"
+   "en": "Thorny whip that\nallows for close\nrange attacks.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 2{06}EFFECT:\nCan be used to\ngrab certain items.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:91",
    "jp": "電撃をまとった強力な\nムチ\n\n\n軌道　直線\n連射　遅い\n威力　3{06}効果:\n特定のアイテムを引き\n寄せることができる\nまた敵を貫通して攻撃\nすることができる",
    "us": "Powerful whip\nimbued with\nelectricity.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 3{06}EFFECT:\nCan be used to\ngrab certain\nitems.\nAlso, can pierce\nenemies to\ndamage others.",
-   "en": "Powerful whip\nimbued with\nelectricity.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 3{06}EFFECT:\nCan be used to\ngrab certain\nitems.\nAlso, can pierce\nenemies to\ndamage others.",
-   "status": "official"
+   "en": "Powerful whip imbued\nwith electricity.\n\nARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 3{06}EFFECT:\nCan be used to\ngrab certain items.\nAlso, can pierce\nenemies to\ndamage others.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:92",
    "jp": "矢先に火の着いた矢を\n撃ち出すクロスボウ\n\n\n軌道　直線\n連射　速い\n威力　1{06}効果:\n炎に弱い敵に対して効\n果が高い",
    "us": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "en": "Crossbow that fires\nflaming arrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially effective\nagainst enemies\nsusceptible to fire.",
    "status": "done",
    "notes": "USA text, spelling fixed (succeptible)"
   },
@@ -661,50 +677,57 @@
    "id": "a03:93",
    "jp": "3方向同時に矢を撃ち\n出すクロスボウ\n\nパワーアップすると、\n同時に発射する矢の数\nが増える{06}1本の矢の威力は変わ\nらない\n\n\n軌道　直線\n連射　遅い\n威力　1",
    "us": "Crossbow that\nfires arrows in\n3 directions:\nUp, down, and\nstraight ahead.{06}Powering up\nincreases arrow\ncount, but not\nindividual\npower.{06}ARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 1",
-   "en": "Crossbow that\nfires arrows in\n3 directions:\nUp, down, and\nstraight ahead.{06}Powering up\nincreases arrow\ncount, but not\nindividual\npower.{06}ARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 1",
-   "status": "official"
+   "en": "Crossbow that\nfires arrows in\n3 directions:\nUp, down, and\nstraight ahead.{06}Powering up increases\narrow count, but\nnot individual power.{06}ARC: STRAIGHT\nFIRE RATE: SLOW\nPOWER: 1",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:94",
    "jp": "電撃をまとった矢を撃\nち出すクロスボウ\n\n\n軌道　直線\n連射　普通\n威力　2{06}効果:\n敵を貫通して攻撃する\nことができる",
    "us": "Crossbow that\nfires arrows\nwith electrical\nproperties.{06}ARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.",
-   "en": "Crossbow that\nfires arrows\nwith electrical\nproperties.{06}ARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 2{06}EFFECT:\nPierces enemies\nand continues\ntraveling,\npotentially\ndamaging\nadditional foes.",
-   "status": "official"
+   "en": "Crossbow that\nfires arrows with\nelectrical properties.{06}ARC: STRAIGHT\nFIRE RATE: NORM\nPOWER: 2{06}EFFECT:\nPierces enemies and\ncontinues traveling,\npotentially damaging\nadditional foes.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:95",
    "jp": "聖なる光に輝くリング\n\n冒険のカギとなる…",
    "us": "Sacred ring\ntwinkling with\nenchanted light.\n\nIt will prove\nimportant on\nArthur's quest.",
-   "en": "Sacred ring\ntwinkling with\nenchanted light.\n\nIt will prove\nimportant on\nArthur's quest.",
-   "status": "official"
+   "en": "Sacred ring twinkling\nwith enchanted light.\n\nIt will prove important\non Arthur's quest.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:96",
    "jp": "各地に存在する宝箱\n\n青と赤のものがあり\n赤のものは開けた順\nに中身が変化する",
    "us": "Chests appear in\nvarious places.\nRed ones offer\ndifferent\ncontents based\non the order\nthey are opened.",
-   "en": "Chests appear in\nvarious places.\nRed ones offer\ndifferent\ncontents based\non the order\nthey are opened.",
-   "status": "official"
+   "en": "Chests appear in\nvarious places.\nRed ones offer\ndifferent contents\nbased on the order\nthey are opened.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:97",
    "jp": "ひび割れ、朽ち果てた\n盾\n\n\n\n\n最大耐久力　2",
    "us": "Decaying shield\nwith a crack in\nits facade.\n\nMAX DURABILITY 2",
-   "en": "Decaying shield\nwith a crack in\nits facade.\n\nMAX DURABILITY 2",
-   "status": "official"
+   "en": "Decaying shield with a\ncrack in its facade.\n\nMAX DURABILITY 2",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:98",
    "jp": "騎士が一般的に使用し\nている盾\n\n\n\n\n最大耐久力　4",
    "us": "Normal shield of\nthe type used by\nknights.\n\nMAX DURABILITY 4",
-   "en": "Normal shield of\nthe type used by\nknights.\n\nMAX DURABILITY 4",
-   "status": "official"
+   "en": "Normal shield of the\ntype used by knights.\n\nMAX DURABILITY 4",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:99",
    "jp": "伝説の覇王が使用して\nいたと言われる強靭な\n盾\n\n\n\n最大耐久力　8",
    "us": "Shield said to\nhave been used\nby a legendary\nruler.\n\nMAX DURABILITY 8",
-   "en": "Shield said to\nhave been used\nby a legendary\nruler.\n\nMAX DURABILITY 8",
-   "status": "official"
+   "en": "Shield said to have\nbeen used by a\nlegendary ruler.\n\nMAX DURABILITY 8",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:100",
@@ -717,8 +740,9 @@
    "id": "a03:101",
    "jp": "飛竜の力を宿している\n盾\n\n\n\n\n最大耐久力　4{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う{06}効果:\n一定時間で飛行状態は\n自動的に解除される",
    "us": "The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
-   "en": "The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
-   "status": "official"
+   "en": "The spirit of a\nflying dragon sleeps\nwithin this shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump button\nagain in the air to fly.{06}STOPPING:\nPress the jump button\nwhile flying to stop.{06}FLIGHT CONTROL:\nUse the up, down,\nleft, and right\ndirectional buttons\nor the analog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is automatically\ndisengaged after a\ncertain period of time.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:102",
@@ -731,7 +755,7 @@
    "id": "a03:103",
    "jp": "アーサーを中心に爆発\nを起こす魔力\n\n\n\n威力　2\n魔力消費量　4{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n爆発範囲と威力がアッ\nプする",
    "us": "Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
-   "en": "Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange and power\nincrease with\nMagic Power Lv.",
+   "en": "Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies within\nrange sustain damage.\nRange and power\nincrease with\nMagic Power Lv.",
    "status": "done",
    "notes": "D13: official USA line dropped 'and power' (威力); fixed to match a03:142"
   },
@@ -739,77 +763,87 @@
    "id": "a03:104",
    "jp": "アーサーの前方に炎を\n撃ち出す魔力\n\n\n\n威力　1\n魔力消費量　5{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n炎の数と威力がアップ\nする",
    "us": "Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
-   "en": "Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
-   "status": "official"
+   "en": "Magic which\nfires flames in a\nforward direction.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in range\nsustain damage.{06}Number of flames\nand power go up\nwith Magic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:105",
    "jp": "アーサーの周囲にバリ\nアーを出現させる守護\n魔力\n\n\n威力　1\n魔力消費量　10{06}効果:\n接触した敵にダメージ\nを与える\n敵に接触するたびにバ\nリアーは1個ずつ消滅\nしてしまう{06}魔力のLvが上がると\nバリアーの数と耐久力\nがアップする",
    "us": "Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
-   "en": "Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
-   "status": "official"
+   "en": "Magic which\ninvokes a barrier\naround Arthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them damage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic Power\nLv goes up, the\nnumber of units and\ndurability increase.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:106",
    "jp": "アーサー以外の者に対\nして時の進行を遅らせ\nる魔力\n\n\n威力　-\n魔力消費量　6{06}効果:\n周囲の敵などの動きを\n一定時間スローにする\n魔力のLvが上がると停\n止させることができる",
    "us": "Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
-   "en": "Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
-   "status": "official"
+   "en": "Only Arthur is immune\nto the slowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed for\nall enemies and\nobjects within range.{06}Enemies and objects\nstop altogether\nwith increased\nMagic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:107",
    "jp": "封印を解除することが\nできる魔力\n\n\n\n威力　-\n魔力消費量　8{06}効果:\n封印された場所で使用\nすると、その封印が解\nかれ先に進めるように\nなる",
    "us": "Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
-   "en": "Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
-   "status": "official"
+   "en": "Magic which has the\npower to break seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in order\nto break the seal\nand allow passage.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:108",
    "jp": "アーサーの周囲にカマ\nイタチを発生させる魔\n力\n\n\n威力　1\n魔力消費量　2{06}効果:\nカマイタチ発生中は飛\n行状態となり通常攻撃\nは行えなくなる\n敵と接触するとその敵\nにダメージを与えるこ\nとができるが、{06}その度に魔力は消費さ\nれる{06}解除:\n飛行中にジャンプボタ\nン、又は魔力ボタンを\n押すと飛行解除される{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動",
    "us": "Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
-   "en": "Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
-   "status": "official"
+   "en": "Magic which summons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the poltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power is\nconsumed as a result.{06}STOPPING:\nPress either the jump\nbutton or the magic\nbutton to stop flying.{06}FLIGHT CONTROL:\nMove with the up,\ndown, left, and right\ndirectional buttons\nor the analog stick.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:109",
    "jp": "前方の敵を石化させる\nことができる魔力\n\n\n\n威力　-\n魔力消費量　3{06}効果:\nヒットした敵を一定時\n間石化状態にすること\nができる\n石化状態の敵を足場と\nして利用することも可\n能{06}また、墓石など石化し\nたものに撃ち出すと、\n石化状態を解除するこ\nとができる",
    "us": "Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
-   "en": "Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
-   "status": "official"
+   "en": "Magic which turns\nenemies in front of\nArthur to stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with this\nmagic are temporarily\nturned to stone.{06}Stoned enemies can\nbe used as platforms.{06}Tombstones and\nother objects turned\nto stone can be\nundone with another\nshot of magic.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:110",
    "jp": "武器をパワーアップさ\nせる魔力\n\n\n\n威力　-\n魔力消費量　10{06}効果:\n装備している武器の攻\n撃力と攻撃速度をアッ\nプさせる\n敵からダメージを受け\nるとパワーアップ状態\nは解除されてしまう",
    "us": "Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
-   "en": "Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
-   "status": "official"
+   "en": "Magic which increases\npower of weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power\nof equipped\nweapon increases.\nTaking damage\ncancels the effect.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:111",
    "jp": "隠された財宝を発見す\nることができる魔力\n\n\n\n威力　-\n魔力消費量　2{06}効果:\nアーサーの周囲に隠さ\nれた宝箱がある場合、\nその場所を見つけるこ\nとができる",
    "us": "Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
-   "en": "Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
-   "status": "official"
+   "en": "Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of any\nhidden chests near\nArthur are revealed.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:112",
    "jp": "あらゆるものを飲み込\nんで飛んでいく最強の\n魔力\n\n\n威力　4\n魔力消費量　3{06}効果:\n敵を貫通して飛んでい\nき、敵の攻撃もはね返\nすことができる{06}魔力のLvが上がると\n魔力の大きさと威力が\nアップする",
    "us": "Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
-   "en": "Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
-   "status": "official"
+   "en": "Powerful magic that\nsucks in surroundings\nand flings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size and\nthe power of this\nmagic are improved\nby increased\nMagic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:113",
    "jp": "跳ね馬の力を宿したブ\nーツの片一方\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、1回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
    "us": "Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "Single boot imbued\nwith the spirit\nof a wild horse.\nIt allows Arthur to\nperform a double jump.{06}Simply press the jump\nbutton while in the air.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:114",
    "jp": "かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
    "us": "Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "Feather from\nan angel who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "Feather from\nan angel who has\nfallen from grace.{06}One who possesses it\ngains the ability to don\nthe armor of angels.{06}Get this item once,\nand it cannot be lost.",
    "status": "done",
    "notes": "USA text, typo fixed (angle -> angel)"
   },
@@ -817,183 +851,209 @@
    "id": "a03:115",
    "jp": "魔界に生息する妖樹に\n生える妖しげな葉\n魔女が実験の材料とし\nて使うこともある",
    "us": "Leaf from the\nfearful\nNecrotree.\nOften used by\nwitches to\nperform wicked\nexperiments.",
-   "en": "Leaf from the\nfearful\nNecrotree.\nOften used by\nwitches to\nperform wicked\nexperiments.",
-   "status": "official"
+   "en": "Leaf from the\nfearful Necrotree.\nOften used by\nwitches to perform\nwicked experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:116",
    "jp": "甘い句いを発して人を\n誘い込み襲う巨大な花\nに生える葉\n魔女が実験の材料とし\nて使うこともある",
    "us": "Leaf from a\nplant that lures\nvictims with a\nsweet smell.\nWitches often\nuse it for\nexperiments.",
-   "en": "Leaf from a\nplant that lures\nvictims with a\nsweet smell.\nWitches often\nuse it for\nexperiments.",
-   "status": "official"
+   "en": "Leaf from a plant\nthat lures victims\nwith a sweet smell.\nWitches often use\nit for experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:117",
    "jp": "摘んだ者は呪われると\n言われている葉\n魔女が実験の材料とし\nて使うこともある",
    "us": "Leaf fabled to\ncurse the one\nwho plucks it.\nOften used by\nwitches in their\nexperiments.",
-   "en": "Leaf fabled to\ncurse the one\nwho plucks it.\nOften used by\nwitches in their\nexperiments.",
-   "status": "official"
+   "en": "Leaf fabled to curse\nthe one who plucks it.\nOften used by witches\nin their experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:118",
    "jp": "騎士違の心が魂となっ\nて具現化した物\n受けるダメージが1/2\nになる\n\n一度取得すると失うこ\nとはない",
    "us": "The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:119",
    "jp": "大地を駆ける駿馬違の\n魂が具現化した物\n移動速度が20%アップ\nする\n\n一度取得すると失うこ\nとはない",
    "us": "The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "The embodiment of the\nsouls of wild horses.\nAgility +20%.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:120",
    "jp": "死者の国に生息するカ\nエルの王の血\nその血を飲むとあらゆ\nる傷や病を治し、死者\nさえも甦ると言われて\nいる{06}魔女が実験の材料とし\nて使うこともある",
    "us": "Blood drained\nfrom the king of\ndemonic frogs.\nQuaffing this\nfoul liquid will\nheal wounds and\ndisease.{06}It is even\nrumored to be a\ncatalyst in\nresurrection.\nOften used in\nwitches' foul\nexperiments.",
-   "en": "Blood drained\nfrom the king of\ndemonic frogs.\nQuaffing this\nfoul liquid will\nheal wounds and\ndisease.{06}It is even\nrumored to be a\ncatalyst in\nresurrection.\nOften used in\nwitches' foul\nexperiments.",
-   "status": "official"
+   "en": "Blood drained from the\nking of demonic frogs.\nQuaffing this\nfoul liquid will heal\nwounds and disease.{06}It is even rumored\nto be a catalyst\nin resurrection.\nOften used in witches'\nfoul experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:121",
    "jp": "何百年も生き続ける年\nを取ることのない怪鳥\nの血\nその血を飲むと不老不\n死になると言われてい\nる{06}魔女が実験の材料とし\nて使うこともある",
    "us": "The bird of\neternal youth\ndoes not age\nwith the passage\nof time.{06}Its blood is\nsaid to bring\nabout eternal\nyouth and\nimmortality.{06}Witches have\nbeen known to\nutilize it in\nexperiments.",
-   "en": "The bird of\neternal youth\ndoes not age\nwith the passage\nof time.{06}Its blood is\nsaid to bring\nabout eternal\nyouth and\nimmortality.{06}Witches have\nbeen known to\nutilize it in\nexperiments.",
-   "status": "official"
+   "en": "The bird of eternal\nyouth does not\nage with the\npassage of time.{06}Its blood is said to\nbring about eternal\nyouth and immortality.{06}Witches have been\nknown to utilize it\nin experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:122",
    "jp": "清い心を持つ者の前に\nしか姿を現すことがな\nい黄金のヤギの血\nその血を飲むと無限の\n力を宿すと言われてい\nる{06}魔女が実験の材料とし\nて使うこともある",
    "us": "The golden goat\nonly appears to\nthose pure of\nheart.\nConsuming its\nblood yields\nlimitless power.{06}It is often used\nby witches in\ntheir horrific\nexperiments.",
-   "en": "The golden goat\nonly appears to\nthose pure of\nheart.\nConsuming its\nblood yields\nlimitless power.{06}It is often used\nby witches in\ntheir horrific\nexperiments.",
-   "status": "official"
+   "en": "The golden goat only\nappears to those\npure of heart.\nConsuming its blood\nyields limitless power.{06}It is often used\nby witches in their\nhorrific experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:123",
    "jp": "魔力を秘めたペンダン\nト\n魔力の消費量が1/2に\nなる\n\n一度取得すると失うこ\nとはない",
    "us": "Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "Mysterious\npendant that\nhalves Magic Cost.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:124",
    "jp": "百年生きると言われて\nいる魔界に生息する毒\nヘビの脱殻\n魔女が実験の材料とし\nて使うこともある",
    "us": "Skin of a\ndreadful\npoisonous snake\nsaid to live\n100 years.{06}Often used in\nwitches'\nexperiments.",
-   "en": "Skin of a\ndreadful\npoisonous snake\nsaid to live\n100 years.{06}Often used in\nwitches'\nexperiments.",
-   "status": "official"
+   "en": "Skin of a dreadful\npoisonous snake said\nto live 100 years.{06}Often used in\nwitches' experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:125",
    "jp": "頭に巨大な1本の角を\n持つ牛の怪物の骨\n魔女が実験の材料とし\nて使うこともある",
    "us": "Bone of a single\nhorned bull\ncreature.\nOften used in\nwitches'\nexperiments.",
-   "en": "Bone of a single\nhorned bull\ncreature.\nOften used in\nwitches'\nexperiments.",
-   "status": "official"
+   "en": "Bone of a single\nhorned bull creature.\nOften used in\nwitches' experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:126",
    "jp": "血の池に棲み人を襲う\n怪魚の目\n魔女が実験の材料とし\nて使うこともある",
    "us": "Eye of horrific\nman-eating fish\ncreature that\ndwells in a lake\nof blood.{06}Often used in\nwitches'\nexperiments.",
-   "en": "Eye of horrific\nman-eating fish\ncreature that\ndwells in a lake\nof blood.{06}Often used in\nwitches'\nexperiments.",
-   "status": "official"
+   "en": "Eye of horrific\nman-eating fish\ncreature that dwells\nin a lake of blood.{06}Often used in\nwitches' experiments.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:127",
    "jp": "跳ね馬の力を宿したブ\nーツ\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、2回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
    "us": "Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "Pair of boots imbued\nwith the spirit\nof wild horses.\nAllows Arthur\nto perform\namazing jumps.{06}Press the jump button\nin midair to continue\njumping 2 times.{06}Get this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:128",
    "jp": "絶大な魔力を秘めたペ\nンダント\n魔力の消費量が1/2、\n魔力Lvが3になる\n\n一度取得すると失うこ\nとはない",
    "us": "Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "Pendant imbued with\ngreat magical power.{06}Magic Power\nconsumption is halved\nand Magic Power\nLv increases to 3.{06}Get this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:129",
    "jp": "St1-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 1-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:130",
    "jp": "St1-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 1-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:131",
    "jp": "St2-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 2-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:132",
    "jp": "St2-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 2-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:133",
    "jp": "St3-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 3-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:134",
    "jp": "St3-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 3-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:135",
    "jp": "St4のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the ST 4 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:136",
    "jp": "赤バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the Red Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:137",
    "jp": "黄バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the Yellow Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:138",
    "jp": "青バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "Use the Blue Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:139",
    "jp": "ワープスピアは再び元\nの場所に散らばってし\nまった",
    "us": "All Warp Staves\nhave been\nredistributed to\ntheir original\nlocations.",
-   "en": "All Warp Staves\nhave been\nredistributed to\ntheir original\nlocations.",
-   "status": "official"
+   "en": "All Warp Staves have\nbeen redistributed to\ntheir original locations.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:140",
    "jp": "{02}{04}{02}飛竜の盾{03}を手に入れた{06}飛竜の力を宿している\n盾\n\n\n\n\n最大耐久力　4{06}飛行:\nジャンプ中にもう一度\nジャンプボタンを押す\nことで飛行状態になる{06}解除:\n飛行中にジャンプボタ\nンを押すと飛行解除さ\nれる{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動{06}攻撃ボタンで武器攻撃\nを行う{06}効果:\n一定時間で飛行状態は\n自動的に解除される",
    "us": "You obtained the\n{02}{04}{02}Dragon Shield{03}!{06}The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
-   "en": "You obtained the\n{02}{04}{02}Dragon Shield{03}!{06}The spirit of a\nflying dragon\nsleeps within\nthis shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump\nbutton again in\nthe air to fly.{06}STOPPING:\nPress the jump\nbutton while\nflying to stop.{06}FLIGHT CONTROL:\nUse the up,\ndown, left, and\nright\ndirectional\nbuttons or the\nanalog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is\nautomatically\ndisengaged after\na certain period\nof time.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Dragon Shield{03}!{06}The spirit of a\nflying dragon sleeps\nwithin this shield.\n\nMAX DURABILITY 4{06}FLIGHT:\nPress the jump button\nagain in the air to fly.{06}STOPPING:\nPress the jump button\nwhile flying to stop.{06}FLIGHT CONTROL:\nUse the up, down,\nleft, and right\ndirectional buttons\nor the analog stick to{06}move.\nAttack with the\nattack button.{06}EFFECT:\nFlight is automatically\ndisengaged after a\ncertain period of time.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:141",
@@ -1006,7 +1066,7 @@
    "id": "a03:142",
    "jp": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}アーサーを中心に爆発\nを起こす魔力\n\n\n\n威力　2\n魔力消費量　4{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n爆発範囲と威力がアッ\nプする",
    "us": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
-   "en": "You obtained the\n{02}{04}{02}Flare Magic\nCrystal{03}!{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange and power\nincrease with\nMagic Power Lv.",
+   "en": "You obtained the\n{02}{04}{02}Flare Magic Crystal{03}!{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies within\nrange sustain damage.\nRange and power\nincrease with\nMagic Power Lv.",
    "status": "done",
    "notes": "USA text keeps a Japanese line; translated in the style of a03:143-151, name from a03:36 (FLARE MAGIC)"
   },
@@ -1014,77 +1074,87 @@
    "id": "a03:143",
    "jp": "{02}{04}{02}火炎の魔力水晶{03}を手に\n入れた{06}アーサーの前方に炎を\n撃ち出す魔力\n\n\n\n威力　1\n魔力消費量　5{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n炎の数と威力がアップ\nする",
    "us": "You obtained the\n{02}{04}{02}Inferno Magic\nCrystal{03}!{06}Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
-   "en": "You obtained the\n{02}{04}{02}Inferno Magic\nCrystal{03}!{06}Magic which\nfires flames in\na forward\ndirection.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in\nrange sustain\ndamage.{06}Number of flames\nand power go up\nwith Magic Power\nLv.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Inferno Magic Crystal{03}!{06}Magic which\nfires flames in a\nforward direction.\n\nPOWER: 1\nMAGIC COST: 5{06}EFFECT:\nAll enemies in range\nsustain damage.{06}Number of flames\nand power go up\nwith Magic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:144",
    "jp": "{02}{04}{02}無敵の魔力水晶{03}を手に\n入れた{06}アーサーの周囲にバリ\nアーを出現させる守護\n魔力\n\n\n威力　1\n魔力消費量　10{06}効果:\n接触した敵にダメージ\nを与える\n敵に接触するたびにバ\nリアーは1個ずつ消滅\nしてしまう{06}魔力のLvが上がると\nバリアーの数と耐久力\nがアップする",
    "us": "You obtained the\n{02}{04}{02}Invincible Magic\nCrystal{03}!{06}Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
-   "en": "You obtained the\n{02}{04}{02}Invincible Magic\nCrystal{03}!{06}Magic which\ninvokes a\nbarrier around\nArthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them\ndamage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic\nPower Lv goes\nup, the number\nof units and\ndurability\nincrease.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Invincible Magic Crystal{03}!{06}Magic which\ninvokes a barrier\naround Arthur.\n\nPOWER: 1\nMAGIC COST: 10{06}EFFECT:\nTouch enemies to\ncause them damage.{06}Each hit causes\none barrier unit\nto disappear.{06}As the Magic Power\nLv goes up, the\nnumber of units and\ndurability increase.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:145",
    "jp": "{02}{04}{02}時の魔力水晶{03}を手に入\nれた{06}アーサー以外の者に対\nして時の進行を遅らせ\nる魔力\n\n\n威力　-\n魔力消費量　6{06}効果:\n周囲の敵などの動きを\n一定時間スローにする\n魔力のLvが上がると停\n止させることができる",
    "us": "You obtained the\n{02}{04}{02}Time Magic\nCrystal{03}!{06}Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
-   "en": "You obtained the\n{02}{04}{02}Time Magic\nCrystal{03}!{06}Only Arthur is\nimmune to the\nslowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed\nfor all enemies\nand objects\nwithin range.{06}Enemies and\nobjects stop\naltogether with\nincreased Magic\nPower Lv.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Time Magic Crystal{03}!{06}Only Arthur is immune\nto the slowing of time.\n\nPOWER: -\nMAGIC COST: 6{06}EFFECT:\nTime is slowed for\nall enemies and\nobjects within range.{06}Enemies and objects\nstop altogether\nwith increased\nMagic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:146",
    "jp": "{02}{04}{02}封印解除の魔力水晶{03}を\n手に入れた{06}封印を解除することが\nできる魔力\n\n\n\n威力　-\n魔力消費量　8{06}効果:\n封印された場所で使用\nすると、その封印が解\nかれ先に進めるように\nなる",
    "us": "You obtained the\n{02}{04}{02}Unseal Magic\nCrystal{03}!{06}Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
-   "en": "You obtained the\n{02}{04}{02}Unseal Magic\nCrystal{03}!{06}Magic which has\nthe power to\nbreak seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in\norder to break\nthe seal and\nallow passage.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Unseal Magic Crystal{03}!{06}Magic which has the\npower to break seals.\n\nPOWER: -\nMAGIC COST: 8{06}EFFECT:\nUse near sealed\noff areas in order\nto break the seal\nand allow passage.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:147",
    "jp": "{02}{04}{02}カマイタチの魔力水晶{03}\nを手に入れた{06}アーサーの周囲にカマ\nイタチを発生させる魔\n力\n\n\n威力　1\n魔力消費量　2{06}効果:\nカマイタチ発生中は飛\n行状態となり通常攻撃\nは行えなくなる\n敵と接触するとその敵\nにダメージを与えるこ\nとができるが、{06}その度に魔力は消費さ\nれる{06}解除:\n飛行中にジャンプボタ\nン、又は魔力ボタンを\n押すと飛行解除される{06}飛行操作:\n方向キー上、\n方向キー下、\n方向キー左、\n方向キー右、\n又はアナログパッドで\n移動",
    "us": "You obtained the\n{02}{04}{02}Spirit Magic\nCrystal{03}!{06}Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
-   "en": "You obtained the\n{02}{04}{02}Spirit Magic\nCrystal{03}!{06}Magic which\nsummons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the\npoltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power\nis consumed as a\nresult.{06}STOPPING:\nPress either the\njump button or\nthe magic button\nto stop flying.{06}FLIGHT CONTROL:\nMove with the\nup, down, left,\nand right\ndirectional\nbuttons or the\nanalog stick.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Spirit Magic Crystal{03}!{06}Magic which summons\npoltergeists.\n\nPOWER: 1\nMAGIC COST: 2{06}EFFECT:\nWhile the poltergeists\nare dispatched,\nArthur flies and\nis unable to use\nnormal attacks.{06}Enemies can be\nharmed simply by\ntouching them,\nbut Magic Power is\nconsumed as a result.{06}STOPPING:\nPress either the jump\nbutton or the magic\nbutton to stop flying.{06}FLIGHT CONTROL:\nMove with the up,\ndown, left, and right\ndirectional buttons\nor the analog stick.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:148",
    "jp": "{02}{04}{02}石化の魔力水晶{03}を手に\n入れた{06}前方の敵を石化させる\nことができる魔力\n\n\n\n威力　-\n魔力消費量　3{06}効果:\nヒットした敵を一定時\n間石化状態にすること\nができる\n石化状態の敵を足場と\nして利用することも可\n能{06}また、墓石など石化し\nたものに撃ち出すと、\n石化状態を解除するこ\nとができる",
    "us": "You obtained the\n{02}{04}{02}Gorgon Magic\nCrystal{03}!{06}Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
-   "en": "You obtained the\n{02}{04}{02}Gorgon Magic\nCrystal{03}!{06}Magic which\nturns enemies in\nfront of Arthur\nto stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with\nthis magic are\ntemporarily\nturned to stone.{06}Stoned enemies\ncan be used as\nplatforms.{06}Tombstones and\nother objects\nturned to stone\ncan be undone\nwith another\nshot of magic.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Gorgon Magic Crystal{03}!{06}Magic which turns\nenemies in front of\nArthur to stone.\n\nPOWER: -\nMAGIC COST: 3{06}EFFECT:\nEnemies hit with this\nmagic are temporarily\nturned to stone.{06}Stoned enemies can\nbe used as platforms.{06}Tombstones and\nother objects turned\nto stone can be\nundone with another\nshot of magic.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:149",
    "jp": "{02}{04}{02}パワーアップの魔力水\n晶{03}を手に入れた{06}武器をパワーアップさ\nせる魔力\n\n\n\n威力　-\n魔力消費量　10{06}効果:\n装備している武器の攻\n撃力と攻撃速度をアッ\nプさせる\n敵からダメージを受け\nるとパワーアップ状態\nは解除されてしまう",
    "us": "You obtained the\n{02}{04}{02}Power Up Magic\nCrystal{03}!{06}Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
-   "en": "You obtained the\n{02}{04}{02}Power Up Magic\nCrystal{03}!{06}Magic which\nincreases power\nof weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power of\nequipped weapon\nincreases.\nTaking damage\ncancels the\neffect.",
-   "status": "official"
+   "en": "You obtained\nthe {02}{04}{02}Power Up\nMagic Crystal{03}!{06}Magic which increases\npower of weaponry.\n\nPOWER: -\nMAGIC COST: 10{06}EFFECT:\nAttack power\nof equipped\nweapon increases.\nTaking damage\ncancels the effect.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:150",
    "jp": "{02}{04}{02}発見の魔力水晶{03}を手に\n入れた{06}隠された財宝を発見す\nることができる魔力\n\n\n\n威力　-\n魔力消費量　2{06}効果:\nアーサーの周囲に隠さ\nれた宝箱がある場合、\nその場所を見つけるこ\nとができる",
    "us": "You obtained the\n{02}{04}{02}Discovery Magic\nCrystal{03}!{06}Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
-   "en": "You obtained the\n{02}{04}{02}Discovery Magic\nCrystal{03}!{06}Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of\nany hidden\nchests near\nArthur are\nrevealed.",
-   "status": "official"
+   "en": "You obtained\nthe {02}{04}{02}Discovery\nMagic Crystal{03}!{06}Magic which can\nuncover hidden\ntreasures.\n\nPOWER: -\nMAGIC COST: 2{06}EFFECT:\nThe location of any\nhidden chests near\nArthur are revealed.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:151",
    "jp": "{02}{04}{02}波動の魔力水晶{03}を手に\n入れた{06}あらゆるものを飲み込\nんで飛んでいく最強の\n魔力\n\n\n威力　4\n魔力消費量　3{06}効果:\n敵を貫通して飛んでい\nき、敵の攻撃もはね返\nすことができる{06}魔力のLvが上がると\n魔力の大きさと威力が\nアップする",
    "us": "You obtained the\n{02}{04}{02}Wave Magic\nCrystal{03}!{06}Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
-   "en": "You obtained the\n{02}{04}{02}Wave Magic\nCrystal{03}!{06}Powerful magic\nthat sucks in\nsurroundings and\nflings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size\nand the power\nof this magic\nare improved by\nincreased Magic\nPower Lv.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Wave Magic Crystal{03}!{06}Powerful magic that\nsucks in surroundings\nand flings them.\n\nPOWER: 4\nMAGIC COST: 3{06}EFFECT:\nPierces enemies\nand deflects\ntheir attacks.{06}Both the size and\nthe power of this\nmagic are improved\nby increased\nMagic Power Lv.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:152",
    "jp": "{02}{04}{02}跳ね馬のブーツ{03}を手に\n入れた{06}跳ね馬の力を宿したブ\nーツの片一方\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、1回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
    "us": "You obtained a\n{02}{04}{02}Leap Boot{03}!{06}Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained a\n{02}{04}{02}Leap Boot{03}!{06}Single boot\nimbued with the\nspirit of a wild\nhorse.\nIt allows Arthur\nto perform a\ndouble jump.{06}Simply press the\njump button\nwhile in the\nair.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained a\n{02}{04}{02}Leap Boot{03}!{06}Single boot imbued\nwith the spirit\nof a wild horse.\nIt allows Arthur to\nperform a double jump.{06}Simply press the jump\nbutton while in the air.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:153",
    "jp": "{02}{04}{02}墜天使の羽{03}を手に入れ\nた{06}かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angel who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "en": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angel who has\nfallen from grace.{06}One who possesses it\ngains the ability to don\nthe armor of angels.{06}Get this item once,\nand it cannot be lost.",
    "status": "done",
    "notes": "USA text, typo fixed (angle -> angel)"
   },
@@ -1113,15 +1183,17 @@
    "id": "a03:157",
    "jp": "{02}{04}{02}騎士の魂{03}を手に入れた{06}騎士違の心が魂となっ\nて具現化した物\n受けるダメージが1/2\nになる\n\n一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Knight Soul{03}!{06}The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Knight Soul{03}!{06}The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Knight Soul{03}!{06}The embodiment\nof many a brave\nknight's soul.\nHalves damage.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:158",
    "jp": "{02}{04}{02}駿馬の魂{03}を手に入れた{06}大地を駆ける駿馬違の\n魂が具現化した物\n移動速度が20%アップ\nする\n\n一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Steed Soul{03}!{06}The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Steed Soul{03}!{06}The embodiment\nof the souls of\nwild horses.\nAgility +20%.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Steed Soul{03}!{06}The embodiment of the\nsouls of wild horses.\nAgility +20%.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:159",
@@ -1148,8 +1220,9 @@
    "id": "a03:162",
    "jp": "{02}{04}{02}魔力のペンダント{03}を手\nに入れた{06}魔力を秘めたペンダン\nト\n魔力の消費量が1/2に\nなる\n\n一度取得すると失うこ\nとはない",
    "us": "You obtained a\n{02}{04}{02}Magic Pendant{03}!{06}Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained a\n{02}{04}{02}Magic Pendant{03}!{06}Mysterious\npendant that\nhalves Magic\nCost.\nGet this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained a\n{02}{04}{02}Magic Pendant{03}!{06}Mysterious\npendant that\nhalves Magic Cost.\nGet this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:163",
@@ -1176,85 +1249,97 @@
    "id": "a03:166",
    "jp": "{02}{04}{02}跳ね馬のブーツ　両方{03}\nを手に入れた{06}跳ね馬の力を宿したブ\nーツ\n空中ジャンプが可能と\nなる\n空中でジャンプボタン\nを押すことで、2回ジ\nャンプできる{06}一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Leap Boots{03}!{06}Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Leap Boots{03}!{06}Pair of boots\nimbued with the\nspirit of wild\nhorses.\nAllows Arthur to\nperform amazing\njumps.{06}Press the jump\nbutton in midair\nto continue\njumping 2\ntimes.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Leap Boots{03}!{06}Pair of boots imbued\nwith the spirit\nof wild horses.\nAllows Arthur\nto perform\namazing jumps.{06}Press the jump button\nin midair to continue\njumping 2 times.{06}Get this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:167",
    "jp": "{02}{04}{02}魔天のペンダント{03}を手\nに入れた{06}絶大な魔力を秘めたペ\nンダント\n魔力の消費量が1/2、\n魔力Lvが3になる\n\n一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Ex Magic\nPendant{03}!{06}Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Ex Magic\nPendant{03}!{06}Pendant imbued\nwith great\nmagical power.{06}Magic Power\nconsumption is\nhalved and\nMagic Power Lv\nincreases to 3.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Ex Magic Pendant{03}!{06}Pendant imbued with\ngreat magical power.{06}Magic Power\nconsumption is halved\nand Magic Power\nLv increases to 3.{06}Get this item once,\nand it cannot be lost.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:168",
    "jp": "{02}{04}{02}St1-1のワープスピア{03}\nをセットした{06}St1-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 1-1 Warp\nStaff{03} has been\nset.{06}Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 1-1 Warp\nStaff{03} has been\nset.{06}Use the ST 1-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 1-1 Warp\nStaff{03} has been set.{06}Use the ST 1-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:169",
    "jp": "{02}{04}{02}St1-2のワープスピア{03}\nをセットした{06}St1-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 1-2 Warp\nStaff{03} has been\nset.{06}Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 1-2 Warp\nStaff{03} has been\nset.{06}Use the ST 1-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 1-2 Warp\nStaff{03} has been set.{06}Use the ST 1-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:170",
    "jp": "{02}{04}{02}St2-1のワープスピア{03}\nをセットした{06}St2-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 2-1 Warp\nStaff{03} has been\nset.{06}Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 2-1 Warp\nStaff{03} has been\nset.{06}Use the ST 2-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 2-1 Warp\nStaff{03} has been set.{06}Use the ST 2-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:171",
    "jp": "{02}{04}{02}St2-2のワープスピア{03}\nをセットした{06}St2-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 2-2 Warp\nStaff{03} has been\nset.{06}Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 2-2 Warp\nStaff{03} has been\nset.{06}Use the ST 2-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 2-2 Warp\nStaff{03} has been set.{06}Use the ST 2-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:172",
    "jp": "{02}{04}{02}St3-1のワープスピア{03}\nをセットした{06}St3-1のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 3-1 Warp\nStaff{03} has been\nset.{06}Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 3-1 Warp\nStaff{03} has been\nset.{06}Use the ST 3-1\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 3-1 Warp\nStaff{03} has been set.{06}Use the ST 3-1 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:173",
    "jp": "{02}{04}{02}St3-2のワープスピア{03}\nをセットした{06}St3-2のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 3-2 Warp\nStaff{03} has been\nset.{06}Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 3-2 Warp\nStaff{03} has been\nset.{06}Use the ST 3-2\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 3-2 Warp\nStaff{03} has been set.{06}Use the ST 3-2 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:174",
    "jp": "{02}{04}{02}St4のワープスピア{03}\nをセットした{06}St4のワープスピア\n\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}ST 4 Warp\nStaff{03} has been\nset.{06}Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}ST 4 Warp\nStaff{03} has been\nset.{06}Use the ST 4\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\n\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}ST 4 Warp\nStaff{03} has been set.{06}Use the ST 4 Warp\nStaff to warp to the\nbeginning of that area.\n\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:175",
    "jp": "{02}{04}{02}赤バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}赤バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}Red Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}Red Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Red\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}Red Rose\nWitch Lair Warp\nStaff{03} has been set.{06}Use the Red Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:176",
    "jp": "{02}{04}{02}黄バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}黄バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}Yellow Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}Yellow Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Yellow\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}Yellow Rose\nWitch Lair Warp\nStaff{03} has been set.{06}Use the Yellow Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:177",
    "jp": "{02}{04}{02}青バラの魔女の棲家の\nワープスピア{03}をセット\nした{06}青バラの魔女の棲家の\nワープスピア\n使用するとそのエリア\nのスタート地点にワー\nプできる\n\n魔力消費量　10",
    "us": "The {02}{04}{02}Blue Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "en": "The {02}{04}{02}Blue Rose\nWitch Lair Warp\nStaff{03} has been\nset.{06}Use the Blue\nRose Witch Lair\nWarp Staff to\nwarp to the\nbeginning of\nthat area.\nMAGIC COST: 10",
-   "status": "official"
+   "en": "The {02}{04}{02}Blue Rose\nWitch Lair Warp\nStaff{03} has been set.{06}Use the Blue Rose\nWitch Lair Warp\nStaff to warp to the\nbeginning of that area.\nMAGIC COST: 10",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:178",
@@ -1274,8 +1359,9 @@
    "id": "a03:180",
    "jp": "このゲームモードではワープできません",
    "us": "You cannot warp\nin this game\nmode.",
-   "en": "You cannot warp\nin this game\nmode.",
-   "status": "official"
+   "en": "You cannot warp\nin this game mode.",
+   "status": "done",
+   "notes": "USA text, rewrapped for the VWF (D13)"
   },
   {
    "id": "a03:181",
