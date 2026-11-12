@@ -183,6 +183,14 @@
    "max": 27,
    "en": "Hidden Firefall",
    "status": "done"
+  },
+  {
+   "id": "prx:0x34a070",
+   "jp": "新規作成データ",
+   "max": 15,
+   "en": "New Save Data",
+   "status": "done",
+   "notes": "Shift-JIS, outside the region: the save utility's new-data entry title (PPSSPP draws its own NEW DATA)"
   }
  ]
 }

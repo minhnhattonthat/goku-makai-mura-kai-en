@@ -16,7 +16,7 @@ lines by hand (`\n`) inside the budget, and so must we: the lint fails any line 
 | Subtitles | mv00-mv06 | 440 | 2 | measured: the block is centred on its longest line (`{c:02}`), no box; the wrap is wider than the screen (733 fits), so the budget is the screen less 20 px a side. |
 | Memory-stick prompts | memstick | 440 | 15 | measured: block-centred, no box, no wrap seen before the screen edge; blank lines place it vertically. go string 11 has 15 lines (14 `{c:02}` rows, 9 with text, then a trailing break) and draws them all, 18 px apart, its last text row at y 225 with room below (`work/qa/marker/run/go_memstick_all/mem_11.png`). re string 11 is cut at the sides in the shot. |
 | Equipment pane | a03 (original game) | 182 | 8 per page | measured: name and description both wrap at 182-189 (go:sub_all on the ruler build, a03 index 73). `{06}` starts a new page. |
-| Save dialog | prx.json | `max` bytes (UTF-8) | | the PSP system dialog; slot sizes are fixed (phase 7 may repoint). |
+| Save dialog | prx.json | `max` bytes (UTF-8) | | the PSP system dialog; a longer string moves to free slot space in the region (`script.prx_patch`), so the limit is the region's free space (lint fails when none is left); the Shift-JIS new-data title has no pointer and keeps its 15-byte slot. |
 
 Choice lines (`{c:01}{05}YES  {05}NO`) are the USA's on every prompt and need no new budget.
 

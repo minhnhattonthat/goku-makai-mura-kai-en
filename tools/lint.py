@@ -3,7 +3,8 @@
 Usage: lint.py [-v]   exit 1 on any error; -v lists the warnings too
 Errors, on a translated row (status done/recheck): over its box; control codes, printf specifiers (prx) or leading and
 trailing blanks that differ from the jp; a glossary term's JP without its EN, or an "Avoid" spelling (glossary.md);
-a stub last line (under 6 characters after a longer line); a prx row that is not ASCII or finds no room in the PRX region.
+a stub last line (under 6 characters after a longer line); an ordinal suffix glued to a variable (%dth);
+a prx or sfo row that is not ASCII, or a prx row that finds no room in the PRX region.
 Any row still untranslated is an error too, unless its id is in script/keep_jp.txt (`<game>/<id> reason` per line).
 Warnings: an official or inherited row over budget (the USA text, laid out for the 12 px fixed font; check it in game).
 """
@@ -97,11 +98,15 @@ def run():
                         lines = [CODES.sub("", l).strip() for l in page.strip("\n").split("\n")]
                         if len(lines) > 1 and 0 < len(lines[-1]) < 6 and len(lines[-2]) >= 6:
                             errors.append(f"{game}/{r['id']}: stub last line '{lines[-1]}'")
-                if name == "prx":
+                if re.search(r"(%[-+ #0-9.]*[a-zA-Z]|\{[^}]*\})(st|nd|rd|th)\b", text):
+                    errors.append(f"{game}/{r['id']}: ordinal suffix glued to a variable (1th): rephrase")
+                if name in ("prx", "sfo"):
                     if own and Counter(PRINTF.findall(text)) != Counter(PRINTF.findall(r["jp"])):
                         errors.append(f"{game}/{r['id']}: printf specifiers differ from the jp")
                     if not text.isascii():
                         errors.append(f"{game}/{r['id']}: not ASCII")
+                    if name == "sfo" and len(text.encode()) > r["max"]:
+                        errors.append(f"{game}/{r['id']}: {len(text.encode())} bytes > {r['max']}")
                     continue
                 if re.search(script.JP_CHAR, text) and own:
                     errors.append(f"{game}/{r['id']}: Japanese left in the en")

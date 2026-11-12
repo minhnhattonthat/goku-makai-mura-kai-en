@@ -6,7 +6,9 @@ Usage: script.py dump      write or refresh script/<game>/<name>.json from the d
 
 Games: `re` = Kai (USRDIR/REGOKUMAKAI), `go` = the original (USRDIR/GOKUMAKAI). Sources:
 - every .bms in each game's datapack.kpd (docs/re/text.md): id `<stem>:<index>`;
-- the UTF-8 save-dialog strings in <game>.PRX (prx.json): id `prx:<file offset>`, `max` = bytes the slot holds before its NUL.
+- the UTF-8 save-dialog strings in <game>.PRX (prx.json), plus its Shift-JIS new-data title (PRX_SJIS): id
+  `prx:<file offset>`, `max` = bytes the slot holds before its NUL;
+- the disc's PARAM.SFO TITLE (re/sfo.json, id `sfo:TITLE`, `max` UTF-8 bytes).
 Entry fields: id, jp, en, status, plus `us` (official English from the USA disc, D10: same file and index, original game only)
 and `same` (a Kai entry whose jp equals an original-game entry: it takes that entry's en on insert).
 Status: official (en = us), inherit (en comes from `same`), new (needs translating), empty (an empty string; insert as is).
@@ -20,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import bms
 import build
 import kpd
+import sfo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "script"
@@ -30,6 +33,34 @@ PRX = {"re": (0x3495A0, 0x349904), "go": (0x349B30, 0x349E80)}
 JP_CHAR = r"[぀-ヿ一-鿿]"  # kana and kanji (the USA text keeps fullwidth spaces, which are fine)
 # 3+ kana/kanji in a row: two-char runs turn up in MIPS code by chance (go.PRX 0x497fa)
 JP_UTF8 = re.compile(rb"(?:[\xe3-\xe9][\x80-\xbf]{2}){3,}")
+# Shift-JIS strings in the PRX outside the region: the save utility's new-data title 新規作成データ (loaded by lui/addiu at
+# re 0x41a98, go 0x42eb0, after the new-data icon paths). No pointer table: written in place, never moved. [file offsets]
+PRX_SJIS = {"re": [0x349AD0], "go": [0x34A070]}
+SJIS_STR = re.compile(rb"(?<=\0)(?:[\x81-\x9f\xe0-\xfc][\x40-\x7e\x80-\xfc]|[\x20-\x7e])+\0")   # no halfwidth kana
+SFO = "/PSP_GAME/PARAM.SFO"   # the disc's XMB title (TITLE, UTF-8): row sfo:TITLE in script/re/sfo.json
+
+
+def sjis_runs(d):
+    """File offsets of the Shift-JIS strings in a PRX: NUL-bounded, 4-aligned, 3+ kana/kanji, not valid UTF-8 (the
+    region's strings are). Code and float data match the byte pattern too, but not all of this (2026-11-12: one hit per
+    PRX, the PRX_SJIS string)."""
+    out = []
+    for m in SJIS_STR.finditer(d):
+        s = m.group()[:-1]
+        if m.start() % 4:
+            continue
+        try:
+            t = s.decode("cp932")
+        except UnicodeDecodeError:
+            continue
+        try:
+            s.decode("utf-8")
+            continue
+        except UnicodeDecodeError:
+            pass
+        if len(re.findall(JP_CHAR, t)) >= 3:
+            out.append(m.start())
+    return out
 
 
 def archive(game):
@@ -75,7 +106,13 @@ def extract():
             if s.isascii():
                 continue  # format strings and the English mode names stay as they are
             rows.append({"id": f"prx:{o:#x}", "jp": s.decode("utf-8"), "max": room})
+        for o in PRX_SJIS[game]:
+            s = d[o:d.index(b"\0", o)]
+            rows.append({"id": f"prx:{o:#x}", "jp": s.decode("cp932"), "max": len(s) + len(re.match(rb"\0*", d[o + len(s):]).group()) - 1})
         files["prx"] = {"archive": build.USR + GAMES[game] + "/" + GAMES[game] + ".PRX", "strings": rows}
+        if game == "re":
+            _, _, mx, _, title = sfo.read(build.read_files(build.ROM, [SFO])[SFO])["TITLE"]
+            files["sfo"] = {"archive": SFO, "strings": [{"id": "sfo:TITLE", "jp": title, "max": mx - 1}]}
         res[game] = files
     return res
 
@@ -188,9 +225,11 @@ def check():
         for m in JP_UTF8.finditer(d):
             if not a <= m.start() < b:
                 bad.append(f"{game}.PRX: Japanese UTF-8 outside the region at {m.start():#x}")
+        if sjis_runs(d) != PRX_SJIS[game]:
+            bad.append(f"{game}.PRX: Shift-JIS strings at {[hex(o) for o in sjis_runs(d)]} != PRX_SJIS")
         for r in files["prx"]["strings"]:
             o = int(r["id"][4:], 16)
-            s = r["jp"].encode("utf-8")
+            s = r["jp"].encode(prx_enc(game, o))
             if d[o:o + len(s) + 1] != s + b"\0" or len(s) > r["max"]:
                 bad.append(f"{game}/{r['id']}: does not roundtrip")
     return bad
@@ -245,6 +284,9 @@ def insert(marker_build=None):
             rows = doc["strings"]
             text = [r["jp"] if r["status"] in ("empty", "keep") else
                     marker(r, fill) if marker_build else en_text(r, docs) for r in rows]
+            if name == "sfo":
+                out[SFO] = sfo.set_str(build.read_files(build.ROM, [SFO])[SFO], "TITLE", text[0])
+                continue
             if name != "prx":
                 out.setdefault(doc["archive"], {})[doc["path"]] = bms.build([bms.encode(s, t) for s in text])
                 continue
@@ -264,35 +306,47 @@ def prx_pointers(d, game, o):
     return [p for p in range(a, b, 4) if int.from_bytes(d[p:p + 4], "little") == o - 0x80]
 
 
+def prx_enc(game, o):
+    """The encoding of the PRX string at file offset o: UTF-8 in the save-dialog region, Shift-JIS (PRX_SJIS) outside."""
+    return "utf-8" if PRX[game][0] <= o < PRX[game][1] else "cp932"
+
+
 def prx_patch(game, rows, texts):
     """The PRX with each row's string (bytes, no NUL) written. A string that fits its own slot stays there; a longer one
-    moves into the free tail of another slot and its table pointers are rewritten. ValueError when one finds no room."""
+    moves, 4-aligned like the compiler's, into the free tail of another slot and its table pointers are rewritten.
+    ValueError when one finds no room (a PRX_SJIS row has no table pointer, so it must fit its own slot)."""
     d = bytearray(prx_bytes(game))
     slots = []
     for r, s in zip(rows, texts):
         o = int(r["id"][4:], 16)
-        old = r["jp"].encode("utf-8")
+        old = r["jp"].encode(prx_enc(game, o))
         assert d[o:o + len(old) + 1] == old + b"\0", f"{game}/{r['id']}: slot does not hold its jp"
-        ptrs = prx_pointers(d, game, o)
-        assert ptrs, f"{game}/{r['id']}: no pointer in the table"
+        in_region = prx_enc(game, o) == "utf-8"
+        ptrs = prx_pointers(d, game, o) if in_region else []
+        assert ptrs or not in_region, f"{game}/{r['id']}: no pointer in the table"
+        if not in_region and len(s) > r["max"]:
+            raise ValueError(f"{game}/{r['id']}: {len(s)} bytes > its {r['max']}-byte slot (no pointer to move it by)")
         d[o:o + r["max"] + 1] = bytes(r["max"] + 1)
-        slots.append((o, r["max"] + 1, s, ptrs, r["id"]))
-    free = []   # [start, end) bytes no string uses
+        slots.append((o, r["max"] + 1, s, ptrs, r["id"], in_region))
+    free = []   # [start, end) bytes no string uses, inside the region only
     moved = [x for x in slots if len(x[2]) + 1 > x[1]]
-    for o, room, s, _, _ in slots:
+    for o, room, s, _, _, in_region in slots:
         if len(s) + 1 <= room:
             d[o:o + len(s)] = s
-            free.append([o + len(s) + 1, o + room])
+            if in_region:
+                free.append([o + len(s) + 1, o + room])
         else:
             free.append([o, o + room])
-    for _, _, s, ptrs, rid in sorted(moved, key=lambda x: -len(x[2])):
-        f = next((f for f in sorted(free, key=lambda f: f[1] - f[0]) if f[1] - f[0] >= len(s) + 1), None)
+    up = lambda x: (x + 3) & ~3
+    for _, _, s, ptrs, rid, _ in sorted(moved, key=lambda x: -len(x[2])):
+        f = next((f for f in sorted(free, key=lambda f: f[1] - f[0]) if f[1] - up(f[0]) >= len(s) + 1), None)
         if f is None:
             raise ValueError(f"{game}/{rid}: {len(s)} bytes, no free slot space left in the PRX region")
-        d[f[0]:f[0] + len(s)] = s
+        at = up(f[0])
+        d[at:at + len(s)] = s
         for p in ptrs:
-            d[p:p + 4] = (f[0] - 0x80).to_bytes(4, "little")
-        f[0] += len(s) + 1
+            d[p:p + 4] = (at - 0x80).to_bytes(4, "little")
+        f[0] = at + len(s) + 1
     return bytes(d)
 
 

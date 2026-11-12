@@ -38,7 +38,7 @@ The original game has an official English title, **Ultimate Ghosts 'n Goblins**;
 | a60/03_logo_go, a60/13_tit_ico | Title screen, load icons |
 | a60/22,24,25,26 + 23 改 seal | Kai seal over the logo (re) |
 | la a50/00_lau_a00 | Book screen logos (coloured + sepia) |
-| memstick sl_ico01,03 (PNG), PSP_GAME ICON0/PIC0 | Save icon, XMB |
+| memstick sl_ico01,03 (PNG), PSP_GAME ICON0/PIC0 | Save icon, XMB (the XMB title text is PARAM.SFO TITLE: row `sfo:TITLE`, docs/re/text.md) |
 | a10/15,16_op_psp0 | Logo inside the options PSP drawing |
 | mv00.pmf, last seconds | **Burned into the movie**; can't change without re-encoding PSMF |
 

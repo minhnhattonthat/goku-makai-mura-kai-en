@@ -15,7 +15,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 - Lines are broken by hand (`\n`) inside the box budget (`docs/re/boxes.md`); `python -X utf8 tools/lint.py -v` is the gate.
 - The font has no `[ ] { } < > @ ^ _ \` \\ | ~ $`.
 - Witches: haughty, archaic imperatives ("Take this and begone!", "Behold..."). Their laughs follow the USA s0600:7-10.
-- Save-dialog strings (`prx.json`) are UTF-8 in the PSP system font, ASCII only, within `max` bytes.
+- Save-dialog strings (`prx.json`) are in the PSP system font, ASCII only. A string longer than `max` moves to free space in the region (lint fails when none is left); the new-data title (`prx:0x34a070`, Shift-JIS) must stay within its 15 bytes.
 
 ## Characters
 | JP | EN | max | notes | Avoid |

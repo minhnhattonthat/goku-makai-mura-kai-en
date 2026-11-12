@@ -1,0 +1,14 @@
+{
+ "game": "re",
+ "archive": "/PSP_GAME/PARAM.SFO",
+ "strings": [
+  {
+   "id": "sfo:TITLE",
+   "jp": "極魔界村 改",
+   "max": 127,
+   "en": "Ultimate Ghosts 'n Goblins Kai",
+   "status": "done",
+   "notes": "the disc's XMB game-list title (D12)"
+  }
+ ]
+}

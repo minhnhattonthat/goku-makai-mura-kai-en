@@ -201,6 +201,14 @@
    "max": 27,
    "en": "",
    "status": "inherit"
+  },
+  {
+   "id": "prx:0x349ad0",
+   "jp": "新規作成データ",
+   "same": "go/prx:0x34a070",
+   "max": 15,
+   "en": "",
+   "status": "inherit"
   }
  ]
 }

@@ -3,10 +3,12 @@
 Usage: diffcheck.py [BUILT_ISO]   (default build/goku_en.iso); exit 1 on any problem
 - ISO: every changed byte is a changed file's data (old or new extent), its directory record (LBA, size) or the volume
   size in the PVD; no file was added or dropped; the files that differ are exactly the ones build.edits() replaces.
-  No Japanese UTF-8 (3+ characters) is left in a built PRX.
+  The whole image is scanned, past the original's end too.
 - Archives: the same member list as the original; members that differ are only .bms files and the font (build.FONT).
-- PRX: bytes differ only in the save-dialog region (script.PRX) and its pointer table (script.PRX_PTRS); every table
-  word points at a string start in the region.
+- PRX: bytes differ only in the save-dialog region (script.PRX), its pointer table (script.PRX_PTRS) and the Shift-JIS
+  new-data title slots (script.PRX_SJIS); every table word points at a string start in the region; no Japanese UTF-8 or
+  Shift-JIS run (3+ characters) is left.
+- PARAM.SFO: only its TITLE differs.
 """
 import sys
 from pathlib import Path
@@ -16,6 +18,7 @@ import build
 import iso9660
 import kpd
 import script
+import sfo
 
 CHUNK = 1 << 20
 
@@ -35,11 +38,14 @@ def iso_problems(orig, new, changed):
             allowed.append((lba * 2048, (lba + -(-ln // 2048)) * 2048))
             allowed += [(pos + 2, pos + 10), (pos + 10, pos + 18)]
     with open(orig, "rb") as fa, open(new, "rb") as fb:
-        end = fa.seek(0, 2)
+        end = max(fa.seek(0, 2), fb.seek(0, 2))   # past the original's end too (grown files append there)
         fa.seek(0)
+        fb.seek(0)
         at = 0
         while at < end:
             x, y = fa.read(CHUNK), fb.read(CHUNK)
+            n = max(len(x), len(y))
+            x, y = x.ljust(n, b"\0"), y.ljust(n, b"\0")   # missing bytes count as 0
             if x != y and not any(s <= at and at + len(x) <= e for s, e in allowed):
                 for i in range(len(x)):
                     if x[i] != y[i] and not any(s <= at + i < e for s, e in allowed):
@@ -59,19 +65,27 @@ def check(new):
         bad.append(f"ISO: changed files {sorted(changed)} != the files the build edits {sorted(want)}")
     bad += iso_problems(build.ROM, new, changed)
     for p in sorted(changed & set(want)):
+        o, n = orig_b[p], new_b[p]
+        if p == script.SFO:
+            if n != sfo.set_str(o, "TITLE", sfo.read(n)["TITLE"][4]):
+                bad.append(f"{p}: changed beyond its TITLE")
+            continue
         if p.endswith(".PRX"):
             game = next(g for g, n in script.GAMES.items() if p.endswith("/" + n + ".PRX"))
             (r0, r1), (t0, t1) = script.PRX[game], script.PRX_PTRS[game]
-            o, n = orig_b[p], new_b[p]
             if len(o) != len(n):
                 bad.append(f"{p}: size changed")
             bad += [f"{p}: Japanese UTF-8 left at {m.start():#x}" for m in script.JP_UTF8.finditer(n)]
-            if o[:r0] != n[:r0] or o[r1:t0] != n[r1:t0] or o[t1:] != n[t1:]:
-                bad.append(f"{p}: bytes changed outside the save-dialog region and its pointer table")
+            bad += [f"{p}: Japanese Shift-JIS left at {o:#x}" for o in script.sjis_runs(n)]
+            keep = sorted([(0, r0), (r1, t0), (t1, len(o))])
+            for s in script.PRX_SJIS[game]:   # the in-place Shift-JIS slots: 16 bytes each, cut out of the kept spans
+                keep = [x for a, b in keep for x in ((a, min(b, s)), (max(a, s + 16), b)) if x[0] < x[1]]
+            if any(o[a:b] != n[a:b] for a, b in keep):
+                bad.append(f"{p}: bytes changed outside the save-dialog region, its pointer table and the new-data title")
             for w in range(t0, t1, 4):
                 v = int.from_bytes(n[w:w + 4], "little") + 0x80
-                if r0 < v < r1 and n[v - 1] != 0:
-                    bad.append(f"{p}: table word {w:#x} points mid-string at {v:#x}")
+                if not (r0 <= v < r1 and n[v - 1] == 0):
+                    bad.append(f"{p}: table word {w:#x} points at {v:#x}, not a string start in the region")
             continue
         om, nm = dict(kpd.walk(orig_b[p])), dict(kpd.walk(new_b[p]))
         if list(om) != list(nm):

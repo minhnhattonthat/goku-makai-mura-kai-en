@@ -90,5 +90,16 @@ REGOKUMAKAI.PRX 0x3495a0-0x349904, GOKUMAKAI.PRX 0x349b30-0x349e80 (`script.PRX`
 names are tight. Pointer table (phase 7): u32 words at go 0x351988-0x351a14, re 0x351488-0x351514, value + 0x80 = file offset,
 one R_MIPS_32 reloc each; every row has its pointer(s) there and nowhere else (no lui/addiu pair, no mid-string pointer;
 `5 暗黒の大魔宮殿` has 7). `script.prx_patch` keeps a string in its slot when it fits, else moves it into another slot's free
-tail and rewrites its words; the titles and Dark Astaroth's Chamber move. Proven in game: the save's PARAM.SFO and the load
-list show the full moved titles.
+tail (4-aligned, like the compiler's) and rewrites its words; the titles and Dark Astaroth's Chamber move. Proven in game:
+the save's PARAM.SFO and the load list show the full moved titles.
+
+One **Shift-JIS** string sits outside the region: `新規作成データ` (the save utility's new-data entry title) at re 0x349ad0,
+go 0x34a070 (`script.PRX_SJIS`), loaded by lui/addiu at re 0x41a98, go 0x42eb0 right after the new-data icon paths. No table
+word: written in place only (15 bytes before the next word): "New Save Data". `script.sjis_runs` (NUL-bounded, 4-aligned,
+3+ kana/kanji, not valid UTF-8) finds exactly this one per PRX; `script.py check` and diffcheck fail on any other.
+PPSSPP draws its own "NEW DATA" there, so no emulator shot shows it.
+
+## PARAM.SFO
+
+`/PSP_GAME/PARAM.SFO` TITLE `極魔界村 改` (the XMB game list; UTF-8, 128 bytes) is row `sfo:TITLE` in `script/re/sfo.json`,
+written with `tools/sfo.py` (D12: *Ultimate Ghosts 'n Goblins Kai*). `SYSDIR/UPDATE/PARAM.SFO` is the firmware update's; untouched.

@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import bms
 import build
 import script
+import sfo
 import vwf
 
 need_roms = pytest.mark.skipif(not (build.ROM.is_file() and build.US_ROM.is_file()), reason="needs the dumps in rom/")
@@ -37,11 +38,15 @@ def test_insert_writes_every_row():
                 orig = script.prx_bytes(game)
                 assert len(d) == len(orig)
                 for r in doc["strings"]:
+                    want = r["jp"] if r["status"] in ("empty", "keep") else script.en_text(r, docs)
+                    at = int(r["id"][4:], 16)
                     # follow each of the row's table pointers (a long string moves; script.prx_patch)
-                    for p in script.prx_pointers(orig, game, int(r["id"][4:], 16)):
-                        o = int.from_bytes(d[p:p + 4], "little") + 0x80
-                        want = r["jp"] if r["status"] in ("empty", "keep") else script.en_text(r, docs)
+                    ptrs = script.prx_pointers(orig, game, at)
+                    for o in [int.from_bytes(d[p:p + 4], "little") + 0x80 for p in ptrs] or [at]:   # PRX_SJIS: in place
                         assert d[o:d.index(b"\0", o)].decode() == want, r["id"]
+                continue
+            if name == "sfo":
+                assert sfo.read(out[doc["archive"]])["TITLE"][4] == script.en_text(doc["strings"][0], docs)
                 continue
             got = [bms.decode(s, t) for s in bms.parse(out[doc["archive"]][doc["path"]])]
             assert len(got) == len(doc["strings"])

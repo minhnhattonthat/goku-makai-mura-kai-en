@@ -2,7 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator next. Last build: `build/goku_en.iso` (every text row English; graphics still Japanese), sha1 903e6c234b7334357cb3d92c3bd705094b20c82e, smoke ok, diffcheck ok, 2026-11-12.
+- **Phase:** 8. QA in the emulator next. Last build: `build/goku_en.iso` (every text row English; graphics still Japanese), sha1 e02338e6237ec95035184db564712fcb0e4f25fa, smoke ok, diffcheck ok, 2026-11-12.
+- **Phase-7 review fixes (2026-11-12):** both Importants: disc PARAM.SFO TITLE is row `re/sfo:TITLE` (*Ultimate Ghosts 'n Goblins Kai*); the Shift-JIS new-data title `新規作成データ` is row `prx:0x349ad0`/`prx:0x34a070` "New Save Data" (in place, `script.PRX_SJIS`), with a Shift-JIS leftover scan (`script.sjis_runs`) in `script.py check` and diffcheck. Minors 3 (moved strings 4-aligned), 4a-c (diffcheck scans past the original end, table words must point into the region; test), 6 (ordinal lint), 7, 8 done; 4d and 5 in `docs/polish.md`.
 - **Done:** Repo set up, recon (`docs/re/`), debug tool `tools/debug/warp.py` (133/133 scenes), identity build (`build.py --identity` = dump), extract (`script/{re,go}/*.json`, roundtrip + coverage tests).
 - **Engine spike and marker build (phase 5, done 2026-11-12):**
   - Inserter: `build.py` -> `script.insert()`: every `.bms` rebuilt from script/ (`inherit` rows take their source row's en, untranslated rows keep the jp), PRX save-dialog strings written in place, NUL-padded to their slot (moved and repointed when longer, phase 7).

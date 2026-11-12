@@ -12,6 +12,7 @@ import diffcheck
 import iso9660
 import lint
 import script
+import sfo
 
 need_roms = pytest.mark.skipif(not (build.ROM.is_file() and build.US_ROM.is_file()), reason="needs the dumps in rom/")
 
@@ -44,17 +45,38 @@ def test_build_writes_only_its_ranges(tmp_path):
     iso = tmp_path / "en.iso"
     build.build(iso)
     assert diffcheck.check(iso) == []
+    prx_path = build.USR + "GOKUMAKAI/GOKUMAKAI.PRX"
+    got = build.read_files(iso, [script.SFO, prx_path])
+    assert sfo.read(got[script.SFO])["TITLE"][4] == "Ultimate Ghosts 'n Goblins Kai"
+    assert got[prx_path][0x34A070:0x34A070 + 14] == b"New Save Data\0"
     with open(iso, "rb") as f:
         where = {p: lba for p, lba, _, _ in iso9660.listing(f)}
-    prx = where[build.USR + "GOKUMAKAI/GOKUMAKAI.PRX"] * 2048 + 0x1000          # code, not the save strings
+    prx = where[prx_path] * 2048
     other = where[build.USR + "GOKUMAKAI/movie/" + next(
         p.split("/")[-1] for p in where if "/GOKUMAKAI/movie/" in p)] * 2048    # a file the build never touches
     with open(iso, "r+b") as f:
-        for at in (prx, other):
+        for at in (prx + 0x1000, other):    # PRX code, not the save strings
             f.seek(at)
             b = f.read(1)
             f.seek(at)
             f.write(bytes([b[0] ^ 0xFF]))
+        f.seek(prx + script.PRX_PTRS["go"][0])
+        f.write(bytes(4))                   # a table word pointing outside the region
     bad = diffcheck.check(iso)
     assert any("GOKUMAKAI.PRX: bytes changed outside" in x for x in bad)
     assert any("movie/" in x for x in bad)
+    assert any("not a string start in the region" in x for x in bad)
+
+
+@need_roms
+def test_prx_alignment_and_sjis_slot():
+    docs = script.load()
+    rows = docs["go"]["prx"]["strings"]
+    texts = [script.en_text(r, docs).encode() for r in rows]
+    d = script.prx_patch("go", rows, texts)
+    for r in rows:   # every moved string lands 4-aligned
+        for p in script.prx_pointers(script.prx_bytes("go"), "go", int(r["id"][4:], 16)):
+            assert (int.from_bytes(d[p:p + 4], "little") + 0x80) % 4 == 0
+    i = next(k for k, r in enumerate(rows) if r["id"] == "prx:0x34a070")
+    with pytest.raises(ValueError):   # no pointer to move it by: must fit its own slot
+        script.prx_patch("go", rows, [b"X" * 16 if k == i else t for k, t in enumerate(texts)])
