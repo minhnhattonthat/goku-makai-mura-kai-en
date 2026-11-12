@@ -44,15 +44,17 @@ Record: u64 `kind` (1 file, 0 directory), u64 `off`, u64 `size`, u16 chain, `nam
   and scripts, stage data. A scan for Shift-JIS, UTF-8, UTF-16 and font codes found no text in them (`tools/survey_text.py`;
   hits were noise).
 
-## Free space and the rebuild plan (phase 3; a plan, **not yet tested**)
+## Rebuild (phase 3, **verified**)
 
-- Same-size texture edits overwrite bytes in place: GIM re-encodes keep their size, and nothing moves.
-- `.bms` grow, so the nested kpd holding them has to grow. Slack is small: nested padding is at most 0xF bytes, and outer padding
-  under 0x800.
-- Plan: rebuild the changed nested kpd, **append** it at the end of the outer data area, then repoint that one record's `off` and
-  `size` and update `total_size`/`data_size`. Hash tables and names stay untouched.
-- ISO room: `GOKUMAKAI/datapack.kpd` (LBA 21280) sits right before `GOKUMAKAI.PRX` (LBA 135024); `REGOKUMAKAI/datapack.kpd`
-  (LBA 249760) right before `module/` and `movie/`. `iso9660.patch` relocates a file that outgrows its slot, which would copy a
-  234 MB archive. Moving the small neighbour (the PRX, or `module/` plus `mv00.pmf`) to the end of the image instead frees 5-15 MB
-  behind each datapack, enough to grow it in place. Needs a small extension of `tools/iso9660.py`.
-- `xdelta3 -B <image size>` at release, because of the moved files.
+`kpd.rebuild(d, {path: bytes})` (paths may reach into nested kpd), driven by `tools/build.py`:
+- Every file slot in every archive is padded to the archive's alignment and sits inside its directory's data region (checked on all
+  233 archives; `rebuild` asserts it). `total_size == data_start + data_size` everywhere.
+- A file that outgrows its aligned slot shifts every later file by the growth; records, each directory's `data_off`/`data_size` and
+  the header sizes follow. Directory blocks, hash buckets and names never change. Same-size edits move nothing.
+- Identity: every file of every archive pushed back through `rebuild` gives the dump byte for byte (`build.py --identity`,
+  `tests/test_build.py`, about 8 s).
+- In game: a disc with all 34 `.bms` grown by 0x900 (both games, so every later file shifts and both datapacks move to the end
+  of the image via `iso9660.patch`) gave pixel-identical shots to the original on 7 warp scenes (save prompt, title scroll, witch
+  text, system menu, stage 1; both games). So the engine reads the directory, not fixed offsets.
+- ISO: a grown datapack is appended at the end of the image (+234 MB each; the image stays under 1.5 GB). Fine for a UMD-size image;
+  `xdelta3 -B <image size>` at release because of the moved files.

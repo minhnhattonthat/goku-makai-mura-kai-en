@@ -38,18 +38,34 @@ def _rec(kind, off, size, name):
     return (struct.pack("<QQQ", kind, off, size) + b"\xff\xff" + name.encode()).ljust(0x80, b"\0")
 
 
-def test_kpd_walks_subdir_and_nested():
-    inner_files = _rec(1, 0, 2, "b.bin").ljust(0x80, b"\0")
-    inner = bytearray(struct.pack("<4sIQQQQQQ", b"DPLK", 0x100, 0, 0x10, 0x40, 0x880, 0x8c0, 2).ljust(0x40, b"\0"))
-    inner += _dir(1, 0x80, 0x880, 0, 0, 2, 0x10) + inner_files + b"hi"
-    root_ents = _rec(0, 0, 0x880, "d").ljust(0x800, b"\0")
-    sub = _dir(2, 0x800, 0x1000, 0, 0, len(inner) + 4, 0x800) + (_rec(1, 0, 4, "a.txt") + _rec(1, 0x10, len(inner), "n.kpd")).ljust(0x800, b"\0")
+def _sample():
+    """Archive: d/a.txt, d/n.kpd (nested: b.bin), e/c.txt; align 0x10, every slot padded like the game's archives."""
+    inner = bytearray(struct.pack("<4sIQQQQQQ", b"DPLK", 0x100, 0x8d0, 0x10, 0x40, 0x880, 0x8c0, 0x10).ljust(0x40, b"\0"))
+    inner += _dir(1, 0x80, 0x880, 0, 0, 0x10, 0x10) + _rec(1, 0, 2, "b.bin") + b"hi".ljust(0x10, b"\0")
+    root_ents = (_rec(0, 0, 0x880, "d") + _rec(0, 0x1000, 0x800, "e")).ljust(0x800, b"\0")
+    sub = _dir(2, 0x800, 0x1000, 0, 0, 0x10 + len(inner), 0x10) + (_rec(1, 0, 4, "a.txt") + _rec(1, 0x10, len(inner), "n.kpd")).ljust(0x800, b"\0")
+    sub += _dir(1, 0x800, 0x1000, 0, 0x10 + len(inner), 0x10, 0x10) + _rec(1, 0, 3, "c.txt").ljust(0x800, b"\0")
     head = 0x800
     data_start = head + 0x1000 + len(sub)
-    d = bytearray(struct.pack("<4sIQQQQQQ", b"DPLK", 0x100, 0, 0x800, head, 0, data_start, 0).ljust(0x800, b"\0"))
-    d += _dir(1, 0x800, 0x1000, len(sub), 0, 0, 0x800) + root_ents + sub
-    d += b"abcd".ljust(0x10, b"\0") + inner
-    assert dict(kpd.walk(bytes(d))) == {"d/a.txt": b"abcd", "d/n.kpd/b.bin": b"hi"}
+    data = b"abcd".ljust(0x10, b"\0") + inner + b"xyz".ljust(0x10, b"\0")
+    d = bytearray(struct.pack("<4sIQQQQQQ", b"DPLK", 0x100, data_start + len(data), 0x10, head, 0, data_start, len(data)).ljust(0x800, b"\0"))
+    d += _dir(2, 0x800, 0x1000, len(sub), 0, len(data), 0x10) + root_ents + sub + data
+    return bytes(d)
+
+
+def test_kpd_walks_subdir_and_nested():
+    assert dict(kpd.walk(_sample())) == {"d/a.txt": b"abcd", "d/n.kpd/b.bin": b"hi", "e/c.txt": b"xyz"}
+
+
+def test_kpd_rebuild_identity_and_grow():
+    d = _sample()
+    assert kpd.rebuild(d, {"d/a.txt": b"abcd", "d/n.kpd/b.bin": b"hi", "e/c.txt": b"xyz"}) == d
+    big = b"B" * 0x25
+    r = kpd.rebuild(d, {"d/n.kpd/b.bin": big})
+    assert dict(kpd.walk(r)) == {"d/a.txt": b"abcd", "d/n.kpd/b.bin": big, "e/c.txt": b"xyz"}
+    assert len(r) == len(d) + 0x20 == struct.unpack_from("<Q", r, 8)[0]
+    files, dirs, _ = kpd.parse(r)
+    assert [(p, do, dz) for _, p, _, do, dz in dirs] == [("", 0, 0x10 + 0x8f0 + 0x10), ("d/", 0, 0x10 + 0x8f0), ("e/", 0x900, 0x10)]
 
 
 def test_ana_entries():
