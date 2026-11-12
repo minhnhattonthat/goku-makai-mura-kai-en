@@ -13,7 +13,9 @@ Reachability of the rows marked "demo leftover" is unproven. They come from a "C
 
 - **USA art spliced in, both games** (per GIM; a Kai GIM only where it equals the original's): a10 option rows and footer,
   a02 pause menu, a30 stage select words, a06 door word, a70 ending word, a00 word_00, a60 intro story (op_w_00); the
-  original game also gets a03 (sub screen), a10 op_psp0 logos and the a60 logo. Layout `.csl` changes merged the same way.
+  original game also gets a03 (sub screen), a10 op_psp0 logos and the a60 logo. Layout `.csl` changes merged the same way,
+  and so are ANA bytes outside the GIMs (sprite geometry): a03's tab dividers sit there, and without the USA's moved
+  positions they cut through STATUS/SHIELD/MAGIC/ITEM (phase 8 QA; USA reference `tools/routes/us_subscreen.txt`).
 - **Not taken from the USA:** button0 icons (USA swaps circle and cross; this code confirms with circle) and the a60 menu
   labels (another packing; ours are English already). Kai keeps its Japanese logos (a60/03 seal set, a10/15-16; D5).
 - **Redrawn** from the USA's own letters (`gfx.Font`): Kai a10/18 (MAGIC POWER x2, NOT USED, MAGIC POWER, JUMP, ATTACK),

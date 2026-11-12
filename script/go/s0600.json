@@ -14,15 +14,17 @@
    "id": "s0600:1",
    "jp": "\n3種類の葉があれば…",
    "us": "If only you had three varieties of\nleaf...",
-   "en": "If only you had three varieties of\nleaf...",
-   "status": "official"
+   "en": "\nIf only you had three varieties of leaf...",
+   "status": "done",
+   "notes": "USA text on one line (its break was for the fixed-width font; one-word last line), the jp's line layout"
   },
   {
    "id": "s0600:2",
    "jp": "\nわたしが必要なのは3種類の葉だ、それではない",
    "us": "I need three types of leaves.\nYou do not posses what I require.",
-   "en": "I need three types of leaves.\nYou do not posses what I require.",
-   "status": "official"
+   "en": "I need three types of leaves.\nYou do not possess what I require.",
+   "status": "done",
+   "notes": "USA text, typo fixed (posses)"
   },
   {
    "id": "s0600:3",
@@ -35,15 +37,17 @@
    "id": "s0600:4",
    "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're two more experiments\naway from the ultimate power!",
-   "en": "Viola! We're two more experiments\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're two more experiments\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0600:5",
    "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're one more experiment\naway from the ultimate power!",
-   "en": "Viola! We're one more experiment\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're one more experiment\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0600:6",

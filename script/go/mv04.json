@@ -21,8 +21,9 @@
    "id": "mv04:2",
    "jp": "{c:02}\n{c:02}ご無事で何よりでした",
    "us": "{c:02}I'm relieved to see that you are\n{c:02}safe.",
-   "en": "{c:02}I'm relieved to see that you are\n{c:02}safe.",
-   "status": "official"
+   "en": "{c:02}\n{c:02}I'm relieved to see that you are safe.",
+   "status": "done",
+   "notes": "USA text on one line (its break was for the fixed-width font; one-word last line), the jp's line layout"
   },
   {
    "id": "mv04:3",

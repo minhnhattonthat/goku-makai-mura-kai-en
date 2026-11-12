@@ -35,15 +35,17 @@
    "id": "s0800:4",
    "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're two more experiments\naway from the ultimate power!",
-   "en": "Viola! We're two more experiments\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're two more experiments\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0800:5",
    "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're one more experiment\naway from the ultimate power!",
-   "en": "Viola! We're one more experiment\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're one more experiment\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0800:6",

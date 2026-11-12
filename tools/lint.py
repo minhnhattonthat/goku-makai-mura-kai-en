@@ -3,7 +3,9 @@
 Usage: lint.py [-v]   exit 1 on any error; -v lists the warnings too
 Errors, on a translated row (status done/recheck): over its box; control codes, printf specifiers (prx) or leading and
 trailing blanks that differ from the jp; a glossary term's JP without its EN, or an "Avoid" spelling (glossary.md);
-a stub last line (under 6 characters after a longer line); an ordinal suffix glued to a variable (%dth);
+a stub last line (under 6 characters after a longer line); a row edited from the USA text (has `us`: typo and
+line-break fixes, D13) is checked against the USA's codes and blanks instead, and skips the glossary and stub rules
+(official wording); an ordinal suffix glued to a variable (%dth);
 a prx or sfo row that is not ASCII, or a prx row that finds no room in the PRX region.
 Any row still untranslated is an error too, unless its id is in script/keep_jp.txt (`<game>/<id> reason` per line).
 Warnings: an official or inherited row over budget (the USA text, laid out for the 12 px fixed font; check it in game).
@@ -23,7 +25,8 @@ HELP = [412, 412]          # 2 lines; the engine wraps a longer line at 412-420 
 ICONS = [412, 300]         # line 2 shares the row with the circle/cross button icons (from x 335)
 SUB = [440, 440]           # block-centred subtitles; 20 px margin each side of the 480 px screen
 BOX = {
-    "a02": HELP, "a04": HELP, "a10": ICONS, "a30": ICONS,
+    "a02": HELP, "a10": ICONS, "a30": ICONS,
+    "a04": [182] * 8,          # warp prompts draw in the sub-screen pane, wrapping mid-word (go:sub_all a04 shots)
     "s0506": HELP, "s0507": HELP, "s0600": HELP, "s0700": HELP, "s0800": HELP,
     "memstick": [440] * 15,    # block-centred prompt, no box, blank lines position it; go:11 draws 15 rows (marker shot)
     "a03": [182] * 8,          # sub-screen detail pane: wraps at 182-189 px (name and description)
@@ -82,19 +85,21 @@ def run():
                     continue
                 own = r["status"] not in ("official", "inherit")
                 if own:
-                    if Counter(CODES.findall(text)) != Counter(CODES.findall(r["jp"])):
-                        errors.append(f"{game}/{r['id']}: control codes differ from the jp")
-                    if [b.count("\n") for b in blanks(text)] != [b.count("\n") for b in blanks(r["jp"])]:
+                    ref = r.get("us", r["jp"])   # an edited USA row keeps the USA's codes and pages
+                    if Counter(CODES.findall(text)) != Counter(CODES.findall(ref)):
+                        errors.append(f"{game}/{r['id']}: control codes differ from the {'us' if 'us' in r else 'jp'}")
+                    nl = [b.count("\n") for b in blanks(text)]
+                    if nl != [b.count("\n") for b in blanks(r["jp"])] and nl != [b.count("\n") for b in blanks(ref)]:
                         errors.append(f"{game}/{r['id']}: leading or trailing line breaks differ from the jp")
                     low = re.sub(r"\s+", " ", CODES.sub("", text)).lower()   # a name may break across lines
                     left = r["jp"]
-                    for jp, en, avoid in terms:   # longest first: 最強の魔力 hides its 魔力
+                    for jp, en, avoid in ([] if "us" in r else terms):   # longest first: 最強の魔力 hides its 魔力
                         if any(j in left for j in jp) and not any(e in low for e in en):
                             errors.append(f"{game}/{r['id']}: {jp[0]} without its glossary EN ({' / '.join(en)})")
                         for j in jp:
                             left = left.replace(j, "\0")
                         errors += [f"{game}/{r['id']}: glossary Avoid spelling '{a}'" for a in avoid if a in low]
-                    for page in text.split("{06}"):
+                    for page in ([] if "us" in r else text.split("{06}")):   # USA rows keep the USA's wrapping
                         lines = [CODES.sub("", l).strip() for l in page.strip("\n").split("\n")]
                         if len(lines) > 1 and 0 < len(lines[-1]) < 6 and len(lines[-2]) >= 6:
                             errors.append(f"{game}/{r['id']}: stub last line '{lines[-1]}'")

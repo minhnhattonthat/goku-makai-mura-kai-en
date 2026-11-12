@@ -28,8 +28,9 @@
    "id": "a04:3",
    "jp": "{02}{04}{02}赤バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
    "us": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "en": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Red Rose\nWitch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:4",
@@ -56,8 +57,9 @@
    "id": "a04:7",
    "jp": "{02}{04}{02}黄バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
    "us": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "en": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Yellow Rose\nWitch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:8",
@@ -77,8 +79,9 @@
    "id": "a04:10",
    "jp": "{02}{04}{02}青バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}はい　{05}{02}{04}{06}いいえ{03}",
    "us": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "en": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Blue Rose\nWitch Lair{03}?\n{c:01}{05}YES  {05}{02}{04}{06}NO  {03}",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:11",
@@ -98,8 +101,9 @@
    "id": "a04:13",
    "jp": "{02}{04}{02}赤バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
    "us": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "en": "Warp to {02}{04}{02}Red Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Red Rose\nWitch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:14",
@@ -126,8 +130,9 @@
    "id": "a04:17",
    "jp": "{02}{04}{02}黄バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
    "us": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "en": "Warp to {02}{04}{02}Yellow Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Yellow Rose\nWitch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:18",
@@ -147,8 +152,9 @@
    "id": "a04:20",
    "jp": "{02}{04}{02}青バラの魔女の棲家{03}へワープしますか?\n{c:01}{05}{02}{04}{06}はい{03}　{05}いいえ",
    "us": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "en": "Warp to {02}{04}{02}Blue Rose Witch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
-   "status": "official"
+   "en": "Warp to {02}{04}{02}Blue Rose\nWitch Lair{03}?\n{c:01}{05}{02}{04}{06}YES  {03}{05}NO  ",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:21",
@@ -161,15 +167,17 @@
    "id": "a04:22",
    "jp": "\n魔力が足りません",
    "us": "\nYou don't have enough Magic Power.",
-   "en": "\nYou don't have enough Magic Power.",
-   "status": "official"
+   "en": "\nYou don't have enough\nMagic Power.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:23",
    "jp": "\n今いるエリアへはワープできません",
    "us": "You cannot warp to the area you\ncurrently occupy.",
-   "en": "You cannot warp to the area you\ncurrently occupy.",
-   "status": "official"
+   "en": "\nYou cannot warp to\nthe area you\ncurrently occupy.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word), the jp's leading line"
   },
   {
    "id": "a04:24",
@@ -182,29 +190,33 @@
    "id": "a04:25",
    "jp": "\n状態異常中はワープできません",
    "us": "You cannot warp while in an\nirregular status.",
-   "en": "You cannot warp while in an\nirregular status.",
-   "status": "official"
+   "en": "\nYou cannot warp while\nin an irregular status.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word), the jp's leading line"
   },
   {
    "id": "a04:26",
    "jp": "\nこのゲームモードではワープできません",
    "us": "\nYou cannot warp in this game mode.",
-   "en": "\nYou cannot warp in this game mode.",
-   "status": "official"
+   "en": "\nYou cannot warp in\nthis game mode.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:27",
    "jp": "\n今ワープすることはできません",
    "us": "\nYou cannot warp right now.",
-   "en": "\nYou cannot warp right now.",
-   "status": "official"
+   "en": "\nYou cannot warp\nright now.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word)"
   },
   {
    "id": "a04:28",
    "jp": "\nこの状態ではワープできません",
    "us": "You cannot warp in your current\nstate.",
-   "en": "You cannot warp in your current\nstate.",
-   "status": "official"
+   "en": "\nYou cannot warp in\nyour current state.",
+   "status": "done",
+   "notes": "USA text broken for the 182 px sub-screen pane (the engine wraps mid-word), the jp's leading line"
   }
  ]
 }

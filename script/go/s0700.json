@@ -14,8 +14,9 @@
    "id": "s0700:1",
    "jp": "\n3種類の血があれば…",
    "us": "If only you had three varieties of\nblood...",
-   "en": "If only you had three varieties of\nblood...",
-   "status": "official"
+   "en": "\nIf only you had three varieties of blood...",
+   "status": "done",
+   "notes": "USA text on one line (its break was for the fixed-width font; one-word last line), the jp's line layout"
   },
   {
    "id": "s0700:2",
@@ -35,15 +36,17 @@
    "id": "s0700:4",
    "jp": "できたぞ! あと2人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're two more experiments\naway from the ultimate power!",
-   "en": "Viola! We're two more experiments\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're two more experiments\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0700:5",
    "jp": "できたぞ! あと1人のものが揃えば\nやっとあの究極の魔力が手に入る…",
    "us": "Viola! We're one more experiment\naway from the ultimate power!",
-   "en": "Viola! We're one more experiment\naway from the ultimate power!",
-   "status": "official"
+   "en": "Voila! We're one more experiment\naway from the ultimate power!",
+   "status": "done",
+   "notes": "USA text, typo fixed (Viola -> Voila)"
   },
   {
    "id": "s0700:6",

@@ -28,8 +28,9 @@
    "id": "memstick:3",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™ inserted.\n{c:02}Ultimate Ghosts'n Goblins requires\n{c:02}at least 400Ⓚ of free space\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "done",
+   "notes": "USA text rewrapped for the VWF (its 'data.' stub line came from the fixed-width font); blank rows keep the USA's row count"
   },
   {
    "id": "memstick:4",
@@ -42,8 +43,9 @@
    "id": "memstick:5",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}ゲームデータのオートロードに失敗しました。\n{c:02}アクセスエラーが発生しました。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
    "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occured.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occured.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
-   "status": "official"
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}Failed to Autoload game data.\n{c:02}An access error has occurred.\n{c:02}400Ⓚ or more is required\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "status": "done",
+   "notes": "USA text, typo fixed (occured)"
   },
   {
    "id": "memstick:6",

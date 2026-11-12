@@ -616,8 +616,9 @@
    "id": "a03:87",
    "jp": "放り投げて地面に落ち\nると燃え上がる武器\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、炎上\n炎上部分に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
    "us": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "status": "official"
+   "en": "Unleashes flame\nwhen thrown to\nthe ground.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nEnemies who come\nin contact with\nthe flames\nsustain damage.{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "status": "done",
+   "notes": "USA text, spelling fixed (succeptible)"
   },
   {
    "id": "a03:88",
@@ -630,8 +631,9 @@
    "id": "a03:89",
    "jp": "火薬の詰まった大きな\n玉\n\n\n軌道　放物線\n連射　普通\n威力　1{06}効果:\n地面に落下後、転がっ\nて爆発\n爆発範囲に敵が接触す\nるとダメージを与える\nことができる{06}炎に弱い敵に対して効\n果が高い",
    "us": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "status": "official"
+   "en": "Giant ball\nfilled with\ngunpowder.\n\nARC: CURVED\nFIRE RATE: NORM\nPOWER: 1{06}EFFECT:\nRolls along the\nground before\ndetonating.\nAftermath of\nexplosion also\ndamages enemies.{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "status": "done",
+   "notes": "USA text, spelling fixed (succeptible)"
   },
   {
    "id": "a03:90",
@@ -651,8 +653,9 @@
    "id": "a03:92",
    "jp": "矢先に火の着いた矢を\n撃ち出すクロスボウ\n\n\n軌道　直線\n連射　速い\n威力　1{06}効果:\n炎に弱い敵に対して効\n果が高い",
    "us": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "en": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsucceptible to\nfire.",
-   "status": "official"
+   "en": "Crossbow that\nfires flaming\narrows.\n\nARC: STRAIGHT\nFIRE RATE: FAST\nPOWER: 1{06}This weapon is\nespecially\neffective\nagainst enemies\nsusceptible to\nfire.",
+   "status": "done",
+   "notes": "USA text, spelling fixed (succeptible)"
   },
   {
    "id": "a03:93",
@@ -806,8 +809,9 @@
    "id": "a03:114",
    "jp": "かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
    "us": "Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "Feather from\nan angel who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "done",
+   "notes": "USA text, typo fixed (angle -> angel)"
   },
   {
    "id": "a03:115",
@@ -1080,8 +1084,9 @@
    "id": "a03:153",
    "jp": "{02}{04}{02}墜天使の羽{03}を手に入れ\nた{06}かつて罪を犯して天界\nから追放された天使の\n羽\nこの羽を所持している\n者は大空を駆ける墜天\n使の鎧を身に着けるこ\nとができる{06}一度取得すると失うこ\nとはない",
    "us": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "en": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angle who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
-   "status": "official"
+   "en": "You obtained the\n{02}{04}{02}Angel Feather{03}!{06}Feather from\nan angel who has\nfallen from\ngrace.{06}One who\npossesses it\ngains the\nability to don\nthe armor of\nangels.{06}Get this item\nonce, and it\ncannot be lost.",
+   "status": "done",
+   "notes": "USA text, typo fixed (angle -> angel)"
   },
   {
    "id": "a03:154",

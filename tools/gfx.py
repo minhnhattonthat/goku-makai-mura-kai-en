@@ -7,6 +7,8 @@ Rules (D10: the USA disc's English art wins wherever the tree matches):
   (same name, same occurrence of that name), spliced in place (sizes must match, so the ANA's offsets and trailing data
   stay). A Kai-only or Kai-changed GIM is left alone. Never the USA button icons (KEEP_JP); a60 only ONLY's names.
   (Whole USA files are wrong here: their button icons swap circle and cross.)
+  ANA bytes outside the GIMs (sprite geometry; a03's tab dividers) take the USA's changes like a .csl, when the
+  three ANAs have the same length.
 - REDRAW: our own lettering for what the USA art doesn't cover, written over the result.
 - .csl layouts (same length in all three): Kai takes the USA's byte changes wherever its own bytes equal the original's.
   a60.csl differs in length (another title layout): both games keep their own.
@@ -66,6 +68,14 @@ def splice(x, orig, us, only=None):
         assert len(new) == s, f"{n}#{k}: USA GIM is {len(new)} bytes, ours {s}"
         out[o:o + s] = new
         done.append(n)
+    if only is None and len(x) == len(orig) == len(us):
+        # bytes outside the GIMs are sprite geometry (a03: the USA moved the tab dividers): the USA's changes, as in .csl
+        m, pos = merge3(x, orig, us), 0
+        for o, s in sorted((o, s) for _, _, o, s in gims(x)) + [(len(x), 0)]:
+            if out[pos:o] != m[pos:o]:
+                out[pos:o] = m[pos:o]
+                done.append(f"geometry@{pos:#x}")
+            pos = max(pos, o + s)
     return bytes(out), done
 
 
