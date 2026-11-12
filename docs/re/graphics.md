@@ -9,6 +9,19 @@ game's copy gets written.
 
 Reachability of the rows marked "demo leftover" is unproven. They come from a "Capcom Special Demo 3 in 1" launcher.
 
+## Phase 8 progress (`tools/gfx.py`; `python -X utf8 tools/gfx.py` lists every edit and writes redraw previews to `work/gfx/out/`)
+
+- **USA art spliced in, both games** (per GIM; a Kai GIM only where it equals the original's): a10 option rows and footer,
+  a02 pause menu, a30 stage select words, a06 door word, a70 ending word, a00 word_00, a60 intro story (op_w_00); the
+  original game also gets a03 (sub screen), a10 op_psp0 logos and the a60 logo. Layout `.csl` changes merged the same way.
+- **Not taken from the USA:** button0 icons (USA swaps circle and cross; this code confirms with circle) and the a60 menu
+  labels (another packing; ours are English already). Kai keeps its Japanese logos (a60/03 seal set, a10/15-16; D5).
+- **Redrawn** from the USA's own letters (`gfx.Font`): Kai a10/18 (MAGIC POWER x2, NOT USED, MAGIC POWER, JUMP, ATTACK),
+  a10/20 (legend, PAUSE for SUBSCREEN).
+- **Left:** a60/14,15 tit_w_1 `極魔界村 (ULJM-…)` (both games), a60 op_w_01 save-carryover notice (re 27, go 23), the
+  original game's small logos (a60/13 tit_ico, go a60/18-22), launcher a50 (door 次へ, book logos), demo leftovers,
+  memstick icons, ICON0/PIC0, s0a0001mazo 仮.
+
 ## Must translate
 
 | ID | Screen | Japanese | Notes |

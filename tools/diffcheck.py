@@ -4,7 +4,8 @@ Usage: diffcheck.py [BUILT_ISO]   (default build/goku_en.iso); exit 1 on any pro
 - ISO: every changed byte is a changed file's data (old or new extent), its directory record (LBA, size) or the volume
   size in the PVD; no file was added or dropped; the files that differ are exactly the ones build.edits() replaces.
   The whole image is scanned, past the original's end too.
-- Archives: the same member list as the original; members that differ are only .bms files and the font (build.FONT).
+- Archives: the same member list as the original; a member that differs holds exactly the bytes build.edits() gives it
+  (.bms text, the font, tools/gfx.py textures).
 - PRX: bytes differ only in the save-dialog region (script.PRX), its pointer table (script.PRX_PTRS) and the Shift-JIS
   new-data title slots (script.PRX_SJIS); every table word points at a string start in the region; no Japanese UTF-8 or
   Shift-JIS run (3+ characters) is left.
@@ -91,8 +92,8 @@ def check(new):
         if list(om) != list(nm):
             bad.append(f"{p}: member list differs: {sorted(set(om) ^ set(nm))}")
         for m in om:
-            if m in nm and om[m] != nm[m] and not (m.endswith(".bms") or m in build.FONT):
-                bad.append(f"{p}: {m} changed, but the build only writes .bms and the font")
+            if m in nm and om[m] != nm[m] and want[p].get(m) != nm[m]:
+                bad.append(f"{p}: {m} changed, but not to the bytes build.edits() writes there")
     return bad
 
 

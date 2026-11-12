@@ -52,12 +52,16 @@ def font_files():
 
 def edits(archives, marker=None):
     """{iso path: {archive path: bytes}} per archive, or {iso path: bytes} for a plain file (the PRXes).
-    Text from script/ (`script.insert`); both games take the USA font with variable widths (tools/vwf.py, docs/re/text.md)."""
-    import script  # here, not at the top: script imports build
+    Text from script/ (`script.insert`); both games take the USA font with variable widths (tools/vwf.py, docs/re/text.md)
+    and the textures from tools/gfx.py."""
+    import gfx     # here, not at the top: script and gfx import build
+    import script
     out = script.insert(marker)
     font = font_files()
     for game in ("GOKUMAKAI", "REGOKUMAKAI"):
         out[USR + game + "/datapack.kpd"].update(font)
+    for p, e in gfx.files().items():   # textures: the USA art (D10), then our redraws (docs/re/graphics.md)
+        out[p].update(e)
     return out
 
 

@@ -69,6 +69,25 @@ def test_build_writes_only_its_ranges(tmp_path):
 
 
 @need_roms
+def test_gfx_keeps_jp_button_icons():
+    """The USA button icons swap circle and cross; every edited ANA keeps the original's button0 GIMs."""
+    import ana
+    import gfx
+    e = gfx.edits()
+    for game, members in e.items():
+        own = gfx.tree(build.ROM, build.USR + gfx.GAMES[game] + "/datapack.kpd")
+        for m, (b, _) in members.items():
+            if not m.endswith(".ana"):
+                continue
+            old, new = ana.parse(own[m]), ana.parse(b)
+            assert [(o, s, n) for o, s, n in old] == new   # offsets, sizes, names unchanged
+            for o, s, n in new:
+                if n in gfx.KEEP_JP:
+                    assert b[o:o + s] == own[m][o:o + s], (game, m, n)
+    assert "18_op_wor0" in e["re"][gfx.D2.format("play_res", "a10", "a10", "ana")][1]
+
+
+@need_roms
 def test_prx_alignment_and_sjis_slot():
     docs = script.load()
     rows = docs["go"]["prx"]["strings"]
