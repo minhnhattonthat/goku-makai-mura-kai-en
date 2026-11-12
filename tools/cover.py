@@ -1,6 +1,6 @@
 """Text coverage inputs for the skill's textcover.py (PPSSPP has no Lua probe, so the logs come from warp runs).
 
-    python -X utf8 tools/cover.py [--tour work/qa/tour] [--out work/qa/cover]
+    python -X utf8 tools/cover.py [--tour work/qa/tour [work/qa/p9 ..]] [--out work/qa/cover]
     python -X utf8 "$(python tools/skill.py)/scripts/textcover.py" work/qa/cover work/qa/cover/strings.tsv --waive docs/text_unshown.tsv
 
 Writes OUT/strings.tsv (`<game>:<id>` and a made-up hex key per non-empty string of script/) and one OUT/<run>/log.txt of
@@ -62,22 +62,24 @@ def run_ids(run, game, idx):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument('--tour', default='work/qa/tour'); ap.add_argument('--out', default='work/qa/cover')
+    # several tours (a full tour plus re-shots of changed text, e.g. work/qa/p9) merge by run name
+    ap.add_argument('--tour', nargs='+', default=['work/qa/tour']); ap.add_argument('--out', default='work/qa/cover')
     a = ap.parse_args()
     ids = strings(); key = {s: f'{i:x}' for i, s in enumerate(ids)}
     os.makedirs(a.out, exist_ok=True)
     with open(f'{a.out}/strings.tsv', 'w', encoding='utf8', newline='\n') as f:
         f.writelines(f'{s}\t{key[s]}\n' for s in ids)
     idx = {g: bms_index(os.environ.get('BMS_DIR_' + g.upper()) or f'work/goku_en/{g}/pkdata') for g in ('re', 'go')}
-    seen = set()
-    for run in sorted(glob.glob(f'{a.tour}/run/[rg][eo]_*')):
-        g = os.path.basename(run)[:2]
-        got = run_ids(run, g, idx[g]) & key.keys()
-        seen |= got
-        os.makedirs(f'{a.out}/{os.path.basename(run)}', exist_ok=True)
-        with open(f'{a.out}/{os.path.basename(run)}/log.txt', 'w', newline='\n') as f:
+    by_run = defaultdict(set)
+    for tour in a.tour:
+        for run in sorted(glob.glob(f'{tour}/run/[rg][eo]_*')):
+            g = os.path.basename(run)[:2]
+            by_run[os.path.basename(run)] |= run_ids(run, g, idx[g]) & key.keys()
+    for name, got in by_run.items():
+        os.makedirs(f'{a.out}/{name}', exist_ok=True)
+        with open(f'{a.out}/{name}/log.txt', 'w', newline='\n') as f:
             f.writelines(f'TEXT {key[s]}\n' for s in sorted(got))
-    print(f'{len(ids)} strings, {len(seen)} shown in {a.tour}/run')
+    print(f'{len(ids)} strings, {len(set().union(*by_run.values()))} shown in {", ".join(a.tour)}')
 
 
 if __name__ == '__main__':
