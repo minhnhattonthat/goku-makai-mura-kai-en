@@ -6,22 +6,24 @@
    "id": "prx:0x349b30",
    "jp": "極魔界村セーブデータ",
    "max": 31,
-   "en": "",
-   "status": "new"
+   "en": "Ultimate Ghosts 'n Goblins",
+   "status": "done",
+   "notes": "CUT: セーブデータ (Save Data): the title with it is 36 bytes; the save dialog already says it is save data"
   },
   {
    "id": "prx:0x349b54",
    "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \n",
    "max": 87,
-   "en": "",
-   "status": "new"
+   "en": "Play Time: %02d:%02d:%02d \nScore: %d \nGame Mode: %s \n",
+   "status": "done",
+   "notes": "colons instead of space alignment: the system font is proportional"
   },
   {
    "id": "prx:0x349bac",
    "jp": "プレイ時間　　%02d:%02d:%02d \nスコア　　　　%d \nゲームモード　%s \nクリア周回数　%d周目クリア",
    "max": 127,
-   "en": "",
-   "status": "new"
+   "en": "Play Time: %02d:%02d:%02d \nScore: %d \nGame Mode: %s \nTimes Cleared: %d",
+   "status": "done"
   },
   {
    "id": "prx:0x349c58",
@@ -34,148 +36,152 @@
    "id": "prx:0x349c64",
    "jp": "１－１　魔の森",
    "max": 23,
-   "en": "",
-   "status": "new"
+   "en": "1-1 Magic Forest",
+   "status": "done",
+   "notes": "stage names: USA sub-screen art (a03 sub_w00-w06)"
   },
   {
    "id": "prx:0x349c7c",
    "jp": "１－２　血の巣窟",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "1-2 Bloody Nest",
+   "status": "done"
   },
   {
    "id": "prx:0x349c98",
    "jp": "第１の魔界門",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "First Demon Gate",
+   "status": "done"
   },
   {
    "id": "prx:0x349cac",
    "jp": "２－１　嵐の砦",
    "max": 23,
-   "en": "",
-   "status": "new"
+   "en": "2-1 Storm Fortress",
+   "status": "done"
   },
   {
    "id": "prx:0x349cc4",
    "jp": "２－２　死の古城",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "2-2 Death Castle",
+   "status": "done"
   },
   {
    "id": "prx:0x349ce0",
    "jp": "第２の魔界門",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "Second Demon Gate",
+   "status": "done"
   },
   {
    "id": "prx:0x349cf4",
    "jp": "３－１　腐敗の沼",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "3-1 Rotten Swamp",
+   "status": "done"
   },
   {
    "id": "prx:0x349d10",
    "jp": "３－２　地の底の死海",
    "max": 31,
-   "en": "",
-   "status": "new"
+   "en": "3-2 Sea of Death",
+   "status": "done"
   },
   {
    "id": "prx:0x349d30",
    "jp": "第３の魔界門",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "Third Demon Gate",
+   "status": "done"
   },
   {
    "id": "prx:0x349d44",
    "jp": "４　灼熱の魔山",
    "max": 23,
-   "en": "",
-   "status": "new"
+   "en": "4 Scorch Mountain",
+   "status": "done"
   },
   {
    "id": "prx:0x349d5c",
    "jp": "４－２　（欠番）",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "4-2 (Unused)",
+   "status": "done",
+   "notes": "欠番: a stage number the game skips; probably never shown"
   },
   {
    "id": "prx:0x349d78",
    "jp": "第４の魔界門",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "Fourth Demon Gate",
+   "status": "done"
   },
   {
    "id": "prx:0x349d8c",
    "jp": "５　暗黒の大魔宮殿",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "5 Black Palace",
+   "status": "done",
+   "notes": "the USA art reads 5 BlackPalace (squeezed art); spaced here"
   },
   {
    "id": "prx:0x349da8",
    "jp": "大魔王の部屋",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "Astaroth's Chamber",
+   "status": "done",
+   "notes": "CUT: official name is Dark Astaroth's Chamber (23 bytes, slot 19). Phase 7: repoint (stage-name pointer table at go.PRX 0x3519a8, value + 0x80 = file offset) and restore Dark"
   },
   {
    "id": "prx:0x349dbc",
    "jp": "暗黒魔王の部屋",
    "max": 23,
-   "en": "",
-   "status": "new"
+   "en": "Hades' Chamber",
+   "status": "done"
   },
   {
    "id": "prx:0x349dd4",
    "jp": "赤バラの魔女の棲み家",
    "max": 31,
-   "en": "",
-   "status": "new"
+   "en": "Red Rose Witch Lair",
+   "status": "done"
   },
   {
    "id": "prx:0x349df4",
    "jp": "黄バラの魔女の棲み家",
    "max": 31,
-   "en": "",
-   "status": "new"
+   "en": "Yellow Rose Witch Lair",
+   "status": "done"
   },
   {
    "id": "prx:0x349e14",
    "jp": "青バラの魔女の棲み家",
    "max": 31,
-   "en": "",
-   "status": "new"
+   "en": "Blue Rose Witch Lair",
+   "status": "done"
   },
   {
    "id": "prx:0x349e34",
    "jp": "知られざる塔",
    "max": 19,
-   "en": "",
-   "status": "new"
+   "en": "Unknown Tower",
+   "status": "done"
   },
   {
    "id": "prx:0x349e48",
    "jp": "忘れ去られた幽閉牢",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "Forgotten Dungeon",
+   "status": "done"
   },
   {
    "id": "prx:0x349e64",
    "jp": "隠された火炎の滝",
    "max": 27,
-   "en": "",
-   "status": "new"
+   "en": "Hidden Firefall",
+   "status": "done"
   }
  ]
 }

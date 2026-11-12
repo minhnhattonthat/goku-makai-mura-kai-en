@@ -1001,9 +1001,9 @@
    "id": "a03:142",
    "jp": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}アーサーを中心に爆発\nを起こす魔力\n\n\n\n威力　2\n魔力消費量　4{06}効果:\n範囲内にいる全ての敵\nにダメージを与えるこ\nとができる\n魔力のLvが上がると\n爆発範囲と威力がアッ\nプする",
    "us": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
-   "en": "{02}{04}{02}爆発の魔力水晶{03}を手に\n入れた{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
-   "status": "new",
-   "notes": "USA text keeps a Japanese line; translate it in the USA style"
+   "en": "You obtained the\n{02}{04}{02}Flare Magic\nCrystal{03}!{06}Magic Power that\nsurrounds Arthur\nin an explosion.\n\nPOWER: 2\nMAGIC COST: 4{06}EFFECT:\nAll enemies\nwithin range\nsustain damage.\nRange expands\nwith increased\nMagic Power Lv.",
+   "status": "done",
+   "notes": "USA text keeps a Japanese line; translated in the style of a03:143-151, name from a03:36 (FLARE MAGIC)"
   },
   {
    "id": "a03:143",

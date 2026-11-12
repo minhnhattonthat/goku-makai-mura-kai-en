@@ -83,8 +83,8 @@
   {
    "id": "memstick:11",
    "jp": "{c:02}\n{c:02}「極魔界村」(ULJM-05147)のゲームデータを検出しました。\n{c:02}\n{c:02}本作でゲームデータをロードする際は\n{c:02}タイトルメニューの「LOAD GAME」を選択した後に\n{c:02}「極魔界村(ULJM-05147)」を選んでください。\n{c:02}\n{c:02}また、本作で作成したゲームデータは\n{c:02}「極魔界村」(ULJM-05147)ではロード出来ません。\n{c:02}\n",
-   "en": "",
-   "status": "new"
+   "en": "{c:02}\n{c:02}Game data from \"Ultimate Ghosts 'n Goblins\"\n{c:02}(ULJM-05147) has been detected.\n{c:02}\n{c:02}To load that game data in this game,\n{c:02}choose \"LOAD GAME\" on the title menu, then select\n{c:02}\"Ultimate Ghosts 'n Goblins (ULJM-05147)\".\n{c:02}\n{c:02}Game data created in this game cannot be loaded\n{c:02}in \"Ultimate Ghosts 'n Goblins\" (ULJM-05147).\n",
+   "status": "done"
   }
  ]
 }

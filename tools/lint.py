@@ -22,7 +22,7 @@ SUB = [440, 440]           # block-centred subtitles; 20 px margin each side of 
 BOX = {
     "a02": HELP, "a04": HELP, "a10": ICONS, "a30": ICONS,
     "s0506": HELP, "s0507": HELP, "s0600": HELP, "s0700": HELP, "s0800": HELP,
-    "memstick": [440] * 12,    # block-centred prompt, no box, blank lines position it
+    "memstick": [440] * 15,    # block-centred prompt, no box, blank lines position it; go:11 draws 15 rows (marker shot)
     "a03": [182] * 8,          # sub-screen detail pane: wraps at 182-189 px (name and description)
 }
 CODES = re.compile(r"\{[^}]*\}")
@@ -44,7 +44,8 @@ def run():
                 if r["status"] in ("empty", "keep"):
                     continue
                 text = script.en_text(r, docs)
-                if text == r["jp"] or r["status"] == "new":   # translators set `done`
+                # translators set `done`; a jp already in English (credit names, ０－０) is not untranslated
+                if r["status"] == "new" or (text == r["jp"] and re.search(script.JP_CHAR, text)):
                     todo += 1
                     continue
                 own = r["status"] not in ("official", "inherit")

@@ -82,14 +82,14 @@
   {
    "id": "s0600:11",
    "jp": "研究の邪魔だ\nこれでも持って立ち去るがよい",
-   "en": "",
-   "status": "new"
+   "en": "You are disturbing my research.\nTake this and begone!",
+   "status": "done"
   },
   {
    "id": "s0600:12",
    "jp": "研究が完成した\n最高の美と最強の魔力を見るがいい",
-   "en": "",
-   "status": "new"
+   "en": "My research is complete! Behold\nthe greatest beauty and mightiest magic!",
+   "status": "done"
   }
  ]
 }

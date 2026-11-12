@@ -6,8 +6,9 @@
    "id": "prx:0x3495a0",
    "jp": "極魔界村 改セーブデータ",
    "max": 35,
-   "en": "",
-   "status": "new"
+   "en": "Ultimate Ghosts 'n Goblins Kai",
+   "status": "done",
+   "notes": "CUT: セーブデータ (Save Data), as go/prx:0x349b30"
   },
   {
    "id": "prx:0x3495c8",
