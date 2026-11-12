@@ -248,16 +248,52 @@ def insert(marker_build=None):
             if name != "prx":
                 out.setdefault(doc["archive"], {})[doc["path"]] = bms.build([bms.encode(s, t) for s in text])
                 continue
-            d = bytearray(prx_bytes(game))
-            for r, s in zip(rows, text):
-                o = int(r["id"][4:], 16)
-                old = r["jp"].encode("utf-8")
-                assert d[o:o + len(old) + 1] == old + b"\0", f"{game}/{r['id']}: slot does not hold its jp"
-                new = s.encode("utf-8")[:r["max"]] if marker_build else s.encode("utf-8")
-                assert len(new) <= r["max"], f"{game}/{r['id']}: {len(new)} bytes, slot holds {r['max']}"
-                d[o:o + r["max"] + 1] = new.ljust(r["max"] + 1, b"\0")
-            out[doc["archive"]] = bytes(d)
+            out[doc["archive"]] = prx_patch(game, rows, [s.encode("utf-8")[:r["max"]] if marker_build else s.encode("utf-8")
+                                                         for r, s in zip(rows, text)])
     return out
+
+
+# the u32 pointer table that holds every save-dialog string's address (value + 0x80 = file offset; one R_MIPS_32 reloc
+# each, so a new value relocates the same way). Every row has its pointers here and nowhere else (2026-11-12 scan: no
+# other word or lui/addiu pair points into the region).
+PRX_PTRS = {"re": (0x351488, 0x351514), "go": (0x351988, 0x351A14)}
+
+
+def prx_pointers(d, game, o):
+    a, b = PRX_PTRS[game]
+    return [p for p in range(a, b, 4) if int.from_bytes(d[p:p + 4], "little") == o - 0x80]
+
+
+def prx_patch(game, rows, texts):
+    """The PRX with each row's string (bytes, no NUL) written. A string that fits its own slot stays there; a longer one
+    moves into the free tail of another slot and its table pointers are rewritten. ValueError when one finds no room."""
+    d = bytearray(prx_bytes(game))
+    slots = []
+    for r, s in zip(rows, texts):
+        o = int(r["id"][4:], 16)
+        old = r["jp"].encode("utf-8")
+        assert d[o:o + len(old) + 1] == old + b"\0", f"{game}/{r['id']}: slot does not hold its jp"
+        ptrs = prx_pointers(d, game, o)
+        assert ptrs, f"{game}/{r['id']}: no pointer in the table"
+        d[o:o + r["max"] + 1] = bytes(r["max"] + 1)
+        slots.append((o, r["max"] + 1, s, ptrs, r["id"]))
+    free = []   # [start, end) bytes no string uses
+    moved = [x for x in slots if len(x[2]) + 1 > x[1]]
+    for o, room, s, _, _ in slots:
+        if len(s) + 1 <= room:
+            d[o:o + len(s)] = s
+            free.append([o + len(s) + 1, o + room])
+        else:
+            free.append([o, o + room])
+    for _, _, s, ptrs, rid in sorted(moved, key=lambda x: -len(x[2])):
+        f = next((f for f in sorted(free, key=lambda f: f[1] - f[0]) if f[1] - f[0] >= len(s) + 1), None)
+        if f is None:
+            raise ValueError(f"{game}/{rid}: {len(s)} bytes, no free slot space left in the PRX region")
+        d[f[0]:f[0] + len(s)] = s
+        for p in ptrs:
+            d[p:p + 4] = (f[0] - 0x80).to_bytes(4, "little")
+        f[0] += len(s) + 1
+    return bytes(d)
 
 
 def stats():

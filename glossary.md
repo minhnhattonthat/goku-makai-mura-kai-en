@@ -22,7 +22,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 |---|---|---|---|---|
 | アーサー | Arthur | | | |
 | プリンセス | the princess | | | |
-| 大魔王 | Dark Astaroth | | stage-5 boss (USA a03 art, credits) | Astaroth alone except where a slot forces it (prx:0x349da8, phase 7) |
+| 大魔王 | Dark Astaroth | | stage-5 boss (USA a03 art, credits) | |
 | 暗黒魔王 | the dark lord / Hades | | "dark lord" in story text (USA mv04:12), Hades as a name (credits, Hades' Chamber) | Demon King |
 | 魔女 | witch | | | |
 
@@ -38,13 +38,12 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | 光の力 | Light Rings | | USA s0506/s0507 | |
-| 最強の力 | the "Ultimate Power" | | Kai s0507 (the Demon Realm's entry condition) | same family: 最強の魔力 (s0600/0700/0800:12, the witches) = "the Ultimate Power" |
+| 最強の力 / 最強の魔力 | the Ultimate Power | | Kai s0507 (the Demon Realm's entry condition); 最強の魔力 is the same family (s0600/0700/0800:12, the witches) | mightiest magic |
 | 魔力 | magic / Magic Power | | Magic Power in the a03 stat panes | |
 | 魔力水晶 | Magic Crystal | | "<Name> Magic Crystal", USA a03:143-151 | |
 | 爆発の魔力 | Flare Magic | | USA a03:36 | Explosion Magic |
 | メモリースティック | Memory Stick Duo™ | | USA memstick | |
 
 ## Decisions from earlier batches
-- phase 6 (37 new rows, translated by the controller) 極魔界村セーブデータ -> Ultimate Ghosts 'n Goblins (Save Data cut to fit the 31-byte slot)
-- phase 6 大魔王の部屋 -> Astaroth's Chamber for now (slot 19 bytes); phase 7 repoints it to restore Dark Astaroth's Chamber
+- phase 6 (37 new rows, translated by the controller); phase 7 repoints PRX strings (`script.prx_patch`), so 極魔界村セーブデータ -> Ultimate Ghosts 'n Goblins Save Data (Kai: ... Kai Save Data) and 大魔王の部屋 -> Dark Astaroth's Chamber in full
 - phase 6 memstick:11 (go) keeps the jp's ★ placeholder for the Kai disc and its icon

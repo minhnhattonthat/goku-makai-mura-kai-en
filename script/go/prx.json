@@ -6,9 +6,9 @@
    "id": "prx:0x349b30",
    "jp": "極魔界村セーブデータ",
    "max": 31,
-   "en": "Ultimate Ghosts 'n Goblins",
+   "en": "Ultimate Ghosts 'n Goblins Save Data",
    "status": "done",
-   "notes": "CUT: セーブデータ (Save Data): the title with it is 36 bytes; the save dialog already says it is save data"
+   "notes": "36 bytes > the 31-byte slot: script.prx_patch moves it and repoints it (phase 7)"
   },
   {
    "id": "prx:0x349b54",
@@ -29,8 +29,9 @@
    "id": "prx:0x349c58",
    "jp": "０－０",
    "max": 11,
-   "en": "０－０",
-   "status": "keep"
+   "en": "0-0",
+   "status": "done",
+   "notes": "ASCII like the other stage numbers (style rule: fullwidth digits -> ASCII)"
   },
   {
    "id": "prx:0x349c64",
@@ -130,9 +131,9 @@
    "id": "prx:0x349da8",
    "jp": "大魔王の部屋",
    "max": 19,
-   "en": "Astaroth's Chamber",
+   "en": "Dark Astaroth's Chamber",
    "status": "done",
-   "notes": "CUT: official name is Dark Astaroth's Chamber (23 bytes, slot 19). Phase 7: repoint (stage-name pointer table at go.PRX 0x3519a8, value + 0x80 = file offset) and restore Dark"
+   "notes": "official name (USA a03 art); 23 bytes > the 19-byte slot: script.prx_patch moves it and repoints it (phase 7)"
   },
   {
    "id": "prx:0x349dbc",

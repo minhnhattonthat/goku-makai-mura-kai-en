@@ -87,5 +87,8 @@ Row: `id` (`a02:4`, `prx:0x349c64`), `jp`, `us`, `same`, `max` (PRX slot bytes),
 
 REGOKUMAKAI.PRX 0x3495a0-0x349904, GOKUMAKAI.PRX 0x349b30-0x349e80 (`script.PRX`, file offsets). Save title `極魔界村 改セーブデータ`, detail lines with
 `%02d %d %s` (keep count and order), and about 20 stage/location names. Slots are 4-byte padded, usually 24-28 bytes, so the English
-names are tight (`1-2 Blood Lair` fits; a long one may need a shorter form or a relocated string via the pointer table; find
-that table in phase 7).
+names are tight. Pointer table (phase 7): u32 words at go 0x351988-0x351a14, re 0x351488-0x351514, value + 0x80 = file offset,
+one R_MIPS_32 reloc each; every row has its pointer(s) there and nowhere else (no lui/addiu pair, no mid-string pointer;
+`5 暗黒の大魔宮殿` has 7). `script.prx_patch` keeps a string in its slot when it fits, else moves it into another slot's free
+tail and rewrites its words; the titles and Dark Astaroth's Chamber move. Proven in game: the save's PARAM.SFO and the load
+list show the full moved titles.

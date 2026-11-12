@@ -34,10 +34,14 @@ def test_insert_writes_every_row():
         for name, doc in files.items():
             if name == "prx":
                 d = out[doc["archive"]]
-                assert len(d) == len(script.prx_bytes(game))
+                orig = script.prx_bytes(game)
+                assert len(d) == len(orig)
                 for r in doc["strings"]:
-                    o = int(r["id"][4:], 16)
-                    assert d[o:o + r["max"] + 1].rstrip(b"\0").decode() == script.en_text(r, docs)
+                    # follow each of the row's table pointers (a long string moves; script.prx_patch)
+                    for p in script.prx_pointers(orig, game, int(r["id"][4:], 16)):
+                        o = int.from_bytes(d[p:p + 4], "little") + 0x80
+                        want = r["jp"] if r["status"] in ("empty", "keep") else script.en_text(r, docs)
+                        assert d[o:d.index(b"\0", o)].decode() == want, r["id"]
                 continue
             got = [bms.decode(s, t) for s in bms.parse(out[doc["archive"]][doc["path"]])]
             assert len(got) == len(doc["strings"])
