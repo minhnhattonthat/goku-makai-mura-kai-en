@@ -129,6 +129,7 @@ def scenes_for(game):
     d['result'] = dict(go=overlay('Result', [(0x100, 1)], gap=300, mode=2), proc='Result', doc='stage result')
     # mode 2, as after a real stage clear: over a live Area the original null-reads res 0x30 in StageSelect and the emulator dies
     d['stage_select'] = dict(go=keys(overlay('SystemMenu', [(0x140, 4)], mode=2), 'circle left circle', 200), proc='StageSelect', doc='stage select')
+    d['stage_prompt'] = dict(go=keys(d['stage_select']['go'], 'circle', 200), proc='StageSelect', doc='stage select: Go to Stage 1? prompt')
     d['save'] = dict(go=save_screen, proc='MsLoad', doc='save list')
     d['witch'] = dict(go=lambda g: (stage(6, 0)(g), g.s.hold('right'), g.s.run(420), g.s.hold(''), g.s.run(420)), proc='Area', doc='witch message box')
     d['msg_all'] = dict(go=msg_all, proc='Area', doc='every stage message, in the witch box')
@@ -146,6 +147,8 @@ def scenes_for(game):
     for n, w in ((1, 780), (2, 1380)):
         d[f'movie_boss{n}'] = dict(go=lambda g, w=w: boss_movie(g, w), proc='Result', doc=f'5-7 clear movie mv03, subtitle {n}')
     d['memstick_all'] = dict(go=memstick_all, doc='every memstick.bms string, in the no-save prompt')
+    d['prompt_all'] = dict(go=prompt_all, proc='SystemMenu', doc='every a02 string, in the system menu prompt box')
+    d['select_all'] = dict(go=select_all, proc='StageSelect', doc='every a30 string, in the stage select help box')
     d['sub_tabs'] = dict(go=keys(lambda g: (stage(2, 1)(g), g.s.press('start', gap=40)), 'up right right right', 40), proc='Pause' if game == 're' else 'Submenu', doc='sub screen / pause')
     if game == 'go':
         d['sub_all'] = dict(go=sub_all, proc='Submenu', doc='every a03/a04 string in the sub screen detail pane')
@@ -272,6 +275,49 @@ def memstick_all(g):
         point_string(g, addr, 6, d, i)
         s.run(280); s.shot(f'mem_{i:02d}')
     print(f'{n} memstick shots, file at {addr:x}')
+
+
+def prompt_all(g):
+    """Every a02 string in the system menu's help/prompt box: variant 5 opens on the save prompt and reads string 22 once
+    as it opens, so slot 22 points at each string in turn from a state taken before SELECT. A shot per string."""
+    s = g.s
+    root = os.environ.get('BMS_DIR') or f'work/{g.g}/pkdata'
+    d = open(f'{root}/play_res.kpd/2d/a02/a02.bms', 'rb').read()
+    stage(1, 0)(g)
+    g.redirect(g.a['select_jal'], 'SystemMenu', fields=[(0x140, 5)])
+    g.s.w32(g.mod(g.a['select_jal'] + 0x18), 0x34050001)
+    addr = find_bytes(g, d[:64])
+    s.r.save_state('work/states/_prompt.ppst')
+    n = struct.unpack_from('<I', d, 0)[0]
+    for i in range(1, n):
+        s.ws.call('game.state.load', path=os.path.abspath('work/states/_prompt.ppst'), wait=True)
+        s.r.base = s.ws.call('cpu.status')['us']; s.f = 0
+        point_string(g, addr, 22, d, i)
+        s.press('select', gap=150); s.shot(f'a02_{i:02d}')
+    print(f'{n - 1} a02 shots, file at {addr:x}')
+
+
+def select_all(g):
+    """Every a30 string in the stage select's help box: it reads string 1 once as it opens, so the slot points at each
+    string in turn from a state taken as soon as a30.bms is in RAM (as memstick_all). A shot per string."""
+    s = g.s
+    root = os.environ.get('BMS_DIR') or f'work/{g.g}/pkdata'
+    d = open(f'{root}/st_select.kpd/2d/a30/a30.bms', 'rb').read()
+    keys(overlay('SystemMenu', [(0x140, 4)], mode=2), 'circle left', 200)(g)
+    s.press('circle', gap=1)
+    addr = None
+    for _ in range(200):
+        try: addr = find_bytes(g, d[:64], 0x08800000); break
+        except LookupError: s.run(2)
+    assert addr, 'a30.bms never reached RAM'
+    s.r.save_state('work/states/_select.ppst')
+    n = struct.unpack_from('<I', d, 0)[0]
+    for i in range(1, n):
+        s.ws.call('game.state.load', path=os.path.abspath('work/states/_select.ppst'), wait=True)
+        s.r.base = s.ws.call('cpu.status')['us']; s.f = 0
+        point_string(g, addr, 1, d, i)
+        s.run(200); s.shot(f'a30_{i:02d}')
+    print(f'{n - 1} a30 shots, file at {addr:x}')
 
 
 def boss_movie(g, wait=60):

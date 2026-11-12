@@ -47,6 +47,8 @@ kanji. No character is used under two codes in either game or the USA text, so `
 82A8) and the encoder picks it; an unused alias would decode as `[XX]` bytes and still roundtrip.
 
 **USA font** (`work/us/font`): same bft entries and cell layout, restyled glyphs, so `tbl/jp.tbl` decodes the USA text as is.
+Except 13 codes, 82A3-82AF (早探会試示×研完美倒検際 and a blank): the USA bft points them at row-14 cells (`番` for 82A8).
+No English row uses them; the one that did, Kai a02:34 `×`, now writes 80D3, × in both fonts.
 Cell 80D7 `Ⓚ` draws "KB" and 80D4 `Ⅿ` draws "MB" in both fonts.
 
 The font already holds A-Z, a-z, 0-9 and punctuation, so English needs no new glyphs for a start.

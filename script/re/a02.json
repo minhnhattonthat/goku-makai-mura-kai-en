@@ -233,8 +233,9 @@
   {
    "id": "a02:34",
    "jp": "{02}{04}{02}×{03}\n",
-   "en": "{02}{04}{02}×{03}\n",
-   "status": "keep"
+   "en": "{02}{04}{02}[80][D3]{03}\n",
+   "status": "done",
+   "notes": "× as code 80D3: the USA bft points the jp's 82A8 at the 番 cell (docs/re/text.md §USA font); 80D3 is × in both fonts"
   }
  ]
 }

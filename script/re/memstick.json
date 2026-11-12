@@ -27,9 +27,10 @@
   {
    "id": "memstick:3",
    "jp": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}メモリースティック™が正しく差し込まれていません。\n{c:02}ゲームデータの保存には400Ⓚ以上必要です。\n{c:02}このままゲームを開始しますか?\n{c:02}{c:01}{05}はい　{05}いいえ        \n",
-   "same": "go/memstick:3",
-   "en": "",
-   "status": "inherit"
+   "us": "{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™\n{c:02}inserted.\n{c:02}Ultimate Ghosts'n Goblins\n{c:02}requires at least 400Ⓚ\n{c:02}of free space to save game\n{c:02}data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO        \n",
+   "en": "{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}\n{c:02}There is no Memory Stick Duo™ inserted.\n{c:02}Ultimate Ghosts 'n Goblins Kai requires\n{c:02}at least 400Ⓚ of free space\n{c:02}to save game data.\n{c:02}Begin game anyway?\n{c:02}{c:01}{05}YES　{05}NO                    \n",
+   "status": "done",
+   "notes": "go/memstick:3 (USA text) with this game's title, D12"
   },
   {
    "id": "memstick:4",

@@ -15,7 +15,8 @@ import argparse, glob, json, os, re, struct
 from collections import defaultdict
 
 FORCED = {'msg_all': re.compile(r'msg_(s\d{4})_(\d+)\.png$'), 'memstick_all': re.compile(r'(mem)_(\d+)\.png$'),
-          'sub_all': re.compile(r'(a0[34])_(\d+)\.png$')}
+          'sub_all': re.compile(r'(a0[34])_(\d+)\.png$'), 'prompt_all': re.compile(r'(a02)_(\d+)\.png$'),
+          'select_all': re.compile(r'(a30)_(\d+)\.png$')}
 
 
 def strings():
