@@ -38,7 +38,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | 光の力 | Light Rings | | USA s0506/s0507 | |
-| 最強の力 | the "Ultimate Power" | | Kai s0507 (the Demon Realm's entry condition) | |
+| 最強の力 | the "Ultimate Power" | | Kai s0507 (the Demon Realm's entry condition) | same family: 最強の魔力 (s0600/0700/0800:12, the witches) = "the Ultimate Power" |
 | 魔力 | magic / Magic Power | | Magic Power in the a03 stat panes | |
 | 魔力水晶 | Magic Crystal | | "<Name> Magic Crystal", USA a03:143-151 | |
 | 爆発の魔力 | Flare Magic | | USA a03:36 | Explosion Magic |

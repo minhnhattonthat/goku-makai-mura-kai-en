@@ -1,7 +1,7 @@
 # Phase 6 review (codex exec, read-only, 2026-11-12)
 
 Input: `python -X utf8 tools/pairs.py work/review/p6_pairs.txt` (the 37 rows translated in phase 6), brief `docs/reviewer-brief.md`.
-Outcome: 0 Critical; 1 Important, waived (D13, official USA text). Verdict after waiver: approved.
+Outcome: reviewer: Needs fixes (0 Critical, 1 Important). The Important was first waived under D13, then fixed after the harness review (`.harness/reviews/...-phase6.md`): go/a03:142 and a03:103 now say "Range and power increase with Magic Power Lv.". That review's second Important (re s0600/0700/0800:12 最強の魔力 as "mightiest magic", breaking the echo with s0507:1 「最強の力」 "Ultimate Power") is fixed too: "Behold the greatest beauty and the Ultimate Power!". Open Critical/Important: none.
 
 ### Issues
 
