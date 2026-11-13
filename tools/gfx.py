@@ -294,11 +294,24 @@ def op_w_01(us, rows):
     return rows
 
 
+def op_w_00(us, rows):
+    """The USA intro story with its two paragraph gaps 14 px shorter: the JP scroll stops when the JP text (ink to row
+    453) has left the top, and the USA's ends at row 476, so its last line stayed on screen over the movie."""
+    out, shift, prev = [bytearray(len(rows[0])) for _ in rows], 0, None
+    for y0, y1 in ink_rows(rows):
+        shift += 14 if prev is not None and y0 - prev > 40 else 0   # line pitch 24, paragraph gap 48
+        out[y0 - shift:y1 - shift], prev = rows[y0:y1], y0
+    assert ink_rows(out)[-1][1] <= 453, ink_rows(out)[-1]
+    return out
+
+
 # redraws: (game, member, GIM "NN_name") -> fn(usa tree, base RGBA rows) giving the RGBA rows; the USA GIM of the same
 # size and name is the base (its palette holds the lettering's colours), else our own GIM
 A60 = "pkdata/title.kpd/2d/a60/a60.ana"
 REDRAW = {("re", "pkdata/play_res.kpd/2d/a10/a10.ana", "18_op_wor0"): re_a10_18,
           ("re", "pkdata/play_res.kpd/2d/a10/a10.ana", "20_op_wor0"): re_a10_20,
+          ("go", A60, "16_op_w_00"): op_w_00,
+          ("re", A60, "20_op_w_00"): op_w_00,
           ("go", A60, "23_op_w_01"): op_w_01,
           ("re", A60, "27_op_w_01"): op_w_01}   # same image; Kai never shows it (its PRX has no ULJM05147)
 
