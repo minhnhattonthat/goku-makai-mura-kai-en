@@ -30,7 +30,7 @@ Base image: `Goku Makai-Mura Kai (Japan).iso` ([Redump](http://redump.org/discs/
 | | Size | CRC32 | MD5 | SHA-1 |
 |---|---|---|---|---|
 | Japanese ISO | 978485248 | DE3C4590 | 7e8b15544d205838b92cb5217c1a414f | 574ce2a6b04ac99a8e246051767b1f8ef8dc2efc |
-| Patched ISO (v1.0) | 1211432960 | 60A35A25 | 17e53227b2143a6e09e1691eaf7bb0dc | 2de3473fb530acd1142516e5a861ce4bc50806f1 |
+| Patched ISO (v1.0) | 1211432960 | 05AE8DB3 | 9a7ab0559444cf9a5cfcc65e73b983cb | b8b04d60918c5c7e722e8d10dfdd0e7b90447308 |
 
 Apply the release's `.xdelta` with xdelta3 (`xdelta3 -d -s "Goku Makai-Mura Kai (Japan).iso" PATCH.xdelta out.iso`)
 or Delta Patcher. The USA disc is not needed. Tested in PPSSPP v1.20.4; start from a cold boot, since savestates made
